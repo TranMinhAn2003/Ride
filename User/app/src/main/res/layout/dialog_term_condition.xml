@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_shape_corner_20dp"
+        android:layoutDirection="@string/layout_direction"
+        android:orientation="vertical"
+    android:id="@+id/root_dialog_term_condition"
+    android:gravity="center">
+
+
+    <WebView
+        android:id="@+id/web_view_terms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_10adp"/>
+
+    <com.rideincab.user.common.custompalette.FontButton
+        android:id="@+id/btnAccept"
+        android:layout_width="@dimen/_150adp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15adp"
+        android:background="@drawable/app_curve_button_yellow"
+        android:padding="@dimen/_15adp"
+        android:text="@string/accept"
+        android:textAllCaps="false"
+        android:textColor="@color/app_primary_button_text_color"
+        android:textSize="@dimen/_18asp"
+        android:textStyle="bold"
+        app:fontName="@string/font_UBERMedium" />
+
+
+</LinearLayout>

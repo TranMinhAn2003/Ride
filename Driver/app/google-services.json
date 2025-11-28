@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "819620858724",
+    "firebase_url": "https://ridein-54d9d-default-rtdb.firebaseio.com",
+    "project_id": "ridein-54d9d",
+    "storage_bucket": "ridein-54d9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819620858724:android:7a3527e6fd96ea7eee0871",
+        "android_client_info": {
+          "package_name": "com.cab.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819620858724-v5pmfied8mkev80tm2vsqgauk6h9ou3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cab.driver",
+            "certificate_hash": "8a6786d03bd56a2528f78b26b7c71a9b7d943b41"
+          }
+        },
+        {
+          "client_id": "819620858724-nt847f0o8nhm9mjlgv7mjsfffmd14nag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYkKT9GWZjrDboDeEs3bBwZg0D_zdtraE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819620858724-nt847f0o8nhm9mjlgv7mjsfffmd14nag.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "819620858724-0258hnmmbhago2ri388tt4d9enp2iel3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rideindriver.live"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819620858724:android:a4b57f082957b041ee0871",
+        "android_client_info": {
+          "package_name": "com.cab.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819620858724-qckgn3dq9rug32oovvjpn7qrqevb6t53.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cab.user",
+            "certificate_hash": "8a6786d03bd56a2528f78b26b7c71a9b7d943b41"
+          }
+        },
+        {
+          "client_id": "819620858724-nt847f0o8nhm9mjlgv7mjsfffmd14nag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYkKT9GWZjrDboDeEs3bBwZg0D_zdtraE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819620858724-nt847f0o8nhm9mjlgv7mjsfffmd14nag.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "819620858724-0258hnmmbhago2ri388tt4d9enp2iel3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rideindriver.live"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819620858724:android:dc7a417560a9e5efee0871",
+        "android_client_info": {
+          "package_name": "com.rideincab.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819620858724-hn8v2ol1bqenjk56esi8fhjlmcvcdjr0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rideincab.driver",
+            "certificate_hash": "8a6786d03bd56a2528f78b26b7c71a9b7d943b41"
+          }
+        },
+        {
+          "client_id": "819620858724-nt847f0o8nhm9mjlgv7mjsfffmd14nag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYkKT9GWZjrDboDeEs3bBwZg0D_zdtraE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819620858724-nt847f0o8nhm9mjlgv7mjsfffmd14nag.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "819620858724-0258hnmmbhago2ri388tt4d9enp2iel3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rideindriver.live"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819620858724:android:569b8928a8f5cb11ee0871",
+        "android_client_info": {
+          "package_name": "com.rideincab.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819620858724-he68m8tjfohrlh8vlkil3kgrh9he7m58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rideincab.user",
+            "certificate_hash": "8a6786d03bd56a2528f78b26b7c71a9b7d943b41"
+          }
+        },
+        {
+          "client_id": "819620858724-nt847f0o8nhm9mjlgv7mjsfffmd14nag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYkKT9GWZjrDboDeEs3bBwZg0D_zdtraE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819620858724-nt847f0o8nhm9mjlgv7mjsfffmd14nag.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "819620858724-0258hnmmbhago2ri388tt4d9enp2iel3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rideindriver.live"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname "RideIn Captain">
+    <!ENTITY userAppName "RideIn Rider">
+    ]>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">&appname;</string>
+    <string name="hide">הסתר/י</string>
+    <string name="rider">נסיעה במונית</string>
+    <string name="emailalreadyexits">"דוא”ל תפוס \nנסה דוא”ל אחר."</string>
+    <string name="invalidelogin">פרטי התחברות אינם תקינים  </string>
+    <string name="signin">התחבר</string>
+    <string name="usernameemail">"שם משתמש ודוא”ל"</string>
+    <string name="password">"סיסמא"</string>
+    <string name="forgotpassword">שכחת סיסמא?</string>
+
+    <string name="error_msg_vehiclename">"בבקשה הזן סוג רכב"</string>
+    <string name="error_msg_vehiclenumber">"בבקשה הזן מספר רכב"</string>
+    <string name="error_msg_vehicletype">"בבקשה הזן דגם רכב"</string>
+    <string name="error_msg_firstname">"הזן שם פרטי"</string>
+
+    <string name="error_msg_mobilenumber">"מס’ נייד לא תקין"</string>
+
+    <string name="error_msg_lastname">"בבקשה הזן משפחה"</string>
+    <string name="error_msg_email">"בבקשה הזן דוא”ל"</string>
+    <string name="error_msg_phone">"בבקשה הזן מס’ נייד תקין"</string>
+    <string name="error_msg_password">"מינימום 6 תווים"</string>
+    <string name="error_msg_address">"הזן כתובת"</string>
+    <string name="error_msg_city">"הזן עיר"</string>
+    <string name="error_msg_state">"הזן מדינה"</string>
+    <string name="error_msg_post">"הזן מיקוד"</string>
+    <string name="error_msg_rating">"נא למלא דירוג"</string>
+
+
+    <string name="camera_permission_description">אפשר ל &appname; לגשת למצלמה/אחסון</string>
+    <string name="storage_permission_description">על מנת להעלות תמונה &appname;
+        משתמשים באחסון שלך</string>
+    <string name="location_permission_description">כדי לבצע הזמנה, אפשר ל &appname; לגשת את מיקום המכשיר</string>
+    <string name="audio_permission_description">כדי לחייג, אפשר ל &appname; לגשת להגדרות האודיו שלך</string>
+
+
+    <string name="network_failure">אנא בדוק חיבור לרשת</string>
+    <string name="internal_server_error">נסה שוב מאוחר יותר.</string>
+    <string name="you_are_viewing_old_data">פועל במצב לא מקוון, בדוק חיבור לרשת</string>
+    <string name="retry">שוב</string>
+
+    <string name="getmobilenumber">מס’ נייד</string>
+    <string name="first">"שם"</string>
+    <string name="last">"משפחה"</string>
+    <string name="email">"דוא”ל"</string>
+    <string name="paypalemail">"PAYPAL דוא”ל"</string>
+    <string name="address1">"כתובת 1"</string>
+    <string name="address2">"כתובת 2"</string>
+    <string name="city">"עיר"</string>
+    <string name="state">"מדינה"</string>
+    <string name="postalcode">"מיקוד"</string>
+    <string name="havean_account">יש לך חשבון ?</string>
+    <string name="login">התחברות</string>
+
+    <string name="resetpasswords">שחזור סיסמא</string>
+
+    <!-- Rider Feedback -->
+
+    <string name="riderfeedbacktitle">"ביקורות מונית"</string>
+
+    <string name="signout_msg">"ברצונך להתנתק??"</string>
+    <string name="cancel_s">"ביטול"</string>
+    <string name="what_would_you_like_to_do">"מה תרצה לעשות?"</string>
+
+    <!-- Register -->
+
+    <string name="descreption">"להמשך, אני מסכים ש &appname;או נציגיו עשויים ליצור איתי קשר באמצעות דוא"ל, טלפון או הודעת טקסט (כולל הודעות אוטומטיות) לכתובת הדוא"ל או הטלפון שאני מספק, כולל לצרכי שיווק. קראתי והבנתי את התנאים. הסכומים עשויים להשתנות, ע"פ הדרך."</string>
+    <string name="register">הרשמה</string>
+    <string name="vehicle">"פרטי רכב"</string>
+    <string name="vehicle_name">"סוג רכב / דוגמא: סקודה אוקטביה, טויוטה קורולה…"</string>
+    <string name="vehicle_number">"מס’ רכב"</string>
+    <string name="vehicle_type">"בחר סוג רכב"</string>
+    <string name="looking">מחפש את אפליקציית הנהג ?</string>
+    <string name="signupwithrider">"אני נהג, רוצה להרשם"</string>
+    <string name="or">"או"</string>
+    <string name="trip_star_5">"דירוג נוכחי"</string>
+    <string name="current_rating">"כמות הנסיעות"</string>
+    <string name="trip_cancel">"5 כוכבים"</string>
+    <string name="request_accepted">"נסיעות מדורגות"</string>
+    <string name="enter4digit">הקש את הקוד שקיבלת </string>
+    <string name="resend">הקש שוב את הקוד</string>
+    <string name="otp_mismatch">"הקוד אינו תואם."</string>
+    <string name="otp_emty">"הזן קוד אימות"</string>
+    <!-- Rating -->
+
+    <string name="riderfeedback">"משוב נהג"</string>
+    <string name="checkfeedback">"בדוק משוב מנוסעים ולמד לשפר"</string>
+    <string name="drivingstyle">"לוח בקרת נהיגה"</string>
+    <string name="seeyourdriving">"לאחר ביצוע נסיעות נוספות, ראה את פרופיל הנהיגה"</string>
+    <string name="cancel_your_trip">"ביטול הנסיעה שלך"</string>
+    <string name="rider_profile">"פרופיל נהג"</string>
+    <string name="waiting_for_payment">"המתן לתשלום…"</string>
+    <string name="payment_done">"תשלום בוצע!"</string>
+    <string name="paid">"שולם"</string>
+
+    <!--Document attach page start-->
+    <string name="documents">"מסמכים"</string>
+    <string name="doc">"בבקשה העלה מסמכים."</string>
+    <string name="personaldoc">"בבקשה העלה מסמכים אישיים."</string>
+    <string name="vehicledoc_msg">"על מנת לעבוד עם &appname; הרכב שלך חייב להיות מונית עם 4 מקומות לנוסעים."</string>
+    <string name="driverlicense_back">"רשיון נהיגה - (קדימה/אחורה)"</string>
+    <string name="driverlicense_front">"רשיון נהיגה - (קדימה)"</string>
+    <string name="motor_insurance">"רשיון רכב"</string>
+    <string name="registeration">"תעודת הרשמה"</string>
+    <string name="contract_carriage">"הסדר עסקי"</string>
+    <string name="continues">"המשך"</string>
+    <string name="verify">"אימות"</string>
+
+    <string name="takephoto">"צלם תמונה שלך"</string>
+    <string name="takephoto_msg">"בבקשה בדוק שהמסמכים קריאים וברורים."</string>
+    <string name="taptoadd">"הוספה"</string>
+    <string name="taptochange">"החלפה"</string>
+    <string name="camera">מצלמה</string>
+    <string name="camera_roll">מצלמה</string>
+    <!--Document attach page end-->
+
+    <!--Home Page Started-->
+    <string name="home">"בית"</string>
+    <string name="earnings">"הכנסות"</string>
+    <string name="rating">"דירוגים"</string>
+    <string name="account">"חשבון"</string>
+    <string name="offline">"מנותק"</string>
+    <string name="checkstatus">"בדוק סטטוס"</string>
+    <string name="online">"מחובר"</string>
+    <string name="trip_id">"מזהה נסיעה : "</string>
+    <string name="enroute">"בדרך"</string>
+    <string name="navigate">"ניווט"</string>
+    <string name="pickup">"איסוף"</string>
+    <string name="pick_up">"איסוף"</string>
+    <string name="dropoff">"שחרור"</string>
+    <string name="contact_C">"איש קשר"</string>
+    <string name="call">חיוג</string>
+    <string name="callsonly">"שיחות בלבד"</string>
+    <string name="cancel">"ביטול"</string>
+    <string name="minute">"דקה"</string>
+    <string name="minutes">"דקות"</string>
+    <string name="help">"עזרה"</string>
+    <string name="edit">"עריכה"</string>
+    <string name="document_s">"מסמכים"</string>
+    <string name="about">"אודות"</string>
+    <string name="signout">"התנתק"</string>
+    <string name="notrip">"אין לך נסיעות"</string>
+
+    <!--Home Page Ended-->
+
+    <!--Trips details Page Started-->
+    <string name="currency">"מטבע"</string>
+    <string name="tripsdetails">"פרטי הנסיעה"</string>
+    <string name="triphistory">"היסטוריית נסיעות"</string>
+    <string name="trip_payment">"נסיעות ותשלומים"</string>
+
+    <string name="tripearnings">"רווח הנסיעות"</string>
+    <string name="fare">"תעריף בסיס"</string>
+    <string name="uberfee">"דמי גישה"</string>
+    <string name="distancefare">"תעריף הנסיעה"</string>
+    <string name="timefare">"תעריף זמן"</string>
+    <string name="totalamount">"סה”כ תעריף הנסיעה"</string>
+    <string name="adminamount">"סכום ניהול"</string>
+    <string name="oweamount">"סכום לגבייה"</string>
+    <string name="driverpayout">"תשלום לנהג"</string>
+    <string name="cashcollectable">"גביית מזומן"</string>
+    <string name="cash_trip">"נסיעה במזומן"</string>
+    <string name="cashcollected">"סה”כ"</string>
+    <string name="waitforrider">"ממתין לאישור מהנוסע"</string>
+
+    <string name="duration">"זמן"</string>
+    <string name="distance">"מרחק"</string>
+    <string name="thisweek">"השבוע"</string>
+    <string name="thisweek_empty">"לא נסעת השבוע"</string>
+    <string name="last_trip">"נסיעה אחרונה: "</string>
+    <string name="pay_statemet">"הצהרת תשלומים"</string>
+    <string name="payment">"תשלום"</string>
+    <string name="payment_failed">"תשלום נכשל"</string>
+    <string name="payout">"העברה"</string>
+    <string name="addpayout">הוסף תשלום ב paypal</string>
+    <string name="most_recent">"העברה אחרונה: "</string>
+    <string name="addpayment_msg">"כדי להוסיף אמצעי תשלום חדש,&appname;מבקשים דוא"ל שלך. "</string>
+
+    <string name="begin_trip">"החלק להתחלת נסיעה"</string>
+    <string name="confirm_arrived">"החלק להודיע שהגעת"</string>
+    <string name="end_trip">"החלק לסיום הנסיעה"</string>
+
+
+    <string name="begin_trip_text">"התחל נסיעה"</string>
+    <string name="end_trip_text">"סיים נסיעה"</string>
+
+
+    <string name="Rating">דירוג</string>
+    <string name="Ratings">דירוגים</string>
+    <string name="completed">הושלם!</string>
+    <string name="Cancelled">בוטל!</string>
+    <string name="scheduled">"מתוזמן"</string>
+    <!--Trips details Page Ended-->
+
+    <!--Payment Statement started-->
+    <string name="paystatement">"הצהרת תשלום"</string>
+    <string name="weeklystatement">"הצהרה שבועית"</string>
+
+    <string name="timeonline">"זמן מחובר"</string>
+    <string name="completedtrips">"נסיעות שהושלמו"</string>
+    <string name="dailyearning">"רווח יומי"</string>
+    <string name="bankdeposit">"העברה בנקאית"</string>
+    <string name="totaluberearning">"סך הרווחים"</string>
+    <string name="riderfaresearn">"תשלום שנשמר."</string>
+    <!--Payment Statement endted-->
+    <string name="Interneterror">אין חיבור לאינטרנט</string>
+    <string name="no_connection">אין חיבור לאינטרנט</string>
+    <string name="enable_connection_and_come_back">אנא הפעל את החיבור
+ ונסה שוב </string>
+    <string name="send_message">שלח הודעה</string>
+    <string name="go_online">עבור למצב מחובר</string>
+    <!--Fetch Address-->
+
+    <string name="no_address_found">לא נמצאה כתובת</string>
+    <string name="no_location_data_provided">לא סופקו נתוני מיקום</string>
+    <string name="service_not_available">השירות אינו זמין</string>
+    <string name="invalid_lat_long_used">נתוני מיקום אינם תקינים</string>
+
+    <!--Profile Page start-->
+    <string name="profile">"פרופיל"</string>
+    <string name="mobile">"מס’ נייד"</string>
+
+    <!-- Error Messages -->
+
+    <string name="InvalidMobileNumber">מס’ נייד לא תקין</string>
+    <string name="InvalidPassword">מינימום 6 תווים</string>
+    <string name="Passwordmismatch">סיסמאות אינם תואמות</string>
+    <string name="Enteryourpassword">הקש סיסמא</string>
+    <string name="Confirmyourpassword">הקש סיסמא שוב</string>
+    <string name="currencies">"מטבע"</string>
+    <string name="selectcurrency">"בחר מטבע"</string>
+
+
+    <string name="mobilenumber">מס’ נייד</string>
+    <string name="language">שפה</string>
+    <string name="selectlanguage">בחר שפה</string>
+
+    <string name="noratings">אין דירוגים ותגובות</string>
+    <string name="ratingsncomment">דירוגים ותגובות</string>
+    <string name="vehicleinformation">פרטי רכב</string>
+    <string name="pleaseentermobile">הזן מס’ נייד</string>
+    <string name="turnoninternet">הפעל אינטרנט</string>
+    <string name="ok">בסדר</string>
+    <string name="yourtripcancelledbydriver">הנהג ביטל את הנסיעה…</string>
+    <string name="driverarrrive">הנהג הגיע…</string>
+    <string name="waiting">המתן לאישור...</string>
+    <string name="acceptingpickup">אשר…</string>
+    <string name="rateyourrider">דרג את הנוסע</string>
+    <string name="writecomment">כתוב הערה… </string>
+    <string name="paymentdetails">פרטי תשלום</string>
+    <string name="view">תצוגה</string>
+    <string name="pressbackagain">לחץ חזור שוב ליציאה</string>
+    <string name="paymentcompleted">התשלום הושלם בהצלחה…</string>
+    <string name="addphoto">הוסף תמונה</string>
+    <string name="choosefromlib">בחר מהגלריה</string>
+    <string name="save">שמור</string>
+
+    <string name="yourtripcanceledrider">הנסיעה בוטלה ע”י הנוסע…</string>
+    <string name="other_reasons">סיבות אחרות</string>
+    <!-- fonts ended -->
+
+    <string name="layout_direction">0</string>
+    <string name="location_not_enabled">מיקום אינו מופעל!</string>
+    <string name="location_settings">פתח הגדרות מיקום</string>
+    <string name="enable_permission">הפעל הרשאות</string>
+    <string name="active">מופעל…</string>
+    <string name="next">הבא</string>
+    <string name="img_failed_msg">העלאת תמונה נכשלה</string>
+    <string name="loading">טוען…</string>
+
+    <string name="image_uploaded">העלאת התמונה הושלמה</string>
+    <string name="settings">הגדרות</string>
+    <string name="not_now">לא עכשיו</string>
+    <string name="message">הודעה</string>
+    <string name="payout_title">הגדר שיטת תשלום עבור &appname;</string>
+    <string name="payout_address">כתובת</string>
+    <string name="street_hint">"רחוב"</string>
+    <string name="apt_hint">"דירה"</string>
+    <string name="city_hint">"עיר"</string>
+    <string name="state_hint">"מדינה"</string>
+    <string name="pin_hint">"מיקוד"</string>
+    <string name="country_hint">"ארץ"</string>
+    <string name="currency1">מטבע</string>
+    <string name="routing_number">מס’ חשבון</string>
+    <string name="clearing_code">מס’ חשבון</string>
+    <string name="bank_name">שם הבנק</string>
+    <string name="branch_name">סניף</string>
+    <string name="bank_code">מס’ בנק</string>
+    <string name="branch_code">מס’ סניף</string>
+    <string name="transit_number">מס’ העברה</string>
+    <string name="institute_number">קנדה</string>
+    <string name="sort_code">בריטניה</string>
+    <string name="account_owner_name">שם בעל החשבון</string>
+    <string name="phone_number">מס’ נייד</string>
+    <string name="iban_number">מס’ IBAN</string>
+    <string name="gender">מין</string>
+    <string name="address_1">כתובת 1</string>
+    <string name="address_2">כתובת 2</string>
+    <string name="state_province">מדינה</string>
+    <string name="postal_code">מיקוד</string>
+    <string name="legal_document">מסמך משפטי</string>
+    <string name="stripe_details">פרטי Stripe</string>
+    <string name="submit">שלח</string>
+    <string name="address_kanji1">כתובת 1</string>
+    <string name="address_kanji2">כתובת 2</string>
+    <string name="kanji_city">עיר</string>
+    <string name="state_province_kanji">מדינה/אזור</string>
+    <string name="postal_code_kanji">מיקוד</string>
+    <string name="address_kana2">כתובת 2</string>
+    <string name="city_kana">עיר</string>
+    <string name="postal_code_kana">מיקוד</string>
+    <string name="address_kana">כתובת קאנה</string>
+    <string name="paypal_email">דוא”ל PAYPAL</string>
+    <string name="address_kanji">Address Kanji</string>
+    <string name="showpassword">הצג סיסמא</string>
+    <string name="delete">מחק</string>
+    <string name="makedefault">הגדר כברירת מחדל</string>
+    <string name="defaults">ברירת מחדל</string>
+    <string name="selectcountry">בחר מדינה</string>
+    <string name="select">נבחר</string>
+
+    <string name="enable_permissions_to_proceed_further">אפשר כדי להמשיך</string>
+    <string name="takephoto_title">בחר תמונה</string>
+    <string name="add_stripe_payout">הוסף Stripe Payout</string>
+    <string name="choose_currency">בחר מטבע</string>
+    <string name="please_choose_a_currency">בחר מטבע</string>
+    <string name="please_enter_account_number">הזן מס’ חשבון</string>
+    <string name="please_enter_bank_name">הזן שם בנק</string>
+    <string name="please_enter_branch_name">הזן שם סניף</string>
+    <string name="please_enter_bank_code">הזן מס’ בנק</string>
+    <string name="please_enter_branch_code">הזן קוד בנק</string>
+    <string name="please_enter_account_holder_name">הזן את שם בעל החשבון</string>
+    <string name="please_enter_address1">הזן כתובת 1</string>
+    <string name="please_enter_city">הזן עיר</string>
+    <string name="please_enter_state">הזן מדינה</string>
+    <string name="please_enter_postal_code">\"הזן מיקוד \"</string>
+    <string name="please_upload_legal_document">העלה מסמך</string>
+    <string name="please_upload_additional_document">מסמך נוסף</string>
+    <string name="external_storage_permission_necessary">הרשאת אחסון חיצונית נחוצה.</string>
+    <string name="please_enter_sort_code">הזן קוד מיון</string>
+    <string name="please_enter_SSN">הזן SSN</string>
+    <string name="please_enter_routing_number">הזן מס’ נתיב</string>
+    <string name="please_enter_clearing_code">הזן קוד ניקוי</string>
+    <string name="please_enter_account_owner_name">הזן שם בעל החשבון</string>
+    <string name="please_enter_phone_number">"הזן מס’ נייד"</string>
+    <string name="please_choose_gender">הזן מין</string>
+    <string name="please_enter_address_1_of_kana">הזן כתובת 1</string>
+    <string name="please_enter_address_2_of_kana">הזן כתובת 2</string>
+    <string name="please_enter_city_of_kana">הזן עיר</string>
+    <string name="please_enter_state_of_kana">הזן מדינה</string>
+    <string name="please_enter_postal_code_of_kana">הזן מיקוד</string>
+    <string name="please_enter_address_1_of_kanji">הזן כתובת 1</string>
+    <string name="please_enter_address_2_of_kanji">הזן כתובת 2</string>
+    <string name="please_enter_city_of_kanji">הזן עיר</string>
+    <string name="please_enter_state_of_kanji">הזן מדינה</string>
+    <string name="please_enter_postal_code_of_kanji">הזן מיקוד</string>
+    <string name="please_choose_country">הזן מדינה</string>
+    <string name="please_enter_transit_number">הזן מס’ העברה</string>
+    <string name="please_enter_institution_number">הזן מס’ מוסד</string>
+    <string name="please_enter_BSB">הזן BSB</string>
+    <string name="manually_booked">הזמנה ידנית</string>
+    <string name="manual_booking_reminder">תזכורת להזמנה ידנית</string>
+    <string name="manual_booking_cancelled">הזמנה ידנית מבוטלת</string>
+    <string name="send_a_message">שלח הודעה</string>
+    <string name="google_map_not_found_in_device">גוגל מפות לא מוצא את מכשירך</string>
+    <string name="waze_google_map_not_found_in_device">Waze לא מוצא את מכשירך</string>
+    <string name="choose_map">בחר מפה</string>
+    <string name="location_not_enabled_please_enable_location">מיקום אינו מופעל,
+הפעל מיקום כדי להמשיך</string>
+    <string name="you_have_been_manualy_booked">התקבלה הזמנה ידנית</string>
+    <string name="skip">דלג</string>
+
+
+    <string name="bank_location">מיקום בנק</string>
+    <string name="bic_swift_code">IFSC/BIC/SWIFT Code</string>
+    <string name="name_of_bank">שם הבנק</string>
+    <string name="account_number">מס’ חשבון בנק</string>
+    <string name="account_holder_name">שם בעל החשבון</string>
+
+    <string name="required"> נדרש</string>
+
+    <string name="bank_details">פרטי בנק</string>
+    <string name="bank_details_success_message">פרטי הבנק נוספו בהצלחה</string>
+    <string name="rate_your_ride">דרג את הנסיעה</string>
+    <string name="no_ratings_display">אין דירוגים</string>
+    <string name="pending_trips">נסיעות ממתינות</string>
+    <string name="completed_trips">נסיעות שהושלמו</string>
+    <string name="error_address">אנא הזן כתובת.</string>
+    <string name="error_city">אנא הזן עיר.</string>
+    <string name="error_zip_code">אנא הזן מיקוד.</string>
+    <string name="error_country">אנא בחר מדינה לתשלום.</string>
+    <string name="no_vehicle_assigned">לא הוקצאה מונית</string>
+    <string name="trips">נסיעות</string>
+    <string name="total_trip_amount">סכום הנסיעה הכולל</string>
+    <string name="doc_upload_error">נא להעלות את כל המסמכים</string>
+
+    <string name="pay_to">שלם למנהל</string>
+    <string name="your_pay_to">התשלום שלך למנהל</string>
+
+    <string name="add_card">הוסף כרטיס</string>
+    <string name="change">שינוי</string>
+    <string name="enter_amount">הזן סכום</string>
+    <string name="enter_amount_empty">אנא הזן סכום</string>
+    <string name="entered_amt_msg">הסכום שהוזן גדול מסכום החוב</string>
+    <string name="payment_methods">אמצעי תשלום</string>
+    <string name="credit_or_debit">הוסף כרטיס אשראי</string>
+    <string name="select_reason">בחר סיבה</string>
+
+    <string name="default_direction" translatable="false">0</string>
+    <string name="mobile_verification">אימות מס’ נייד</string>
+    <string name="please_enter_mobile_number">אנא הזן מס’ נייד</string>
+    <string name="enter_otp">הקש קוד</string>
+    <string name="resend_otp">"לא קיבלת קוד?"</string>
+    <string name="copy">העתק</string>
+    <string name="driver_earnings">רווחי נהג</string>
+    <string name="otp_send_to_phone_description">"שלחנו לך קוד ב SMS \n לאימות מס’ הנייד שלך"</string>
+    <string name="send_OTP_again_in">שלח שוב</string>
+    <string name="enter_valid_otp">קוד אימות לא תקין!</string>
+    <string name="enter_pendg_amount_empty">אין לך סכום ממתין</string>
+    <string name="enter_otp_to_begin_trip">הזן קוד להתחלת הנסיעה</string>
+    <string name="Done">בוצע</string>
+    <string name="close">סגור</string>
+    <string name="connected">מחובר</string>
+    <string name="ringing">צלצול</string>
+    <string name="connecting">מתחבר…</string>
+
+
+    <string name="amount">תשלום</string>
+    <string name="apply">החל</string>
+    <string name="apply_extra_fee">החלה עמלה נוספת</string>
+    <string name="enter_other_reason">הזן סיבה אחרת</string>
+    <string name="enter_extra_fee_description">הזן תיאור תשלום נוסף</string>
+    <string name="enter_extra_fee">הזן תשלום נוסף</string>
+    <string name="no">לא</string>
+    <string name="yes">כן</string>
+    <string name="select_extra_fee_description">הזן תיאור עמלה נוספת</string>
+    <string name="error_select_extra_fee_description">הזן תיאור תשלום נוסף</string>
+    <string name="er_read_loc">בעיה בקריאת מיקום.</string>
+
+
+    <string name="referral">הפניה</string>
+    <string name="your_invite_code">קוד ההזמנה שלך</string>
+    <string name="share_my_code">שתף קוד</string>
+    <string name="friends_incompleted">חברים - לא הושלמו</string>
+    <string name="friends_completed">חברים - הושלמו</string>
+    <string name="referral_code_copied">קוד הפניה הועתק</string>
+    <string name="referral_code_not_copied">אפשר העתקת קוד הפניה ושתף</string>
+    <string name="days_left">ימים שנותרו</string>
+    <string name="need_to_complete">צריך להשלים</string>
+    <string name="max_referral_earning_statement">קבל עד %s עבור כל נהג שמצטרף ל &appname;</string>
+    <string name="referral_code_optional">קוד הפניה (אופציונלי)</string>
+    <string name="earned">"רווח "</string>
+    <string name="no_referrals_yet">אין הפניות</string>
+    <string name="referral_expired">פג תוקף ההפניה</string>
+    <string name="share_to_contacts">שתף לאיש קשר</string>
+    <string name="invite_msg"><![CDATA[הרשם למוניות רמות אלון. זה העתיד]]></string>
+    <string name="referrel_amount">סכום</string>
+    <string name="day_left">ימים שנותרו</string>
+    <string name="trip_left">נסיעה</string>
+
+    <string name="tap_to_reload">לחץ לטעינה מחדש</string>
+    <string name="error_msg_unknown">אירעה שגיאה בלתי צפויה</string>
+    <string name="total_earnings">"רווח כולל"</string>
+    <string name="remaining_referral">פניות שנותרו</string>
+    <string name="hr_eta">"&#160;שעה&#160;"</string>
+
+    <string name="choose">בחירה</string>
+    <string name="Add_payment_type">הוסף אמצעי תשלום</string>
+    <string name="choose_payment_type">בבקשה הזן אמצעי תשלום</string>
+    <string name="add_payout">הוסף payout </string>
+    <string name="update">עדכון</string>
+    <string name="min">&#160;דקה</string>
+
+    <string name="add_paypal">הוסף Paypal</string>
+    <string name="add_driver_proof">הוסיף זוית לנהג</string>
+    <string name="payout_details">Payout פרטי</string>
+    <string name="onlinepayment">תשלום מקוון</string>
+    <string name="paypal">Paypal</string>
+    <string name="set_canceled">ההתקנה נכשלה, נסה שוב</string>
+    <string name="stripe_error_1">משהו השתבש, נסה שוב</string>
+    <string name="stripe_error_2">נסה שוב מאוחר יותר</string>
+    <string name="navigation_drawer_open">פתח ניווט</string>
+    <string name="navigation_drawer_close">סגור ניווט</string>
+    <string name="choose_vehicle_type">בחר סוג רכב</string>
+    <string name="choose_vehicle">בחר רכב</string>
+    <string name="select_your_vehicle">בחר את הרכב שלך</string>
+    <string name="manage_vehicles">ניהול רכבים</string>
+    <string name="add_vehicles">הוסף רכבים</string>
+    <string name="update_vehicles">עדכן רכבים</string>
+    <string name="New_vehicle">חדש</string>
+    <string name="update_vehicle">עדכן רכב</string>
+    <string name="setting">הגדרות</string>
+    <string name="choose_make">בחר יצרן</string>
+    <string name="choose_year">בחר שנה</string>
+    <string name="your_trips">הנסיעות שלך</string>
+    <string name="manage_documents">ניהול מסמכים</string>
+    <string name="earning">רווחים</string>
+    <string name="choose_model">בחר מודל</string>
+    <string name="enter_vehicle_color">הזן צבע רכב</string>
+    <string name="vehicle_color">צבע רכב</string>
+    <string name="enter_vehicle_name">הזן שם רכב</string>
+    <string name="vehicle_name_title">שם רכב</string>
+    <string name="enter_license_plate">הזן לוחית זיהוי</string>
+    <string name="license_plate">לוחית זיהוי</string>
+    <string name="year">שנה</string>
+    <string name="model">מודל</string>
+    <string name="make">יצרן</string>
+    <string name="add_vehicle">הוסף רכב</string>
+    <string name="delete_msg">"האם אתה בטוח שברצונך למחוק?"</string>
+    <string name="you_have_no_vehicles">אין רכבים</string>
+    <string name="you_have_no_document">לא נוספו מסמכים</string>
+    <string name="please_choose_make">בבקשה בחר יצרן</string>
+    <string name="please_choose_model">בבקשה בחר מודל</string>
+    <string name="please_choose_year">בבקשה בחר שנה</string>
+    <string name="please_choose_license_number">בבקשה בחר מס’ רשיון</string>
+    <string name="please_enter_vehicle_name">בבקשה בחר שם רכב</string>
+    <string name="please_enter_vehicle_color">בבקשה בחר צבע רכב</string>
+    <string name="please_choose_vehicle_type">בבקשה בחר סוג רכב</string>
+    <string name="cancelaccount_msg">"המידע שלך לא ישמר."</string>
+    <string name="confirm">"אשר"</string>
+    <string name="cancel_vehicle_creation">בטל יצירת רכב ?</string>
+    <string name="upload_doc">העלה מסמכים</string>
+    <string name="pending">ממתין…</string>
+    <string name="rejected">נדחה</string>
+    <string name="go_onlines">פנוי</string>
+    <string name="go_offline">עסוק</string>
+    <string name="manage_payout">ניהול Payout</string>
+    <string name="pool_request">Pool Request (</string>
+    <string name="persons_braces">&#160;persons)</string>
+    <string name="person_braces">&#160;person)</string>
+    <string name="pickup_address_braces">"כתובת איסוף :\n"</string>
+    <string name="drop_address_braces">"כתובת יעד :\n"</string>
+    <string name="manage_driver_document">"ניהול מסמכי נהג"</string>
+    <string name="approved">אושר</string>
+    <string name="few_seconds">זה עשוי להימשך כמה שניות</string>
+    <string name="expiry_date">תאריך תפוגה</string>
+    <string name="yyyymmdd">YYYY-MM-DD</string>
+    <string name="changeAlert">אתה בנסיעה, אינך יכול לשנות את כלי הרכב. בבקשה סיים את הנסיעה</string>
+    <string name="vehicleAlert">אתה פנוי, אינך יכול לערוך את הרכבים. תלחץ עסוק</string>
+    <string name="please_expiry_date">בחר תאריך תפוגה</string>
+    <string name="deleteAlert">אתה פנוי, אינך יכול למחוק את כלי הרכב שלך. תלחץ עסוק</string>
+    <string name="male">זכר</string>
+    <string name="female">נקבה</string>
+    <string name="error_gender">בבקשה בחר מין</string>
+    <string name="km_value">ק”מ</string>
+    <string name="mins_value">דקות</string>
+    <string name="settings_status_on_summary">"השירות מופעל "</string>
+    <string name="support">תמיכה</string>
+    <string name="not_valid_data">לא נמצא מידע</string>
+    <string name="seat_count">מס’ נוסעים :</string>
+
+    <string name="new_version_available">גרסה חדשה זמינה</string>
+    <string name="update_desc">בבקשה עדכן את האפליקציה!</string>
+    <string name="update_desc1">כדי להשתמש באפליקציה, הורד את הגרסה העדכנית</string>
+
+    <string name="inactive">לא פעיל</string>
+    <string name="update_successfully">העדכון הושלם.</string>
+    <string name="request_expire">פג תוקף הבקשה</string>
+    <string name="cancel_trip">בטל נסיעה</string>
+    <string name="select_view">בחר %s</string>
+    <string name="vehicle_numbers">מס’ רכב</string>
+    <string name="continue_with_phone_number">המשך עם מס’ נייד</string>
+    <string name="login_to_continue">התחבר כדי להמשיך</string>
+    <string name="welcome_back">שלום</string>
+    <string name="hello">שלום</string>
+    <string name="select_photo">בחר תמונה</string>
+    <string name="pickup_address">מוצא:</string>
+    <string name="drop_address">יעד:</string>
+    <string name="accept">אשר</string>
+    <string name="drivewithuber">הנוסע הוא &userAppName;</string>
+    <string name="pleaseEnteryourpassword">בבקשה הזן סיסמא</string>
+    <string name="pleaseConfirmyourpassword">בבקשה הזן סיסמא בשנית</string>
+    <string name="trip_request">בקשת נסיעה</string>
+    <string name="additional_document">מסמכים נוספים</string>
+    <string name="please_enter_clabe_number">נא להזין CLABE</string>
+
+
+    <plurals name="minutes" tools:ignore="MissingQuantity">
+        <item quantity="one">%d&#160;דקה</item>
+        <item quantity="other">%d&#160;דקות</item>
+    </plurals>
+
+
+    <plurals name="hours" tools:ignore="MissingQuantity">
+        <item quantity="one">%d&#160;שעה&#160;</item>
+        <item quantity="other">%d"&#160;שעות&#160;</item>
+    </plurals>
+
+
+    <plurals name="manage_vehicles" tools:ignore="MissingQuantity">
+        <item quantity="one"> ניהול רכבים</item>
+        <item quantity="other"> ניהול רכבים</item>
+    </plurals>
+
+    <string name="installed_app_alert">אפליקציה זו מספקת לך מידע על ישום, לחווית המשתמש הטובה ביותר ונסיעות בקרבת מקום.</string>
+    <string name="location_disclaimer">אפליקציה זו אוספת נתוני מיקום כדי להפעיל \'Search Vehicle Location\', \'Travel Route and Navigation\', \'Realtime Vehicle Movement\', גם שאפליקציה סגורה או לא בשימוש.</string>
+    <string name="delete_account">מחק משתמש</string>
+
+
+    <string name="sigin_terms1">”בלחיצה על המשך, אני מאשר שקראתי והסכמתי ל”</string>
+    <string name="sigin_terms2">"תנאים וההגבלות"</string>
+    <string name="sigin_terms3">" ו "</string>
+    <string name="sigin_terms4">"מדניות פרטיות"</string>
+    <string name="location_permission">כדי לקבל נסיעות אפשר ל &appname; לגשת אל המיקום שלך. &appname; אוספים נתוני מיקום כדי לתת נסיעות בכל מקום גם כשהאפליקציה סגורה או לא בשימוש.</string>
+    <string name="background_location_permission_rationale">נדרשת הרשאת מיקום ברקע.</string>
+    <string name="fine_permission_denied_explanation">הרשאת מיקום נדחתה, אפשרות זו נחוצה.</string>
+    <string name="background_permission_denied_explanation">הרשאת מיקום נדחתה, אפשרות זו נחוצה.</string>
+    <string name="notification_permission_description">נדרשת הרשאת הודעות.</string>
+    <string name="pls_allow_permission">אנא אשר הרשאה זו.</string>
+    <string name="bubble_permission_msg">לאחר אישור נסיעה תוכל לראות כפתור צף על המסך.</string>
+    <string name="allow">מותר</string>
+    <string name="disclaimer">כתב ויתור</string>
+    <string name="location_permission_is_required_to_find_the_rides_near_you">נדרשת הרשאת מיקום.</string>
+    <string name="location_permission_required">נדרשת הרשאת מיקום.</string>
+    <string name="allow_permission">אפשר הרשאה</string>
+    <string name="allow_background_permission">אפשר הפעלה ברקע</string>
+    <string name="payout_alert">נקה את החובות כדי לקבל נסיעות</string>
+    <string name="estimated_fare">מחיר נסיעה משוער</string>
+    <string name="privacy_policy_txt">מדיניות הפרטיות</string>
+    <string name="start_trip">התחל טיול</string>
+    <string name="start_trip_alert">האם אתה בטוח שאתה רוצה להתחיל את הטיול הזה?</string>
+    <string name="please_update_profile_picture">אנא העלה תמונת פרופיל</string>
+    <string name="cancel_payment">האם אתה בטוח שברצונך לבטל את התשלום?</string>
+    <string name="test_yes">כן</string>
+    <string name="alert">התראה</string>
+
+
+</resources>

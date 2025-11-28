@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layoutDirection="@string/layout_direction"
+        tools:context=".taxi.sendrequest.DriverNotAcceptActivity"
+        >
+
+    <ImageView
+            android:id="@+id/drivernotaccept_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_20adp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/app_ic_back_arrow"
+            />
+
+    <LinearLayout
+            android:id="@+id/request_receive_dialog_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_20adp"
+            android:layout_marginEnd="@dimen/_20adp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_20adp"
+                android:text="@string/sorry_no_rides"
+                android:textAlignment="center"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_18asp"
+                app:fontName="@string/font_Medium"
+                />
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/try_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/try_again"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/app_primary_color"
+                android:textSize="@dimen/_19asp"
+                app:fontName="@string/font_Medium"
+                />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/tv_manualtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/contact_admin_for_manual_booking"
+                android:textAlignment="center"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_18asp"
+                app:fontName="@string/font_Medium"
+                />
+
+        <RelativeLayout
+                android:id="@+id/rlt_contact_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_manualtitle"
+                android:layout_margin="@dimen/_20adp"
+                android:background="@drawable/app_curve_button_yellow"
+                >
+
+            <ImageView
+                    android:id="@+id/iv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:padding="@dimen/_15adp"
+                    android:src="@drawable/ic_phone"
+                    app:tint="@color/app_primary_button_text_color"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/tv_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/iv_phone"
+                    android:padding="@dimen/_15adp"
+                    android:text="@string/call_admin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_primary_button_text_color"
+                    android:textSize="@dimen/_18asp"
+                    app:fontName="@string/font_Medium"
+                    />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

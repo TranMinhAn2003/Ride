@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cabme_app_yellow"
+    android:keepScreenOn="true"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.rideincab.driver.home.MainActivity">
+
+
+    <!--android:fitsSystemWindows="true"
+    android:layoutDirection="@string/layout_direction"
+    tools:openDrawer="start"-->
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layoutDirection="@string/layout_direction"
+        android:background="@color/ub__transparent"
+        tools:openDrawer="start">
+
+
+        <include
+            android:id="@+id/app_bar_main"
+           android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/app_bar_main"
+            android:background="@color/ub__transparent"
+            />
+
+
+
+    <!--<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/iv_line"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:background="#ffffff" />
+
+
+    </RelativeLayout>-->
+
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/cabme_app_white"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:itemTextColor="@color/cabme_app_black"
+            app:menu="@menu/activity_main_drawer"
+            app:theme="@style/NavigationDrawerStyle"
+            >
+
+            <RelativeLayout
+                android:id="@+id/gotorider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingStart="@dimen/_20adp"
+                android:paddingEnd="@dimen/_20adp"
+                >
+
+                <com.rideincab.driver.common.custompalette.FontTextView
+                    android:id="@+id/drivewithuber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/_5adp"
+                    android:text="@string/drivewithuber"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/cabme_app_black"
+                    android:textSize="@dimen/_14asp"
+                    app:fontname="@string/font_Medium"
+                    android:visibility="gone"/>
+
+
+                <com.rideincab.driver.common.custompalette.FontTextView
+                    android:id="@+id/tvAppVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/cabme_app_text_ash"
+                    android:textSize="@dimen/_14asp"
+                    android:text="V 2.0"
+                    app:fontname="@string/font_Medium"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.navigation.NavigationView>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

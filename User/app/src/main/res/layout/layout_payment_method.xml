@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ll_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+    <RelativeLayout
+            android:id="@+id/rtl_paymentMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/_10adp"
+            >
+
+        <ImageView
+                android:id="@+id/iv_paymentIcon"
+                android:layout_width="@dimen/_32adp"
+                android:layout_height="@dimen/_32adp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/online_payment"
+                />
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/tv_paymentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10adp"
+                android:layout_toEndOf="@+id/iv_paymentIcon"
+                android:text="@string/onlinepayment"
+                android:textAllCaps="false"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_16asp"
+                app:fontName="@string/font_Medium"
+                />
+
+        <ImageView
+                android:id="@+id/iv_isSelected"
+                android:layout_width="@dimen/_20adp"
+                android:layout_height="@dimen/_20adp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_20adp"
+                android:layout_marginTop="@dimen/_20adp"
+                android:src="@drawable/tick_green"
+                />
+    </RelativeLayout>
+</LinearLayout>

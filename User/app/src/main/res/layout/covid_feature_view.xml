@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15adp"
+            android:orientation="vertical"
+            android:padding="@dimen/_20adp"
+            >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_25adp"
+                    android:layout_toStartOf="@+id/card_view"
+                    android:text="@string/covid_feature_title"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_16asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="@dimen/_60adp"
+                    android:layout_height="@dimen/_60adp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="10dp"
+                    app:cardBackgroundColor="@color/cabme_app_gray"
+                    app:cardCornerRadius="@dimen/profile_picture_corner_radius"
+                    >
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/covid"
+                        android:background="@drawable/app_round_button_gray"
+                        android:scaleType="centerCrop"
+                        />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25adp"
+                android:orientation="vertical"
+                >
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_25adp"
+                    android:text="@string/covid_desc_1"
+                    android:textColor="@color/app_primary_light_text"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_NarrMedium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30adp"
+                    android:layout_marginTop="@dimen/_25adp"
+                    android:drawableStart="@drawable/app_ic_circle_smalll"
+                    android:drawablePadding="@dimen/_10adp"
+                    android:text="@string/covid_desc_2"
+                    android:textColor="@color/cabme_app_text_ash"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_NarrMedium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30adp"
+                    android:layout_marginTop="@dimen/_25adp"
+                    android:drawableStart="@drawable/app_ic_circle_smalll"
+                    android:drawablePadding="@dimen/_10adp"
+                    android:text="@string/covid_desc_3"
+                    android:textColor="@color/cabme_app_text_ash"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_NarrMedium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30adp"
+                    android:layout_marginTop="@dimen/_25adp"
+                    android:drawableStart="@drawable/app_ic_circle_smalll"
+                    android:drawablePadding="@dimen/_10adp"
+                    android:text="@string/covid_desc_4"
+                    android:textColor="@color/cabme_app_text_ash"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_NarrMedium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15adp"
+                    android:layout_marginEnd="@dimen/_25adp"
+                    android:text="@string/covid_desc_5"
+                    android:textColor="@color/app_primary_light_text"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_NarrMedium"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/_10adp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15adp"
+                android:layout_marginBottom="@dimen/_15adp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+            <com.rideincab.user.common.custompalette.FontButton
+                    android:id="@+id/cf_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_10adp"
+                android:layout_marginBottom="@dimen/_5asp"
+                    android:layout_weight="1"
+                    android:background="@drawable/app_curve_button_gray"
+                    android:text="@string/cancel_s"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_16asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontButton
+                    android:id="@+id/cf_proceed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_10adp"
+                    android:layout_weight="1"
+                android:layout_marginBottom="@dimen/_5asp"
+                    android:background="@drawable/app_curve_button_black"
+                    android:text="@string/proceed"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cabme_app_white"
+                    android:textSize="@dimen/_16asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

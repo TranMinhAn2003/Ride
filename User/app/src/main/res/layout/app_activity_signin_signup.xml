@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cabme_app_white"
+        android:layoutDirection="@string/layout_direction"
+        tools:context=".taxi.views.signinsignup.SigninSignupActivity"
+        >
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_powered_by"
+            >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+                >
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_app_logo"
+                    android:layout_width="@dimen/_120adp"
+                    android:layout_height="@dimen/_120adp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_70adp"
+                    android:layout_marginBottom="@dimen/_40adp"
+                    app:srcCompat="@drawable/app_logo" />
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/tv_welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_app_logo"
+                    android:text="@string/welcome_back"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_33asp"
+                    android:textStyle="bold"
+                    app:fontName="@string/font_UBERMedium" />
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_welcome"
+                    android:layout_margin="@dimen/_15adp"
+                    android:text="@string/login_to_continue"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_18asp"
+                    app:fontName="@string/font_UBERMedium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rlt_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlt_title"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:layout_marginTop="@dimen/marginTop_20"
+                    android:layout_marginEnd="@dimen/_20adp"
+                    android:layout_marginBottom="@dimen/_15adp"
+                    >
+
+                <com.rideincab.user.common.custompalette.FontButton
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/app_curve_button_yellow"
+                    android:padding="@dimen/_15adp"
+                    android:text="@string/continue_with_phone_number"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_primary_button_text_color"
+                    android:textSize="@dimen/_18asp"
+                    android:textStyle="bold"
+                    app:fontName="@string/font_UBERMedium" />
+
+                <com.rideincab.user.common.custompalette.FontButton
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login"
+                    android:layout_marginTop="@dimen/marginTop_20"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:padding="@dimen/_15adp"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_17asp"
+                    app:fontName="@string/font_News" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rlt_sociallogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlt_login"
+                    android:clipToPadding="false"
+                    >
+
+                <com.willowtreeapps.signinwithapplebutton.view.SignInWithAppleButton
+                        android:id="@+id/sign_in_with_apple_button_white"
+                        style="@style/SignInWithAppleButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fb_go"
+                        android:layout_marginStart="@dimen/_20adp"
+                        android:layout_marginTop="@dimen/_15adp"
+                        android:layout_marginEnd="@dimen/_20adp"
+                        android:layout_marginBottom="@dimen/_10adp"
+                        android:elevation="@dimen/_2adp"
+                        android:padding="@dimen/_7adp"
+                        app:sign_in_with_apple_button_cornerRadius="@dimen/_50adp"
+                        app:sign_in_with_apple_button_textType="applelogin"
+                        />
+
+                <LinearLayout
+                        android:id="@+id/fb_go"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10adp"
+                        android:layout_marginEnd="@dimen/_10adp"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5adp"
+                        android:weightSum="2"
+                        >
+
+                    <include
+                            android:id="@+id/v_google"
+                            layout="@layout/app_social_login_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10adp"
+                            />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rlt_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlt_sociallogin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/_15adp"
+                    >
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/tv_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/_5adp"
+                    android:text="@string/language"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_17asp"
+                    app:fontName="@string/font_News" />
+
+                <ImageView
+                        android:id="@+id/iv_languagechange"
+                        android:layout_width="@dimen/_30adp"
+                        android:layout_height="@dimen/_30adp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_5adp"
+                        android:layout_marginTop="@dimen/_5adp"
+                        android:layout_toEndOf="@+id/tv_language"
+                        android:rotation="90"
+                        app:srcCompat="@drawable/app_ic_arrow_right"
+
+                        />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <com.rideincab.user.common.custompalette.FontTextView
+        android:id="@+id/tv_powered_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/_5adp"
+        android:text="Powered by Source Monster ©"
+        android:textColor="@color/app_secondary_text"
+        android:textSize="@dimen/_13asp"
+        app:fontName="@string/font_Medium"/>
+</RelativeLayout>

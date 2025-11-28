@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="@string/pls_allow_permission"
+                        android:textColor="@color/text_black"
+                        android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/imgCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_shape"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="screen"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/baseline_cancel_24" />
+                </RelativeLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/imgGIF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/allow_pop_up_window" />
+
+
+                <com.rideincab.user.common.custompalette.FontButton
+                    android:id="@+id/btnOpenSetting"
+                    android:layout_width="@dimen/_150adp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15adp"
+                    android:background="@drawable/app_curve_button_yellow"
+                    android:padding="@dimen/_15adp"
+                    android:text="@string/allow"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_primary_button_text_color"
+                    android:textSize="@dimen/_18asp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    app:fontName="@string/font_UBERMedium" />
+
+
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

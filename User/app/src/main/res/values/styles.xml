@@ -1,0 +1,216 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ub__black</item>
+        <item name="colorPrimaryDark">@color/ub__black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+   <!-- <style name="AppLoginTheme" parent="Theme.AccountKit">
+        <item name="android:windowNoTitle">true</item>
+        <item name="com_accountkit_secondary_color">#FFFFFF</item>
+        <item name="com_accountkit_input_background_color">@color/accountkit_input_bacground_color</item>
+        <item name="colorPrimary">@color/ub__black</item>
+        <item name="com_accountkit_button_background_color">@color/button_color</item>
+        <item name="com_accountkit_button_disabled_background_color">@color/button_disable_color</item>
+        <item name="colorPrimaryDark">@color/ub__black</item>
+        <item name="com_accountkit_primary_color">@color/ub__black</item>
+    </style>-->
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="DialogCustomTheme" parent="android:Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <!--<item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>-->
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- themes.xml -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+    </style>
+    <style name="AppTheme.NoActionBar1">
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">14sp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">50dp</item><!-- item size in menu-->
+    </style>
+
+    <style name="MyTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">600dp</item>
+    </style>
+
+    <style name="share_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MaterialDialogSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColorPrimary">@color/ub__black</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SlidingDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+
+    </style>
+
+   <!-- New Design EditText Underline Remover-->
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="textInputStyle">@style/Widget.MyApp.TextInputLayout</item>
+    </style>
+
+    <style name="Widget.MyApp.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+    <!-- BottomSheet white -->
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/app_bottom_sheet_top_curve_white</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+    <!--Custom Rating Bar-->
+    <style name="customRatingBar" parent="Theme.AppCompat">
+        <item name="android:progressDrawable">@drawable/app_custom_rating</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:maxHeight">40dip</item>
+
+    </style>
+
+
+    <style name="spinner_style" >
+        <item name="android:background">@drawable/app_spinner_design</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+
+
+    <!--RatingBar-->
+
+    <style name="RatingBar" parent="AppTheme">
+        <item name="colorControlActivated">@color/app_primary_color</item>
+    </style>
+
+
+   <!-- Radio Button-->
+
+    <style name="Widget.App.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.RadioButton</item>
+    </style>
+
+    <style name="ThemeOverlay.App.RadioButton" parent="">
+        <item name="colorOnSurface">@color/app_primary_color</item>
+        <item name="colorSecondary">@color/app_primary_color</item>
+    </style>
+
+   <!-- Tab Layout -->
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:layout_marginLeft">@dimen/_80adp</item>
+        <item name="android:layout_marginRight">@dimen/_80adp</item>
+        <item name="android:textSize">@dimen/_16asp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--common bottom sheet button-->
+    <style name="CommonBottomSheetButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/app_curve_button_yellow</item>
+        <item name="android:layout_marginLeft">@dimen/_35adp</item>
+        <item name="android:layout_marginRight">@dimen/_35adp</item>
+        <item name="android:textColor">@color/app_primary_button_text_color</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_primary_color"
+        android:layoutDirection="@string/layout_direction"
+        >
+
+    <include
+            android:id="@+id/common_header"
+            layout="@layout/app_common_header"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/common_header"
+            android:layout_marginTop="@dimen/default_header_to"
+            android:background="@drawable/app_top_curve_white"
+            >
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/promotions_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:layout_marginTop="@dimen/_15adp"
+                android:layout_marginStart="@dimen/_10adp"
+                android:layout_marginEnd="@dimen/_10adp"
+                android:padding="@dimen/_12adp"
+                android:scrollbars="none"
+                >
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

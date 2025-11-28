@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_50adp"
+        >
+
+    <LinearLayout
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/confirm_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cabme_app_white"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/_15adp"
+                android:layout_marginStart="@dimen/_10adp"
+                android:layout_marginEnd="@dimen/_10adp"
+                android:layout_marginTop="@dimen/_30adp"
+                android:text="@string/confirm_contact_number"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_18asp"
+                app:fontName="@string/font_Medium"
+                />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/_25adp"
+                android:layout_marginRight="@dimen/_10adp"
+                android:background="@color/cabme_app_white"
+                >
+
+            <com.rideincab.user.common.custompalette.FontEditText
+                    android:id="@+id/nameofcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@drawable/app_cursor_color"
+                    android:layout_marginStart="@dimen/_50adp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="@dimen/_50adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:hint="@string/testname"
+                    android:textAlignment="viewStart"
+                    android:maxLength="25"
+                    android:textSize="@dimen/_15asp"
+                    android:padding="@dimen/_15adp"
+                    android:textColor="@color/app_primary_text"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameofcontact"
+                    android:layout_marginStart="@dimen/_50adp"
+                    android:layout_marginTop="@dimen/_18adp"
+                    android:layout_marginEnd="@dimen/_50adp"
+                    android:padding="@dimen/_2adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    >
+
+                <com.hbb20.CountryCodePicker
+                        android:id="@+id/mobile_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/_5adp"
+                        android:clickable="true"
+                        app:ccp_arrowSize="0sp"
+                        app:ccp_autoDetectLanguage="true"
+                        app:ccp_clickable="true"
+                        app:ccp_showArrow="false"
+                        app:ccp_showNameCode="false"
+                        app:ccp_textSize="@dimen/_15asp"
+                        />
+
+                <com.rideincab.user.common.custompalette.FontEditText
+                        android:id="@+id/numberofcontact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/mobile_code"
+                        android:background="@color/transparent"
+                        android:layout_margin="@dimen/_5adp"
+                        android:padding="@dimen/_8adp"
+                        android:hint="@string/testphonenumber"
+                        android:textAlignment="viewStart"
+                        android:inputType="phone"
+                        android:textCursorDrawable="@drawable/app_cursor_color"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_15asp"
+                        app:fontName="@string/font_Medium"
+                        />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile_txt"
+                android:layout_marginStart="@dimen/_50adp"
+                android:layout_marginTop="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_50adp"
+                android:layout_marginBottom="@dimen/_10adp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10adp"
+                android:weightSum="2"
+                >
+
+            <com.rideincab.user.common.custompalette.FontButton
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50adp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_12adp"
+                    android:layout_marginBottom="@dimen/_5adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:text="@string/cancel"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/_15asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontButton
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50adp"
+                    android:layout_weight="1"
+                    android:background="@drawable/app_curve_button_yellow"
+                    android:text="@string/confirm"
+                    android:textColor="@color/app_primary_button_text_color"
+                    android:textSize="@dimen/_15asp"
+                    android:layout_marginBottom="@dimen/_5adp"
+                    app:fontName="@string/font_Medium"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

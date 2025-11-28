@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/cabme_app_yellow">
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_header"
+        android:background="@drawable/app_top_curve_white"
+        android:layout_marginTop="@dimen/_20adp"
+        android:elevation="@dimen/_10adp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20adp">
+
+            <RelativeLayout
+                android:id="@+id/rltCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.stripe.android.view.CardMultilineWidget
+                    android:id="@+id/stripe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15adp"
+                    android:padding="@dimen/_20adp" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <com.rideincab.driver.common.custompalette.FontButton
+            android:id="@+id/btnAddCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_20adp"
+            android:layout_marginTop="@dimen/_20adp"
+            android:layout_marginEnd="@dimen/_20adp"
+            android:layout_marginBottom="@dimen/_20adp"
+            android:background="@drawable/app_curve_button_yellow"
+            android:paddingTop="@dimen/_10adp"
+            android:paddingBottom="@dimen/_10adp"
+            android:text="@string/Done"
+            android:textColor="@color/primary_button_text_color"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_UBERMedium" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname "RideIn Captain">
+    <!ENTITY userAppName "RideIn Rider">
+    ]>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">&appname;</string>
+    <string name="hide">Cacher</string>
+    <string name="rider">Passager</string>
+    <string name="emailalreadyexits">"Vous avez déjà un compte avec cette email. \nEssayez plutôt de vous connecter."</string>
+    <string name="invalidelogin">Informations de connexion invalide  </string>
+    <string name="signin">SE CONNECTER</string>
+    <string name="usernameemail">"NOM D'UTILISATEUR OU EMAIL"</string>
+    <string name="password">"Mot de passe"</string>
+    <string name="forgotpassword">MOT DE PASSE OUBLIÉ ?</string>
+
+    <string name="error_msg_vehiclename">"Veuillez entrer le nom de votre véhicule"</string>
+    <string name="error_msg_vehiclenumber">"Veuillez entrer votre plaque de véhicule"</string>
+    <string name="error_msg_vehicletype">"Veuillez choisir votre type de véhicule"</string>
+    <string name="error_msg_firstname">"Entrez votre prénom s\'il vous plait"</string>
+
+    <string name="error_msg_mobilenumber">"Numéro de portable invalide"</string>
+
+    <string name="error_msg_lastname">"Veuillez entrer votre nom de famille"</string>
+    <string name="error_msg_email">"S'il vous plaît, mettez une adresse email valide"</string>
+    <string name="error_msg_phone">"Veuillez saisir un numéro de mobile valide"</string>
+    <string name="error_msg_password">"Veuillez saisir au minimum 6 caractères"</string>
+    <string name="error_msg_address">"s\'il-vous-plaît entrez une adresse valide"</string>
+    <string name="error_msg_city">"SVP, saisir le nom d\'une ville qui existe"</string>
+    <string name="error_msg_state">"Veuillez entrer un état valide"</string>
+    <string name="error_msg_post">"Veuillez entrer un code postal valide"</string>
+    <string name="error_msg_rating">"Veuillez donner votre note"</string>
+
+
+    <string name="camera_permission_description">Pour capturer des photos et des vidéos, autorisez &appname; pour accéder à votre caméra et à votre stockage</string>
+    <string name="storage_permission_description">"Pour télécharger l\'image &appname; pour accéder à votre stockage"</string>
+    <string name="location_permission_description">"Pour demander votre course, autorisez &appname; pour accéder à l'emplacement de votre appareil"</string>
+    <string name="audio_permission_description">Pour connecter un appel téléphonique, autorisez &appname; pour accéder à vos paramètres audio</string>
+
+
+    <string name="network_failure">"S'il vous plait, vérifiez votre connexion internet"</string>
+    <string name="internal_server_error">Veuillez réessayer plus tard de temps en temps.</string>
+    <string name="you_are_viewing_old_data">Vous consultez des données hors ligne, veuillez vérifier votre connexion réseau</string>
+    <string name="retry">Recommencez</string>
+
+    <string name="getmobilenumber">Entrez votre numéro de mobile</string>
+    <string name="first">"Prénom"</string>
+    <string name="last">"Nom de famille"</string>
+    <string name="email">"Email"</string>
+    <string name="paypalemail">"PAYPAL EMAIL"</string>
+    <string name="address1">"Adresse 1"</string>
+    <string name="address2">"Adresse 2"</string>
+    <string name="city">"ville"</string>
+    <string name="state">"État"</string>
+    <string name="postalcode">"Code Postal"</string>
+    <string name="havean_account">Avoir un compte ?</string>
+    <string name="login">Se connecter</string>
+
+    <string name="resetpasswords">réinitialisez votre mot de passe</string>
+
+    <!-- Rider Feedback -->
+
+    <string name="riderfeedbacktitle">"commentaires des passagers"</string>
+
+    <string name="signout_msg">"Êtes-vous certain de vouloir vous déconnecter?"</string>
+    <string name="cancel_s">"Annuler"</string>
+    <string name="what_would_you_like_to_do">"Qu'est-ce que tu aimerais faire?"</string>
+
+    <!-- Register -->
+
+    <string name="descreption">"En poursuivant, j'accepte que &appname;ou ses représentants puissent me contacter par e-mail, téléphone ou SMS (y compris par système de numérotation téléphonique automatique) à l\'adresse e-mail ou au numéro que je fournis, y compris à des fins de marketing. J'ai lu et compris la déclaration de confidentialité du conducteur concernée. Les montants de référence et les exigences minimales de déplacement peuvent varier d’une ville à l’autre. &appname; peut modifier tout montant ou critère d\'incitation à sa seule discrétion."</string>
+    <string name="register">Registre</string>
+    <string name="vehicle">"LES DÉTAILS DU VÉHICULE"</string>
+    <string name="vehicle_name">"Nom du véhicule / par exemple : Toyota Camry, Honda Accord…"</string>
+    <string name="vehicle_number">"Numéro de plaque / par exemple : TXAA - 000"</string>
+    <string name="vehicle_type">"Choisissez votre type de véhicule"</string>
+    <string name="looking"> RIDELOOKING FOR THER APP ?</string>
+    <string name="signupwithrider">"INSCRIVEZ-VOUS AVEC UN COMPTE client"</string>
+    <string name="or">"ou"</string>
+    <string name="trip_star_5">"VOTRE NOTE ACTUELLE"</string>
+    <string name="current_rating">"VOYAGES À VIE"</string>
+    <string name="trip_cancel">"5 ÉTOILES"</string>
+    <string name="request_accepted">"VOYAGES NOTÉS"</string>
+    <string name="enter4digit">Entrez le code à 4 chiffres qui vous a été envoyé à </string>
+    <string name="resend">Renvoyer le code</string>
+    <string name="otp_mismatch">"Mot de passe incorrecte."</string>
+    <string name="otp_emty">"Veuillez saisir le code"</string>
+    <!-- Rating -->
+
+    <string name="riderfeedback">"Commentaires des passagers"</string>
+    <string name="checkfeedback">"Consultez les commentaires des passagers et apprenez comment vous améliorer"</string>
+    <string name="drivingstyle">"Tableau de bord du chauffeur"</string>
+    <string name="seeyourdriving">"Consultez votre profil après avoir effectué plusieurs voyages"</string>
+    <string name="cancel_your_trip">"Annulez votre trajet"</string>
+    <string name="rider_profile">"PROFIL DU CHAUFFEUR"</string>
+    <string name="waiting_for_payment">"En attente de paiement…"</string>
+    <string name="payment_done">"Paiement effectué"</string>
+    <string name="paid">"Payé"</string>
+
+    <!--Document attach page start-->
+    <string name="documents">"DOCUMENTATION"</string>
+    <string name="doc">"Veuillez télécharger vos documents."</string>
+    <string name="personaldoc">"Veuillez télécharger vos \ndocuments personnels."</string>
+    <string name="vehicledoc_msg">"Pour conduire avec &appname; votre véhicule doit être un véhicule pouvant accueillir de 4 à 8 passagers."</string>
+    <string name="driverlicense_back">"Le permis de conduire - (Verso)"</string>
+    <string name="driverlicense_front">"Permis de conduire - (recto)"</string>
+    <string name="motor_insurance">"Certificat d\'assurance"</string>
+    <string name="registeration">"Certificat du contrôle technique"</string>
+    <string name="contract_carriage">"Certificat d\'assurance pour le transport de personne"</string>
+    <string name="continues">"CONTINUER"</string>
+    <string name="verify">"VÉRIFIER"</string>
+
+    <string name="takephoto">"Prenez une photo de votre"</string>
+    <string name="takephoto_msg">"Veuillez vous assurer que nous pouvons lire facilement tous les détails."</string>
+    <string name="taptoadd">"APPUYEZ POUR AJOUTER"</string>
+    <string name="taptochange">"APPUYEZ POUR CHANGER"</string>
+    <string name="camera">Caméra</string>
+    <string name="camera_roll">Pellicule</string>
+    <!--Document attach page end-->
+
+    <!--Home Page Started-->
+    <string name="home">"Maison"</string>
+    <string name="earnings">"Gains"</string>
+    <string name="rating">"Notes"</string>
+    <string name="account">"COMPTE"</string>
+    <string name="offline">"Hors ligne"</string>
+    <string name="checkstatus">"Vérifier l\'état"</string>
+    <string name="online">"En ligne"</string>
+    <string name="trip_id">"Identifiant du voyage : "</string>
+    <string name="enroute">"En Route"</string>
+    <string name="navigate">"Naviguer"</string>
+    <string name="pickup">"point de rencontre"</string>
+    <string name="pick_up">"point de rencontre"</string>
+    <string name="dropoff">"déposer"</string>
+    <string name="contact_C">"CONTACT"</string>
+    <string name="call">Appel</string>
+    <string name="callsonly">"APPELS UNIQUEMENT"</string>
+    <string name="cancel">"ANNULER"</string>
+    <string name="minute">"MINUTE"</string>
+    <string name="minutes">"MINUTES"</string>
+    <string name="help">"Aide"</string>
+    <string name="edit">"Modifier"</string>
+    <string name="document_s">"Documents"</string>
+    <string name="about">"À propos"</string>
+    <string name="signout">"Se déconnecter"</string>
+    <string name="notrip">"Tu n\'as pas de voyage"</string>
+
+    <!--Home Page Ended-->
+
+    <!--Trips details Page Started-->
+    <string name="currency">"devise ₹ "</string>
+    <string name="tripsdetails">"DÉTAIL DU VOYAGE"</string>
+    <string name="triphistory">"HISTORIQUE DU VOYAGE"</string>
+    <string name="trip_payment">"Voyages et activités Paiements"</string>
+
+    <string name="tripearnings">"REVENUS DE VOYAGE"</string>
+    <string name="fare">"Tarif de base"</string>
+    <string name="uberfee">"Frais d\'accès"</string>
+    <string name="distancefare">"Tarif à distance"</string>
+    <string name="timefare">"Tarif horaire"</string>
+    <string name="totalamount">"Tarif total du voyage"</string>
+    <string name="adminamount">"Montant de l\'administrateur"</string>
+    <string name="oweamount">"Montant dû"</string>
+    <string name="driverpayout">"Paiement du conducteur"</string>
+    <string name="cashcollectable">"Argent à collectionner"</string>
+    <string name="cash_trip">"Voyage en espèces"</string>
+    <string name="cashcollected">"Espèces collectées"</string>
+    <string name="waitforrider">"En attente de confirmation du passager"</string>
+
+    <string name="duration">"DURÉE"</string>
+    <string name="distance">"DISTANCE"</string>
+    <string name="thisweek">"CETTE SEMAINE"</string>
+    <string name="thisweek_empty">"Vous n\'avez pas conduit cette semaine"</string>
+    <string name="last_trip">"Dernier voyage: "</string>
+    <string name="pay_statemet">"Relevés de paie"</string>
+    <string name="payment">"Paiement"</string>
+    <string name="payment_failed">"Paiement échoué"</string>
+    <string name="payout">"Paiement"</string>
+    <string name="addpayout">Ajouter un paiement PayPal</string>
+    <string name="most_recent">"Paiement le plus récent: "</string>
+    <string name="addpayment_msg">"Pour ajouter un nouveau paiement. Créez un e-mail pour votre &appname;
+        compte. "</string>
+
+    <string name="begin_trip">"Faites glisser pour commencer la course"</string>
+    <string name="confirm_arrived">"GLISSEZ POUR CONFIRMER QUE VOUS ÊTES ARRIVÉ"</string>
+    <string name="end_trip">"Glissez pour terminer la course"</string>
+
+
+    <string name="begin_trip_text">"Commencer la course"</string>
+    <string name="end_trip_text">"Fin de la course"</string>
+
+
+    <string name="Rating">Notes</string>
+    <string name="Ratings">Notes</string>
+    <string name="completed">Complété</string>
+    <string name="Cancelled">Annulé</string>
+    <string name="scheduled">"Programmé"</string>
+    <!--Trips details Page Ended-->
+
+    <!--Payment Statement started-->
+    <string name="paystatement">"DÉCLARATION DE SALAIRE"</string>
+    <string name="weeklystatement">"REVENUE HEBDOMADAIRE"</string>
+
+    <string name="timeonline">"TEMPS EN LIGNE"</string>
+    <string name="completedtrips">"courses complets"</string>
+    <string name="dailyearning">"GAINS QUOTIDIENS"</string>
+    <string name="bankdeposit">"Dépôt bancaire"</string>
+    <string name="totaluberearning">"Gains totals"</string>
+    <string name="riderfaresearn">"Tarifs passagers gagnés et conservés."</string>
+    <!--Payment Statement endted-->
+    <string name="Interneterror">Pas de connexion Internet</string>
+    <string name="no_connection">Pas de connexion Internet</string>
+    <string name="enable_connection_and_come_back">Veuillez activer la connexion et revenir </string>
+    <string name="send_message">Envoyer le message</string>
+    <string name="go_online">EN LIGNE</string>
+    <!--Fetch Address-->
+
+    <string name="no_address_found">Désolé, aucune adresse trouvée</string>
+    <string name="no_location_data_provided">Aucune donnée de localisation fournie</string>
+    <string name="service_not_available">"Désolé, le service n\'est pas disponible"</string>
+    <string name="invalid_lat_long_used">Latitude ou longitude utilisée non valide</string>
+
+    <!--Profile Page start-->
+    <string name="profile">"PROFIL"</string>
+    <string name="mobile">"numéro de téléphone"</string>
+
+    <!-- Error Messages -->
+
+    <string name="InvalidMobileNumber">Numéro de portable invalide</string>
+    <string name="InvalidPassword">Veuillez saisir au minimum 6 caractères</string>
+    <string name="Passwordmismatch"> Mot de passe incorrect</string>
+    <string name="Enteryourpassword">Tapez votre mot de passe</string>
+    <string name="Confirmyourpassword">Confirmer votre mot de passe</string>
+    <string name="currencies">"Devise"</string>
+    <string name="selectcurrency">"Sélectionnez la devise"</string>
+
+
+    <!-- fonts started -->
+
+    /* ***************************************************** */
+    <string name="fonts_Book" translatable="false">"ClanPro-Book.otf"</string>
+    <string name="fonts_Medium" translatable="false">"ClanPro-Medium.otf"</string>
+    <string name="fonts_NarrBook" translatable="false">"ClanPro-NarrBook.otf"</string>
+    <string name="fonts_NarrMedium" translatable="false">"ClanPro-NarrMedium.otf"</string>
+
+    <string name="fonts_NarrNews" translatable="false">"ClanPro-NarrNews.otf"</string>
+    <string name="fonts_News" translatable="false">"ClanPro-News.otf"</string>
+    <string name="fonts_WideMedium" translatable="false">"ClanPro-WideMedium.otf"</string>
+    <string name="fonts_WideNews" translatable="false">"ClanPro-WideNews.otf"</string>
+
+    <string name="fonts_UBERBook" translatable="false">"ClanProForUBER-Book.ttf"</string>
+    <string name="fonts_UBERMedium" translatable="false">"ClanProForUBER-Medium.ttf"</string>
+    <string name="fonts_UBERNews" translatable="false">"ClanProForUBER-News.ttf"</string>
+
+    <string name="fonts_PermanentMarker" translatable="false">"PermanentMarker.ttf"</string>
+    <string name="fonts_UberClone" translatable="false">"uber-clone-mobile.ttf"</string>
+
+    /* ***************************************************** */
+    <string name="font_Book" translatable="false">"ClanPro-Book"</string>
+    <string name="font_Medium" translatable="false">"ClanPro-Medium"</string>
+    <string name="font_NarrBook" translatable="false">"ClanPro-NarrBook"</string>
+    <string name="font_NarrMedium" translatable="false">"ClanPro-NarrMedium"</string>
+
+    <string name="font_NarrNews" translatable="false">"ClanPro-NarrNews"</string>
+    <string name="font_News" translatable="false">"ClanPro-News"</string>
+    <string name="font_WideMedium" translatable="false">"ClanPro-WideMedium"</string>
+    <string name="font_WideNews" translatable="false">"ClanPro-WideNews"</string>
+
+    <string name="font_UBERBook" translatable="false">"ClanProForUBER-Book"</string>
+    <string name="font_UBERMedium" translatable="false">"ClanProForUBER-Medium"</string>
+    <string name="font_UBERNews" translatable="false">"ClanProForUBER-News"</string>
+
+    <string name="font_PermanentMarker" translatable="false">"Marqueur permanent"</string>
+    <string name="font_UberClone" translatable="false">"uber-clone-mobile"</string>
+
+    <string name="mobilenumber">NUMÉRO DE PORTABLE</string>
+    <string name="language">Langue</string>
+    <string name="selectlanguage">Choisir la langue</string>
+
+    <string name="noratings">Aucune note ni commentaire</string>
+    <string name="ratingsncomment">Notes et commentaires</string>
+    <string name="vehicleinformation">Informations sur le véhicule</string>
+    <string name="pleaseentermobile">Veuillez entrer le numéro de portable</string>
+    <string name="turnoninternet">Turn on your Internet</string>
+    <string name="ok">OK</string>Connecter vous à Internet
+    <string name="yourtripcancelledbydriver">Votre course à été annulé par le chauffeur…</string>
+    <string name="driverarrrive">Le chauffeur arrive maintenant…</string>
+    <string name="waiting">En attente de l\'approbation de l\'administrateur..</string>
+    <string name="acceptingpickup">Accepter la prise en charge…</string>
+    <string name="rateyourrider">Évaluez le passager</string>
+    <string name="writecomment">Écrivez vos commentaires… </string>
+    <string name="paymentdetails">Détails de paiement</string>
+    <string name="view">VOIR</string>
+    <string name="pressbackagain">Appuyez à nouveau pour quitter</string>
+    <string name="paymentcompleted">Paiement effectué avec succès…</string>
+    <string name="addphoto">Ajouter une photo</string>
+    <string name="choosefromlib">Choisissez dans la bibliothèque</string>
+    <string name="save">sauvegarder</string>
+
+    <string name="yourtripcanceledrider">Votre voyage à été annulé par le passager…</string>
+    <string name="other_reasons">Autres raisons</string>
+    <!-- fonts ended -->
+
+    <string name="layout_direction">0</string>
+    <string name="location_not_enabled">Emplacement non activé!</string>
+    <string name="location_settings">Ouvrir les paramètres de localisation</string>
+    <string name="enable_permission">Veuillez activer les autorisations</string>
+    <string name="active">Active…</string>
+    <string name="next">Suivant</string>
+    <string name="img_failed_msg">Échec du téléchargement de l\'image</string>
+    <string name="loading">Chargement…</string>
+
+    <string name="image_uploaded">Image téléchargée avec succès</string>
+    <string name="settings">PARAMÈTRES</string>
+    <string name="not_now">PAS MAINTENANT</string>
+    <string name="message">Message</string>
+    <string name="payout_title">Configurez votre &appname; mode de paiement</string>
+    <string name="payout_address">Adresse de paiement</string>
+    <string name="street_hint">"Nom de la rue/route"</string>
+    <string name="apt_hint">"Appart / maison / Immeuble"</string>
+    <string name="city_hint">"Ville / Village / District"</string>
+    <string name="state_hint">"État / Province / Comté"</string>
+    <string name="pin_hint">"Zip / code postal"</string>
+    <string name="country_hint">"Pays"</string>
+    <string name="currency1">Devise</string>
+    <string name="ssn" translatable="false">Numéro de sécurité sociale</string>
+    <string name="routing_number">Numéro d\'id</string>
+    <string name="clearing_code">Code de compensation</string>
+    <string name="bank_name">Nom de banque</string>
+    <string name="branch_name">Nom de la filiale</string>
+    <string name="bank_code">Code bancaire</string>
+    <string name="branch_code">Code de succursale</string>
+    <string name="bsb" translatable="false">BSB</string>
+    <string name="transit_number">Numéro de transit</string>
+    <string name="institute_number">Institute Number</string>
+    <string name="sort_code">Code de tri</string>
+    <string name="account_owner_name">Nom du propriétaire du compte</string>
+    <string name="phone_number">Numéro de téléphone</string>
+    <string name="iban_number">Numéro IBAN</string>
+    <string name="gender">Genre</string>
+    <string name="address_1">Adresse 1</string>
+    <string name="address_2">Adresse 2</string>
+    <string name="state_province">État/Province</string>
+    <string name="postal_code">Code Postal</string>
+    <string name="legal_document">Document légal</string>
+    <string name="stripe_details">Détails des rayures</string>
+    <string name="submit">Soumettre</string>
+    <string name="address_kanji1">Adresse 1</string>
+    <string name="address_kanji2">Adresse 2</string>
+    <string name="kanji_city">Ville</string>
+    <string name="state_province_kanji">State/Province</string>
+    <string name="postal_code_kanji">Code Postal</string>
+    <string name="address_kana2">Adresse 2</string>
+    <string name="city_kana">Ville</string>
+    <string name="postal_code_kana">Code Postal</string>
+    <string name="address_kana">Adresse Kana</string>
+    <string name="paypal_email">Identifiant de messagerie PayPal</string>
+    <string name="address_kanji">Adresse Kanji</string>
+    <string name="showpassword">Montrer le mot de passe</string>
+    <string name="delete">Supprimer</string>
+    <string name="makedefault">Faire défaut</string>
+    <string name="defaults">Default</string>
+    <string name="selectcountry">Choisissez le pays</string>
+    <string name="select">Choisi</string>
+
+    <string name="enable_permissions_to_proceed_further">Enable permission to proceed further</string>
+    <string name="takephoto_title">Prendre une photo</string>
+    <string name="add_stripe_payout">Ajouter un paiement Stripe</string>
+    <string name="choose_currency">Veuillez choisir une devise</string>
+    <string name="please_choose_a_currency">Veuillez choisir une devise</string>
+    <string name="please_enter_account_number">veuillez entrer le numéro de compte</string>
+    <string name="please_enter_bank_name">veuillez entrer le nom de la banque</string>
+    <string name="please_enter_branch_name">veuillez entrer le nom de la succursale</string>
+    <string name="please_enter_bank_code">veuillez entrer le code bancaire</string>
+    <string name="please_enter_branch_code">veuillez entrer le code de la succursale</string>
+    <string name="please_enter_account_holder_name">veuillez entrer le nom du titulaire du compte</string>
+    <string name="please_enter_address1">veuillez entrer l\'adresse 1</string>
+    <string name="please_enter_city">Veuillez entrer la ville</string>
+    <string name="please_enter_state">veuillez entrer l\'état</string>
+    <string name="please_enter_postal_code">\"veuillez entrer le code postal \"</string>
+    <string name="please_upload_legal_document">veuillez télécharger le document légal</string>
+    <string name="please_upload_additional_document">veuillez télécharger un document supplémentaire</string>
+    <string name="external_storage_permission_necessary">Une autorisation de stockage externe est nécessaire</string>
+    <string name="please_enter_sort_code">veuillez entrer le code de tri</string>
+    <string name="please_enter_SSN">veuillez entrer le SSN</string>
+    <string name="please_enter_routing_number">veuillez entrer le numéro</string>
+    <string name="please_enter_clearing_code">veuillez entrer le code de compensation</string>
+    <string name="please_enter_account_owner_name">veuillez entrer le nom du propriétaire du compte</string>
+    <string name="please_enter_phone_number">"veuillez entrer le numéro de téléphone "</string>
+    <string name="please_choose_gender">veuillez choisir le sexe</string>
+    <string name="please_enter_address_1_of_kana">veuillez entrer l\'adresse 1 de kana</string>
+    <string name="please_enter_address_2_of_kana">veuillez entrer l\'adresse 2 de kana</string>
+    <string name="please_enter_city_of_kana">veuillez entrer la ville de Kana</string>
+    <string name="please_enter_state_of_kana">veuillez entrer l\'état de Kana</string>
+    <string name="please_enter_postal_code_of_kana">veuillez entrer le code postal de Kana</string>
+    <string name="please_enter_address_1_of_kanji">veuillez entrer l\'adresse 1 du kanji</string>
+    <string name="please_enter_address_2_of_kanji">veuillez entrer l\'adresse 2 du kanji</string>
+    <string name="please_enter_city_of_kanji">veuillez entrer la ville de kanji</string>
+    <string name="please_enter_state_of_kanji">veuillez entrer l\'état du kanji</string>
+    <string name="please_enter_postal_code_of_kanji">veuillez entrer le code postal du kanji</string>
+    <string name="please_choose_country">veuillez choisir le pays</string>
+    <string name="please_enter_transit_number">veuillez entrer le numéro de transit</string>
+    <string name="please_enter_institution_number">veuillez entrer le numéro de l\'établissement</string>
+    <string name="please_enter_BSB">Entrez s\'il vous plait BSB</string>
+    <string name="manually_booked">Réservé manuellement pour le trajet</string>
+    <string name="manual_booking_reminder">Rappel de réservation manuel</string>
+    <string name="manual_booking_cancelled">Réservation manuelle annulée</string>
+    <string name="send_a_message">Envoyer un message</string>
+    <string name="google_map_not_found_in_device">Google Map introuvable sur l\'appareil</string>
+    <string name="waze_google_map_not_found_in_device">Waze Map introuvable sur l\'appareil</string>
+    <string name="choose_map">Choisir la carte</string>
+    <string name="google_map">Google Map</string>
+    <string name="waze_map">Waze Map</string>
+    <string name="location_not_enabled_please_enable_location">Localisation non activée, veuillez activer la localisation pour continuer</string>
+    <string name="you_have_been_manualy_booked">Vous avez été réservé manuellement</string>
+    <string name="skip">Skip</string>
+
+
+    <string name="bank_location">Emplacement de la banque</string>
+    <string name="bic_swift_code">IFSC/BIC/SWIFT Code</string>
+    <string name="name_of_bank">Nom de la banque</string>
+    <string name="account_number">Numéro de compte</string>
+    <string name="account_holder_name">Nom du titulaire du compte</string>
+    <string name="clabe" translatable="false">réclamer</string>
+
+    <string name="required"> Requis</string>
+
+    <string name="bank_details">Coordonnées bancaires</string>
+    <string name="bank_details_success_message">Coordonnées bancaires ajoutées avec succès</string>
+    <string name="rate_your_ride">Évaluez votre trajet</string>
+    <string name="no_ratings_display">Vous n\'avez aucune note à afficher</string>
+    <string name="pending_trips">Voyages en attente</string>
+    <string name="completed_trips">Voyages terminés</string>
+    <string name="error_address">Veuillez fournir une adresse.</string>
+    <string name="error_city">Veuillez indiquer une ville.</string>
+    <string name="error_zip_code">Veuillez fournir un code postal.</string>
+    <string name="error_country">Veuillez sélectionner le pays pour le paiement.</string>
+    <string name="no_vehicle_assigned">Aucun véhicule attribué</string>
+    <string name="trips">VOYAGES</string>
+    <string name="total_trip_amount">Montant total du voyage</string>
+    <string name="doc_upload_error">Veuillez télécharger tous les documents</string>
+
+    <string name="pay_to">Payer à l\'administrateur</string>
+    <string name="your_pay_to">Votre paiement à l\'administrateur</string>
+
+    <string name="add_card">Ajouter une carte</string>
+    <string name="change">CHANGEMENT</string>
+    <string name="enter_amount">Entrer le montant</string>
+    <string name="enter_amount_empty">Veuillez saisir le montant</string>
+    <string name="entered_amt_msg">Le montant saisi est supérieur au montant dû</string>
+    <string name="payment_methods">Mode de paiement</string>
+    <string name="credit_or_debit">Ajouter une carte de crédit ou de débit</string>
+    <string name="select_reason">Sélectionnez la raison</string>
+
+    <string name="default_direction" translatable="false">0</string>
+    <string name="mobile_verification">Vérification mobile</string>
+    <string name="please_enter_mobile_number">Entrez s\'il vous plaît votre numéro de téléphone</string>
+    <string name="enter_otp">Entrez le code</string>
+    <string name="resend_otp">"Je n\'ai pas reçu le code?"</string>
+    <string name="copy">Copier</string>
+    <string name="driver_earnings">Gains du conducteur</string>
+    <string name="otp_send_to_phone_description">"Nous vous avons envoyé le code d\'accès par SMS \n pour la vérification du numéro de mobile"</string>
+    <string name="send_OTP_again_in">Vous pouvez envoyer à nouveau le code dans</string>
+    <string name="enter_valid_otp">Entrez un CODE valide!</string>
+    <string name="enter_pendg_amount_empty">Vous n\'avez aucun montant en attente</string>
+    <string name="enter_otp_to_begin_trip">Entrez le CODE pour commencer le voyage</string>
+    <string name="Done">Fait</string>
+    <string name="close">fermer</string>
+    <string name="connected">Connecté</string>
+    <string name="ringing">Sonnerie</string>
+    <string name="connecting">De liaison…</string>
+
+
+    <string name="amount">Montant</string>
+    <string name="apply">Appliquer</string>
+    <string name="apply_extra_fee">Appliquer des frais supplémentaires</string>
+    <string name="enter_other_reason">Entrez une autre raison</string>
+    <string name="enter_extra_fee_description">Entrez la description des frais supplémentaires</string>
+    <string name="enter_extra_fee">Entrez les frais supplémentaires</string>
+    <string name="no">Non</string>
+    <string name="yes">Oui</string>
+    <string name="select_extra_fee_description">Sélectionnez la description des frais supplémentaires</string>
+    <string name="error_select_extra_fee_description">Veuillez sélectionner la description des frais supplémentaires</string>
+    <string name="er_read_loc">Problème de lecture de la liste des emplacements.</string>
+
+
+    <string name="referral">Référence</string>
+    <string name="your_invite_code">Votre code d\'invitation</string>
+    <string name="share_my_code">Partager mon code</string>
+    <string name="friends_incompleted">Amis - Incomplet</string>
+    <string name="friends_completed">Amis - Terminé</string>
+    <string name="referral_code_copied">Code de référence copié</string>
+    <string name="referral_code_not_copied">Impossible de copier le code de parrainage, veuillez partager le code</string>
+    <string name="days_left">Jours restants</string>
+    <string name="need_to_complete">Il faut compléter</string>
+    <string name="max_referral_earning_statement">Obtenez jusqu\'à %s pour chaque ami qui roule avec Drivmiiz;</string>
+    <string name="referral_code_optional">Code de Promo (facultatif)</string>
+    <string name="earned">"Gagné "</string>
+    <string name="no_referrals_yet">Aucune référence pour l\'instant</string>
+    <string name="referral_expired">Parrainage expiré</string>
+    <string name="share_to_contacts">Partager avec des contacts</string>
+    <string name="invite_msg"><![CDATA[Inscrivez-vous et soyez payé pour chaque parrainage et bien plus de bonus vous attendent ! Utiliser mon code d\'invitation]]></string>
+    <string name="referrel_amount">Montant de référence</string>
+    <string name="day_left">jour restant</string>
+    <string name="trip_left">TRIP</string>
+
+    <string name="tap_to_reload">Appuyez pour recharger</string>
+    <string name="error_msg_unknown">An unexpected error occurred</string>
+    <string name="total_earnings">"TOTAL DES GAINS"</string>
+    <string name="remaining_referral">Référence restante</string>
+    <string name="hr_eta">"&#160;hr&#160;"</string>
+
+    <string name="stripe" translatable="false">Stripe</string>
+    <string name="choose">Choisir</string>
+    <string name="Add_payment_type">Ajouter un type de paiement</string>
+    <string name="choose_payment_type">Veuillez choisir votre type de paiement</string>
+    <string name="add_payout">Ajouter un paiement </string>
+    <string name="update">Mise à jour</string>
+    <string name="min">&#160;Min</string>
+
+
+    <string name="add_paypal">Ajouter Paypal</string>
+    <string name="add_driver_proof">Ajouter une preuve de pilote</string>
+    <string name="payout_details">Détails du paiement</string>
+    <string name="onlinepayment">Paiement en ligne</string>
+    <string name="paypal">Paypal</string>
+    <string name="set_canceled">Installation annulée, réessayez</string>
+    <string name="stripe_error_1">Quelque chose s\'est mal passé essaie encore</string>
+    <string name="stripe_error_2">Version de l\'API Stripe invalide, réessayez plus tard</string>
+    <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
+    <string name="navigation_drawer_close">Fermer la navigation</string>
+    <string name="choose_vehicle_type">Choisissez le type de véhicule</string>
+    <string name="choose_vehicle">Choisir un véhicule</string>
+    <string name="select_your_vehicle">Sélectionnez votre véhicule</string>
+    <string name="manage_vehicles">Gérer les véhicules</string>
+    <string name="add_vehicles">Ajouter des véhicules</string>
+    <string name="update_vehicles">Mettre à jour les véhicules</string>
+    <string name="New_vehicle">Nouveau</string>
+    <string name="update_vehicle">Mettre à jour le véhicule</string>
+    <string name="setting">Paramètres</string>
+    <string name="choose_make">Choisissez Faire</string>
+    <string name="choose_year">Choisir l\'année</string>
+    <string name="your_trips">Vos voyages</string>
+    <string name="manage_documents">Gérer les documents</string>
+    <string name="earning">Gains</string>
+    <string name="choose_model">Choisir le modèle</string>
+    <string name="enter_vehicle_color">Entrez la couleur du véhicule</string>
+    <string name="vehicle_color">Couleur du véhicule</string>
+    <string name="enter_vehicle_name">Entrez le nom du véhicule</string>
+    <string name="vehicle_name_title">Nom du véhicule</string>
+    <string name="enter_license_plate">Entrez la plaque d\'immatriculation</string>
+    <string name="license_plate">Plaque d\'immatriculation</string>
+    <string name="year">Année</string>
+    <string name="model">Modèle</string>
+    <string name="make">Faire</string>
+    <string name="add_vehicle">Ajouter un véhicule</string>
+    <string name="delete_msg">"Etes-vous sûr que vous voulez supprimer?"</string>
+    <string name="you_have_no_vehicles">Vous n\'avez pas de véhicules</string>
+    <string name="you_have_no_document">Aucun document ajouté</string>
+    <string name="please_choose_make">Veuillez choisir Créer</string>
+    <string name="please_choose_model">Veuillez choisir le modèle</string>
+    <string name="please_choose_year">Veuillez choisir l\'année</string>
+    <string name="please_choose_license_number">Veuillez entrer le numéro de plaque</string>
+    <string name="please_enter_vehicle_name">Veuillez entrer le nom du véhicule</string>
+    <string name="please_enter_vehicle_color">Veuillez entrer la couleur du véhicule</string>
+    <string name="please_choose_vehicle_type">Veuillez choisir le type de véhicule</string>
+    <string name="cancelaccount_msg">"Vos informations ne seront pas enregistrées."</string>
+    <string name="confirm">"CONFIRMER"</string>
+    <string name="cancel_vehicle_creation">Annuler la création du véhicule ?</string>
+    <string name="upload_doc">Télécharger un document</string>
+    <string name="pending">En attente</string>
+    <string name="rejected">Rejeté</string>
+    <string name="go_onlines">En ligne</string>
+    <string name="go_offline">Hors ligne</string>
+    <string name="manage_payout">Gérer le paiement</string>
+    <string name="pool_request">Demande(</string>
+    <string name="persons_braces">&#160;persons)</string>
+    <string name="person_braces">&#160;person)</string>
+    <string name="pickup_address_braces">"Adresse de prise en charge :\n"</string>
+    <string name="drop_address_braces">"Adresse de dépôt :\n"</string>
+    <string name="manage_driver_document">"Gérer le document du conducteur"</string>
+    <string name="approved">Approuvé</string>
+    <string name="few_seconds">Cela peut prendre quelques secondes</string>
+    <string name="expiry_date">Date d\'expiration</string>
+    <string name="yyyymmdd">YYYY-MM-DD</string>
+    <string name="changeAlert">puisque vous êtes en voyage, vous ne pouvez pas changer de véhicule, veuillez terminer vos voyages</string>
+    <string name="vehicleAlert">puisque vous êtes en ligne, vous ne pouvez pas modifier vos véhicules, veuillez vous déconnecter</string>
+    <string name="please_expiry_date">Veuillez choisir votre date d\'expiration</string>
+    <string name="deleteAlert">puisque vous êtes en ligne, vous ne pouvez pas supprimer vos véhicules, veuillez vous déconnecter</string>
+    <string name="male">Mâle</string>
+    <string name="female">Femelle</string>
+    <string name="error_gender">Veuillez choisir votre sexe</string>
+    <string name="km_value">Km</string>
+    <string name="mins_value">Minutes</string>
+    <string name="settings_status_on_summary" translatable="false">"Service en cours d\'exécution "</string>
+    <string name="support">Support</string>
+    <string name="not_valid_data">Ce n\'est pas une donnée valide</string>
+    <string name="seat_count">Nombre de siège :</string>
+
+    <string name="new_version_available">Nouvelle version disponible</string>
+    <string name="update_desc">Veuillez mettre à jour notre application pour profiter des dernières fonctionnalités!</string>
+    <string name="update_desc1">Pour utiliser l\'application, téléchargez la dernière version</string>
+
+    <string name="inactive">Inactif</string>
+    <string name="update_successfully">Mis à jour avec succés.</string>
+    <string name="request_expire">Demande expirée</string>
+    <string name="cancel_trip">Annuler le voyage</string>
+    <string name="select_view">Sélectionner %s</string>
+    <string name="vehicle_numbers">Numéro de véhicule</string>
+    <string name="continue_with_phone_number">Continuer avec le numéro de téléphone</string>
+    <string name="login_to_continue">Connectez-vous pour continuer</string>
+    <string name="welcome_back">Content de te revoir</string>
+    <string name="hello">Bonjour</string>
+    <string name="select_photo">Sélectionnez une photo</string>
+    <string name="pickup_address">Adresse de prise en charge:</string>
+    <string name="drop_address">Adresse de dépôt:</string>
+    <string name="accept">Accepter</string>
+    <string name="drivewithuber">Roulez avec Drivmiiz;</string>
+    <string name="pleaseEnteryourpassword">s\'il vous plait entrez votre mot de passe</string>
+    <string name="pleaseConfirmyourpassword">veuillez entrer votre mot de passe de confirmation</string>
+    <string name="trip_request">Demande de voyage</string>
+    <string name="additional_document">Document supplémentaire</string>
+    <string name="please_enter_clabe_number">veuillez entrer CLABE</string>
+
+
+    <plurals name="minutes">
+        <item quantity="one">%d&#160;Min</item>
+        <item quantity="other">%d&#160;Mins</item>
+    </plurals>
+
+
+    <plurals name="hours">
+        <item quantity="one">%d&#160;hr&#160;</item>
+        <item quantity="other">%d"&#160;hrs&#160;</item>
+    </plurals>
+
+
+    <plurals name="manage_vehicles">
+        <item quantity="one" tools:ignore="ImpliedQuantity">Gérer le vehicules</item>
+        <item quantity="other"> Gérer les véhicules</item>
+    </plurals>
+
+
+    <string name="installed_app_alert">Cette application vous fournit des informations sur l\'application installée pour offrir la meilleure expérience utilisateur et des trajets près de chez vous..</string>
+    <string name="location_disclaimer">Cette application a collecté des données de localisation pour activer "Rechercher la localisation du véhicule", "Itinéraire de voyage et navigation", "Mouvement du véhicule en temps réel", même lorsque l\'application est fermée ou non utilisée..</string>
+    <string name="delete_account">Supprimer le compte</string>
+
+
+    <string name="sigin_terms1">"En poursuivant, je confirme avoir lu et accepté les "</string>
+    <string name="sigin_terms2">"Termes et conditions Conditions"</string>
+    <string name="sigin_terms3">" et "</string>
+    <string name="sigin_terms4">"politique de confidentialité"</string>
+    <string name="location_permission">Pour demander votre course, autorisez &appname; pour accéder à l\'emplacement de votre appareil. &appname; de l\'application; collecte des données de localisation pour vous permettre de voyager où que vous soyez, même lorsque l\'application est fermée ou non utilisée.</string>
+    <string name="background_location_permission_rationale">"L'autorisation d\'emplacement en arrière-plan est nécessaire pour des fonctionnalités améliorées."</string>
+    <string name="fine_permission_denied_explanation">"L'autorisation de localisation fine a été refusée, mais elle est nécessaire pour les fonctionnalités de base."</string>
+    <string name="background_permission_denied_explanation">"L'autorisation de localisation en arrière-plan a été refusée, mais nécessaire pour des fonctionnalités améliorées."</string>
+    <string name="notification_permission_description">"L'autorisation de notification est requise, veuillez autoriser l\'autorisation pour recevoir des notifications de réservation."</string>
+    <string name="pls_allow_permission">Veuillez autoriser cette autorisation.</string>
+    <string name="bubble_permission_msg">En acceptant, vous pourrez voir un bouton d\'application flottant sur votre écran.</string>
+    <string name="allow">Permettre</string>
+    <string name="disclaimer">non-responsabilité</string>
+    <string name="location_permission_is_required_to_find_the_rides_near_you">Une autorisation de localisation est requise pour trouver les manèges près de chez vous.</string>
+    <string name="location_permission_required">Autorisation de localisation requise.</string>
+    <string name="allow_permission">Autoriser l\'autorisation</string>
+    <string name="allow_background_permission">Autoriser l\'autorisation en arrière-plan</string>
+    <string name="payout_alert">Veuillez effacer vos cotisations de la section Paiement à l\'administration pour obtenir la prochaine demande de voyage</string>
+    <string name="estimated_fare">Tarif estimé</string>
+    <string name="privacy_policy_txt">Politique de confidentialité</string>
+    <string name="start_trip">Commencer le voyage</string>
+    <string name="start_trip_alert">Êtes-vous sûr de vouloir commencer ce voyage ?</string>
+    <string name="please_update_profile_picture">Veuillez télécharger une photo de profil</string>
+    <string name="cancel_payment">Êtes-vous sûr de vouloir annuler le paiement ?</string>
+    <string name="test_yes">Oui</string>
+    <string name="alert">Alerte</string>
+</resources>

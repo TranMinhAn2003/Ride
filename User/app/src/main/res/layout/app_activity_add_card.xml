@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="@string/layout_direction"
+        android:background="@color/app_primary_color">
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/common_header"
+            android:background="@drawable/app_top_curve_white"
+            android:layout_marginTop="@dimen/default_header_to"
+            android:elevation="@dimen/_10adp">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20adp">
+
+            <RelativeLayout
+                    android:id="@+id/rltCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                <com.stripe.android.view.CardMultilineWidget
+                        android:id="@+id/stripe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15adp"
+                        android:padding="@dimen/_20adp" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+        <com.rideincab.user.common.custompalette.FontButton
+                android:id="@+id/addpayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                style="@style/CommonBottomSheetButton"
+                android:text="@string/done"
+                android:gravity="center"
+                android:paddingTop="@dimen/_10adp"
+                android:paddingBottom="@dimen/_10adp"
+                android:layout_marginBottom="@dimen/_15adp"
+                android:textColor="@color/app_primary_button_text_color"
+                android:textSize="@dimen/_14asp"
+                app:fontName="@string/font_Medium"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

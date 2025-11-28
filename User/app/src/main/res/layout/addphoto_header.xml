@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rideincab.user.common.custompalette.FontTextView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/header"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="@dimen/_20adp"
+        android:text="@string/addphoto"
+        android:textColor="@color/app_primary_text"
+        android:textSize="@dimen/_18asp"
+        app:fontName="@string/font_Medium"
+        />

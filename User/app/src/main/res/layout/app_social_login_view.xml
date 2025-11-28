@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/google_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginStart="@dimen/_10adp"
+    android:layout_marginEnd="@dimen/_10adp"
+    android:background="@drawable/app_round_button_white"
+    android:elevation="@dimen/_2adp"
+    android:gravity="center"
+    android:padding="@dimen/_5adp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/_25adp"
+        android:layout_height="@dimen/_25adp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/app_ic_google" />
+
+
+    <com.rideincab.user.common.custompalette.FontTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10adp"
+        android:layout_marginEnd="@dimen/_10adp"
+        android:layout_toEndOf="@+id/iv_icon"
+        android:padding="@dimen/_10adp"
+        android:text="@string/google"
+        android:textColor="@color/app_primary_text"
+        android:textSize="@dimen/_14asp"
+        app:fontName="@string/font_UBERMedium" />
+</RelativeLayout>

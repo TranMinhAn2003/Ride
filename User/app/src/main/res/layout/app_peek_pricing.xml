@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".taxi.views.peakPricing.PeakPricing"
+        >
+
+    <RelativeLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10adp"
+            >
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/tv_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_10adp"
+                android:text="@string/PeakPricing"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/_22asp"
+                app:fontName="@string/font_Medium"
+                tools:layout_editor_absoluteX="85dp"
+                />
+
+
+        <ImageView
+                android:id="@+id/imgvu_close_icon"
+                android:layout_width="@dimen/_40adp"
+                android:layout_height="@dimen/_40adp"
+                android:layout_marginTop="@dimen/_7adp"
+                android:padding="@dimen/_7adp"
+                android:src="@drawable/app_ic_close"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_heading"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/PeakPriceDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:layout_marginTop="@dimen/_150adp"
+                    android:layout_marginEnd="@dimen/_10adp"
+                    android:paddingStart="@dimen/_20adp"
+                    android:paddingEnd="@dimen/_20adp"
+                    android:text="@string/peakPriceDescription"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_15asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/peak_circle"
+                    android:layout_width="@dimen/_350adp"
+                    android:layout_height="@dimen/_350adp"
+                    android:layout_below="@+id/PeakPriceDescription"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginEnd="@dimen/_8adp"
+                    android:background="@drawable/circle_shape"
+                    app:layout_constraintBottom_toTopOf="@+id/cv_accept"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    >
+
+                <com.rideincab.user.common.custompalette.FontTextView
+
+                        android:id="@+id/tv_normalFare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_10adp"
+                        android:text="@string/the_normal_fare"
+                        android:textColor="@color/app_primary_button_text_color"
+                        app:fontName="@string/font_Medium"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        />
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                        android:id="@+id/tv_peak_price_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_8adp"
+                        android:autoSizeMaxTextSize="@dimen/_100asp"
+                        android:autoSizeMinTextSize="@dimen/_12asp"
+                        android:autoSizeStepGranularity="@dimen/_2asp"
+                        android:autoSizeTextType="uniform"
+                        android:scaleY="1.6"
+                        android:textColor="@color/app_primary_text"
+                        android:textSize="@dimen/_40asp"
+                        android:textStyle="bold"
+                        app:fontName="@string/font_Medium"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_normalFare"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        />
+
+                <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="@dimen/_175adp"
+                        />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/textView"
+                        android:layout_width="@dimen/_260adp"
+                        android:layout_height="@dimen/_80adp"
+                        android:layout_marginStart="@dimen/_8adp"
+                        android:layout_marginTop="@dimen/_15adp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/peek_price_info_tooltip_banner"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/guideline"
+                        >
+
+                    <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/fareInnerContentGuidline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintGuide_end="@dimen/_40adp"
+                            />
+
+                    <com.rideincab.user.common.custompalette.FontTextView
+                            android:id="@+id/tv_minimum_fare"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10adp"
+                            android:layout_marginBottom="8dp"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/app_primary_text"
+                            android:textSize="@dimen/_16asp"
+                            app:fontName="@string/font_Medium"
+                            app:layout_constraintBottom_toTopOf="@+id/fareInnerContentGuidline"
+                            app:layout_constraintEnd_toStartOf="@+id/tv_minimum_fare_static_text"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintHorizontal_weight="2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                    <com.rideincab.user.common.custompalette.FontTextView
+                            android:id="@+id/tv_minimum_fare_static_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8adp"
+                            android:layout_marginEnd="@dimen/_8adp"
+                            android:layout_marginBottom="@dimen/_8adp"
+                            android:text="@string/minimum_fare"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/cabme_app_text_ash"
+                            android:textSize="@dimen/_15asp"
+                            app:fontName="@string/font_Book"
+                            app:layout_constraintBottom_toTopOf="@+id/fareInnerContentGuidline"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintHorizontal_weight="3"
+                            app:layout_constraintStart_toEndOf="@+id/tv_minimum_fare"
+                            />
+
+                    <RelativeLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="@+id/fareInnerContentGuidline"
+                            >
+
+
+                        <com.rideincab.user.common.custompalette.FontTextView
+                                android:id="@+id/tv_per_minutes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10adp"
+                                android:layout_marginTop="@dimen/_8adp"
+                                android:text=""
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/app_primary_text"
+                                android:textSize="@dimen/_16asp"
+                                app:fontName="@string/font_Medium"
+                                app:layout_constraintEnd_toStartOf="@+id/tv_min_static_text"
+                                app:layout_constraintStart_toStartOf="parent"
+                                />
+
+                        <com.rideincab.user.common.custompalette.FontTextView
+                                android:id="@+id/tv_min_static_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8adp"
+                                android:paddingStart="@dimen/_3adp"
+                                android:layout_toEndOf="@+id/tv_per_minutes"
+                                android:paddingEnd="@dimen/_3adp"
+                                android:text=" / MIN"
+                                android:textAlignment="center"
+                                android:textColor="@color/cabme_app_text_ash"
+                                android:textSize="@dimen/_15asp"
+                                app:fontName="@string/font_Book"
+                                app:layout_constraintEnd_toStartOf="@+id/tv_per_distance"
+                                app:layout_constraintStart_toEndOf="@id/tv_per_minutes"
+                                />
+
+                        <com.rideincab.user.common.custompalette.FontTextView
+                                android:id="@+id/tv_per_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10adp"
+                                android:layout_marginTop="@dimen/_8adp"
+                                android:text=""
+                                android:layout_toEndOf="@+id/tv_min_static_text"
+                                android:textAlignment="viewEnd"
+                                android:textColor="@color/text_black"
+                                android:textSize="@dimen/_16asp"
+                                app:fontName="@string/font_Medium"
+                                app:layout_constraintEnd_toStartOf="@+id/tv_km_static_text"
+                                app:layout_constraintHorizontal_bias="0.25"
+                                app:layout_constraintStart_toEndOf="@+id/tv_min_static_text"
+                                />
+
+                        <com.rideincab.user.common.custompalette.FontTextView
+                                android:id="@+id/tv_km_static_text"
+                                android:layout_width="wrap_content"
+                                android:layout_toEndOf="@+id/tv_per_distance"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8adp"
+                                android:text=" / KM"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/cabme_app_text_ash"
+                                android:textSize="@dimen/_15asp"
+                                app:fontName="@string/font_Book"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.25"
+                                app:layout_constraintStart_toEndOf="@id/tv_per_distance"
+                                />
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_peak_car"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_peak_price_percentage"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        />
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8adp"
+                        android:layout_marginTop="@dimen/_10adp"
+                        android:layout_marginEnd="@dimen/_8adp"
+                        android:scaleX=".8"
+                        android:scaleY=".8"
+                        android:src="@drawable/ic_peak_power"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView"
+                        />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cv_accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/peak_circle"
+                    android:layout_marginTop="@dimen/_85adp"
+                    android:layout_marginBottom="@dimen/_20adp"
+                    >
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape_white_20dp"
+                        android:elevation="@dimen/_2adp"
+                        android:gravity="center"
+                        android:padding="@dimen/_5adp"
+                        android:text="OR"
+                        android:textSize="@dimen/_13asp"
+                        app:fontName="@string/font_Medium"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_tryLater_higherPrice"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_accept_higherPrice"
+                        app:layout_constraintStart_toStartOf="@+id/tv_accept_higherPrice"
+                        app:layout_constraintTop_toTopOf="@+id/tv_accept_higherPrice"
+                        />
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                        android:id="@+id/tv_tryLater_higherPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_accept_higherPrice"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/app_curve_button_black"
+                        android:gravity="center"
+                        android:padding="@dimen/_12adp"
+                        android:text="@string/try_again_later"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15asp"
+                        app:fontName="@string/font_Medium"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_accept_higherPrice"
+                        />
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                        android:id="@+id/tv_accept_higherPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/app_curve_button_yellow"
+                        android:gravity="center"
+                        android:padding="@dimen/_12adp"
+                        android:text="@string/iAcceptHigherPrice"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/app_primary_button_text_color"
+                        android:textSize="@dimen/_15asp"
+                        app:fontName="@string/font_Medium"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cabme_app_white"
+        android:orientation="horizontal">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10adp"
+            android:paddingEnd="@dimen/_20adp"
+            android:paddingStart="@dimen/_20adp"
+            android:paddingTop="@dimen/_20adp">
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/promo_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_curve_button_green"
+                android:layout_marginStart="@dimen/_10adp"
+                android:padding="@dimen/_8adp"
+                android:text="@string/off"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16asp"
+                app:fontName="@string/font_UBERMedium" />
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/promo_amt_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/promo_amount"
+                android:layout_marginStart="@dimen/_10adp"
+                android:layout_marginTop="@dimen/_20adp"
+                android:layout_marginBottom="@dimen/_10adp"
+                android:maxLines="2"
+                android:text="Free trip up to $25 from tes"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_15asp"
+                app:fontName="@string/font_UBERMedium" />
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/promo_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_5adp"
+                android:text="Jan 15, 2018"
+                android:textColor="@color/cabme_app_text_ash"
+                android:textSize="@dimen/_15asp"
+                app:fontName="@string/font_UBERMedium" />
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1adp"
+                android:layout_marginStart="@dimen/_15adp"
+                android:layout_below="@+id/promo_amt_txt"
+                android:layout_marginTop="@dimen/_10adp"
+                android:layout_marginEnd="@dimen/_15adp"
+                android:background="@color/cabme_app_border_shadow"
+                />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+

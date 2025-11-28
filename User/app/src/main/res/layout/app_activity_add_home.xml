@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_primary_color"
+    android:layoutDirection="@string/layout_direction">
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header" />
+
+    <com.rideincab.user.common.custompalette.FontTextView
+        android:id="@+id/destclose"
+        android:layout_width="@dimen/_30adp"
+        android:layout_height="@dimen/_30adp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5adp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/_5adp"
+        android:singleLine="true"
+        android:text="R"
+        android:layout_margin="@dimen/_10adp"
+        android:textSize="@dimen/_10adp"
+        android:visibility="gone"
+        app:fontName="@string/font_UberClone" />
+
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/common_header"
+        android:layout_marginTop="@dimen/_10adp"
+        android:background="@drawable/app_top_curve_white">
+
+
+
+
+
+        <com.rideincab.user.common.custompalette.FontEditText
+            android:id="@+id/destadddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12adp"
+            android:layout_marginTop="@dimen/_20adp"
+            android:layout_marginEnd="@dimen/_12adp"
+            android:layout_marginBottom="@dimen/_10adp"
+            android:background="@drawable/app_curve_button_white"
+            android:elevation="@dimen/_10adp"
+            android:ellipsize="end"
+            android:padding="@dimen/_18adp"
+            android:paddingStart="@dimen/_20adp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/app_cursor_color"
+            android:textSize="@dimen/_15asp"
+            app:fontName="@string/font_News">
+
+            <requestFocus />
+        </com.rideincab.user.common.custompalette.FontEditText>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/address_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/white"
+        android:layout_below="@+id/mainlayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cabme_app_white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/location_placesearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/app_curve_layout_gray"
+                    android:padding="@dimen/_20adp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_placesearch"
+                android:layout_marginStart="@dimen/_10adp"
+                android:layout_marginTop="@dimen/_5adp"
+                android:layout_marginEnd="@dimen/_10adp"
+                android:background="@drawable/app_curve_button_gray"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_20adp"
+                android:paddingEnd="@dimen/_20adp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.rideincab.user.common.custompalette.FontTextView
+                        android:id="@+id/setlocationimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="@dimen/_20adp"
+                        android:text="H"
+                        android:textColor="@color/app_primary_text"
+                        android:textSize="@dimen/_18asp"
+                        app:fontName="@string/font_UberClone" />
+
+                    <LinearLayout
+                        android:id="@+id/setlocaion_onmap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/setlocationimage"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_20adp"
+                        android:paddingBottom="@dimen/_20adp"
+                        android:visibility="visible">
+
+                        <com.rideincab.user.common.custompalette.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setlocationonmap"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/_15asp"
+                            app:fontName="@string/font_News" />
+
+                        <com.rideincab.user.common.custompalette.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setlocationonmap"
+                            android:textColor="@color/textgray"
+                            android:textSize="@dimen/_15asp"
+                            android:visibility="gone"
+                            app:fontName="@string/font_News" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainlayout"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-30dp">
+
+                <fragment
+                    android:id="@+id/search_map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MapsActivity_for_request_pages" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/pin_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ub__ic_pin_pickup"
+            android:visibility="gone" />
+
+        <com.rideincab.user.common.custompalette.FontTextView
+            android:id="@+id/drop_done"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/app_curve_button_yellow"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/app_primary_button_text_color"
+            android:visibility="gone"
+            app:fontName="@string/font_Medium"
+
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

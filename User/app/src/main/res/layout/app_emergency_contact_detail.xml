@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layoutDirection="@string/layout_direction"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_10adp"
+            >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/nameofcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_50adp"
+                    android:layout_marginTop="@dimen/_15adp"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:textAlignment="viewStart"
+                    android:layout_toStartOf="@+id/deletemenu"
+                    android:text="@string/testname"
+                    android:textSize="@dimen/_15asp"
+                    app:fontName="@string/font_Medium"
+                    android:textColor="@color/app_primary_text" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5asp"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:layout_below="@+id/nameofcontact"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+            <ImageView
+                    android:layout_width="@dimen/_30adp"
+                    android:layout_height="@dimen/_30adp"
+                    android:src="@drawable/app_ic_contact"
+                    android:layout_weight="0.3"
+                     />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/numberofcontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:textSize="@dimen/_15asp"
+                    android:textAlignment="viewStart"
+                    android:layout_marginTop="@dimen/_5adp"
+                    android:text="@string/testphonenumber"
+                    app:fontName="@string/font_Medium"
+                    android:textColor="@color/cabme_app_text_ash" />
+
+            </LinearLayout>
+
+            <ImageView
+                    android:id="@+id/deletemenu"
+                    android:layout_width="@dimen/_25adp"
+                    android:layout_height="@dimen/_20adp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="@dimen/_5adp"
+                    android:layout_marginTop="@dimen/_20adp"
+                    android:src="@drawable/menu_dots"
+
+                    />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2adp"
+                    android:layout_marginTop="@dimen/_85adp"
+                    android:background="@color/cabme_app_border_shadow" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

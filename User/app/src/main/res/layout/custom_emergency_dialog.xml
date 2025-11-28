@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_corner_draw_emergency"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="15dp"
+            >
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_20adp"
+                android:gravity="center"
+                android:paddingTop="@dimen/_15adp"
+                android:paddingBottom="@dimen/_20adp"
+                android:text="@string/continue_to_send_alert"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_18asp"
+                app:fontName="@string/font_Medium"
+                />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_topbordor"
+                android:divider="@drawable/divider"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_20adp"
+                android:paddingEnd="@dimen/_20adp"
+                android:showDividers="middle"
+                android:weightSum="2"
+                >
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/_15adp"
+                    android:paddingBottom="@dimen/_15adp"
+                    android:text="@string/cancel_s"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_18asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/continuebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/_15adp"
+                    android:paddingBottom="@dimen/_15adp"
+                    android:text="@string/continue_alert"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_primary_color"
+                    android:textSize="@dimen/_18asp"
+                    app:fontName="@string/font_Medium"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

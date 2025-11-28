@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="@string/layout_direction"
+        android:orientation="vertical"
+        android:background="@color/app_primary_color"
+        tools:context=".taxi.sidebar.DriverContactActivity">
+
+    <include
+            android:id="@+id/common_header"
+            layout="@layout/app_common_header"/>
+
+    <RelativeLayout
+            android:id="@+id/contact_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/default_header_to"
+            android:background="@drawable/app_top_curve_white"
+            >
+
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/driver_name_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_35adp"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_16asp"
+                app:fontName="@string/font_Medium" />
+
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/driver_phone_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_below="@+id/driver_name_contact"
+                android:layout_marginTop="@dimen/_25adp"
+                android:paddingEnd="@dimen/_20adp"
+                android:paddingStart="@dimen/_20adp"
+                android:textColor="@color/cabme_app_text_ash"
+                android:textSize="@dimen/_15asp"
+                app:fontName="@string/font_Medium" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/driver_phone_contact"
+                android:layout_marginTop="@dimen/_20adp"
+                android:padding="@dimen/_20adp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+        <LinearLayout
+                android:id="@+id/callbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/app_call_curve_button_yellow"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:layout_marginStart="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_20adp"
+                android:orientation="vertical"
+                android:padding="@dimen/_28adp"
+                android:elevation="@dimen/_5adp"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="@dimen/_20adp"
+                    android:paddingStart="@dimen/_20adp"
+                    android:scaleX=".8"
+                    android:scaleY=".8"
+                    android:src="@drawable/ic_phone"
+                    app:tint="@color/app_primary_button_text_color"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:text="@string/call"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_primary_button_text_color"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/messageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_20adp"
+                android:layout_marginBottom="@dimen/_2adp"
+                android:background="@drawable/app_call_curve_button_yellow"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:elevation="@dimen/_5adp"
+                android:padding="@dimen/_28adp">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="@dimen/_20adp"
+                    android:paddingStart="@dimen/_20adp"
+                    android:scaleX=".8"
+                    android:scaleY=".8"
+                    android:src="@drawable/app_ic_message_yellow"
+                    app:tint="@color/app_primary_button_text_color" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:text="@string/message"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_primary_button_text_color"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_Medium" />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

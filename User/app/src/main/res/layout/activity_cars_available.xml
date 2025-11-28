@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="@string/layout_direction"
+        android:orientation="vertical"
+        >
+    <!--
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">-->
+
+    <RelativeLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/default_header_to"
+                android:layout_marginBottom="@dimen/_15adp"
+                >
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/carname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5adp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/affordable"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <ImageView
+                android:id="@+id/car2"
+                android:layout_width="@dimen/_120adp"
+                android:layout_height="@dimen/_120adp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/carname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/car2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_20asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/secondlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainlayout"
+            android:layout_marginStart="@dimen/_40adp"
+            android:layout_marginEnd="@dimen/_40adp"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    >
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                        android:id="@+id/capacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/capacity"
+                        android:textColor="@color/app_primary_text"
+                        android:textSize="@dimen/_14asp"
+                        app:fontName="@string/font_Medium"
+                        />
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                        android:id="@+id/people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/app_primary_text"
+                        android:textSize="@dimen/_14asp"
+                        app:fontName="@string/font_Medium"
+                        />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_marginTop="@dimen/_5adp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                        android:id="@+id/tv_fare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="@dimen/_5adp"
+                        android:text="@string/fare"
+                        android:textColor="@color/app_primary_text"
+                        android:textSize="@dimen/_14asp"
+                        app:fontName="@string/font_Medium"
+                        />
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5adp"
+                        android:layout_toStartOf="@+id/faredeatils"
+                        android:paddingStart="@dimen/_5adp"
+                        android:paddingEnd="@dimen/_5adp"
+                        android:textColor="@color/app_primary_text"
+                        android:textSize="@dimen/_14asp"
+                        app:fontName="@string/font_Medium"
+                        />
+
+                <ImageView
+                        android:id="@+id/faredeatils"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_5adp"
+                        android:src="@drawable/infoicon"
+                        app:tint="@color/app_primary_color"
+                        />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/discribctionlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondlayout"
+            android:layout_marginStart="@dimen/_40adp"
+            android:layout_marginTop="@dimen/_10adp"
+            android:layout_marginEnd="@dimen/_40adp"
+            >
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/farediscribction"
+                android:textColor="@color/cabme_app_divider_grey"
+                android:textSize="@dimen/_12asp"
+                app:fontName="@string/font_UBERNews"
+                />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discribctionlay"
+            android:layout_marginTop="@dimen/_20adp"
+            >
+
+
+        <com.rideincab.user.common.custompalette.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60adp"
+            android:layout_marginStart="@dimen/_20adp"
+            android:layout_marginTop="@dimen/_20adp"
+            android:layout_marginEnd="@dimen/_20adp"
+            android:layout_marginBottom="@dimen/_20adp"
+            android:background="@drawable/app_curve_button_yellow"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            android:textColor="@color/app_primary_button_text_color"
+            android:textSize="@dimen/_16asp"
+            app:fontName="@string/font_Medium" />
+
+    </RelativeLayout>
+    <!--</RelativeLayout>
+</ScrollView>-->
+</RelativeLayout>

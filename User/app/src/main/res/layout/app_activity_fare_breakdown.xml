@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_primary_color"
+        android:layoutDirection="@string/layout_direction"
+        tools:context=".taxi.sidebar.FareBreakdown"
+        >
+    <include
+            android:id="@+id/common_header"
+            layout="@layout/app_common_header" />
+
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/common_header"
+            android:layout_marginTop="@dimen/default_header_to"
+            android:background="@drawable/app_top_curve_white"
+            android:orientation="vertical"
+            >
+
+
+        <RelativeLayout
+                android:id="@+id/textmater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_40adp"
+                    android:text="@string/pricepresented"
+                    android:textColor="@color/cabme_app_text_ash"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/basefare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_40adp"
+                    android:text="@string/basefare"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_12asp"
+                    android:visibility="gone"
+                    app:fontName="@string/font_UBERMedium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/mimimum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/basefare"
+                    android:layout_marginStart="@dimen/_40adp"
+                    android:paddingTop="@dimen/_5adp"
+                    android:text="@string/basefare"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_12asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mimimum"
+                    android:layout_marginStart="@dimen/_40adp"
+                    android:paddingTop="5dp"
+                    android:text="@string/perminute"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_12asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/minute"
+                    android:layout_marginStart="@dimen/_40adp"
+                    android:paddingTop="5dp"
+                    android:text="@string/perkm"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_12asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <RelativeLayout
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignBottom="@+id/basefare"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@+id/amount1"
+                    android:layout_toEndOf="@+id/basefare"
+                    android:background="#ffd6d7d7"
+                    android:visibility="gone"
+                    ></RelativeLayout>
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/amount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/amount2"
+                    android:layout_alignBottom="@+id/view1"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_12asp"
+                    android:visibility="gone"
+                    app:fontName="@string/font_Medium"
+                    />
+
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/amount2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/mimimum"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_40adp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_12asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignBottom="@+id/mimimum"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@+id/amount2"
+                    android:layout_toEndOf="@+id/mimimum"
+                    android:background="#ffd6d7d7"
+                    ></RelativeLayout>
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/amount3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/minute"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_40adp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_12asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignBottom="@+id/minute"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@+id/amount2"
+                    android:layout_toEndOf="@+id/minute"
+                    android:background="#ffd6d7d7"
+                    ></RelativeLayout>
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/amount4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/per"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_40adp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_12asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignBottom="@+id/per"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@+id/amount2"
+                    android:layout_toEndOf="@+id/per"
+                    android:background="#ffd6d7d7"
+                    ></RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

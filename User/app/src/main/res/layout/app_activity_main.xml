@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_primary_color"
+    android:layoutDirection="@string/layout_direction">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:fitsSystemWindows="true"
+        android:layoutDirection="@string/layout_direction"
+        tools:openDrawer="start">
+
+        <include
+            android:id="@+id/app_bar_main"
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/app_nav_header_main"
+            app:itemTextColor="@color/app_primary_text"
+            app:menu="@menu/activity_main_drawer"
+            app:theme="@style/NavigationDrawerStyle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:paddingStart="@dimen/_20adp"
+                android:paddingTop="@dimen/_10adp"
+                android:paddingEnd="@dimen/_20adp">
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/drivewithuber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:gravity="start|center_vertical"
+                    android:paddingBottom="@dimen/_20adp"
+                    android:text="@string/drivewithuber"
+                    android:textColor="@color/app_secondary_text"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium"
+                    android:visibility="gone" />
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/tv_powered_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentStart="true"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/_5adp"
+                    android:text="Powered by Source Monster©"
+                    android:textColor="@color/app_secondary_text"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium"
+                    android:visibility="gone" />
+
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/tvAppVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/app_primary_light_text"
+                    android:text="V1.0"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+            </RelativeLayout>
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <!--
+        <include layout="@layout/activity_fare_estimation" />
+    -->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

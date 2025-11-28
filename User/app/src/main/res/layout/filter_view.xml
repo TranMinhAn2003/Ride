@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10asp"
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_filter_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:padding="@dimen/_15asp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+    <com.rideincab.user.common.custompalette.FontButton
+            android:id="@+id/tv_save_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv_filter_list"
+            android:layout_marginTop="@dimen/_20adp"
+            style="@style/CommonBottomSheetButton"
+            android:layout_marginBottom="@dimen/_10adp"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textAllCaps="true"
+            android:textColor="@color/app_primary_button_text_color"
+            android:textSize="@dimen/_15asp"
+            app:fontName="@string/font_Medium"
+            />
+
+</RelativeLayout>

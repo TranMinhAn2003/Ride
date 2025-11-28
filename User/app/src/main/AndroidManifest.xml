@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.rideincab.user">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<!--    <uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- voip permission -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--
+   this below permission is very important for Firebase push notification, when app was killed
+   if we delete this below permission accidentally, app wont receive background notification
+    -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+            android:name="android.hardware.telephony"
+            android:required="false" />
+
+    <permission
+            android:name="com.rideincab.user.C2D_MESSAGE"
+            android:protectionLevel="signature" />
+
+    <application
+            android:name="com.rideincab.user.common.network.AppController"
+            android:allowBackup="false"
+            android:fullBackupContent="false"
+            android:icon="@drawable/app_logo"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/round_app_logo"
+            android:largeHeap="true"
+            android:noHistory="false"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:usesCleartextTraffic="true"
+            tools:replace="android:allowBackup">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+                android:name="com.rideincab.user.taxi.views.signinsignup.Lanuching"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+                android:name="com.rideincab.user.common.views.PaymentWebViewActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <receiver
+                android:name="com.rideincab.user.common.helper.NetworkChangeReceiver"
+                android:label="NetworkChangeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <activity
+                android:name="com.rideincab.user.taxi.sendrequest.PaymentAmountPage"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+                android:name="com.rideincab.user.taxi.sendrequest.CancelYourTripActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name="com.rideincab.user.taxi.views.splash.SplashActivity"
+                android:label="@string/app_name"
+                android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name="com.rideincab.user.common.map.FetchAddressIntentService"
+                android:exported="false" />
+        <service
+            android:name=".common.pushnotification.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/app_logo" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id"/>
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="${applicationId}.provider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_maps_key" />
+        <!--
+            <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+        -->
+        <activity
+                android:name="com.rideincab.user.taxi.views.signinsignup.SigninSignupActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+                android:name="com.rideincab.user.taxi.views.main.MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+                android:name="com.rideincab.user.taxi.views.signinsignup.SSResetPassword"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.Profile"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.rideincab.user.taxi.views.signinsignup.SSRegisterActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.Setting"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" />
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.FareBreakdown"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.rideincab.user.taxi.views.search.PlaceSearchActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.EnRoute"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.DriverContactActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.trips.YourTrips"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.trips.TripDetails"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name="com.rideincab.user.taxi.views.addCardDetails.AddCardActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.rideincab.user.taxi.sendrequest.DriverNotAcceptActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name="com.rideincab.user.taxi.sendrequest.DriverRatingActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+
+            <!--
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+            -->
+        </activity>
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.AddHome"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name="com.rideincab.user.common.helper.CommonDialog"
+                android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.payment.PromoAmountActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <!--
+<activity
+                android:name="com.paypal.android.MEP.PayPalActivity"
+                android:configChanges="keyboardHidden|orientation"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        -->
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.payment.AddWalletActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.rideincab.user.taxi.views.emergency.EmergencyContact"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.rideincab.user.taxi.views.emergency.SosActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.rideincab.user.taxi.ScheduleRideDetailActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.rideincab.user.taxi.views.firebaseChat.ActivityChat"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+        <service
+                android:name="com.rideincab.user.taxi.views.firebaseChat.FirebaseChatNotificationService"
+                android:enabled="true"
+                android:exported="false" />
+
+        <activity android:name="com.rideincab.user.taxi.views.facebookAccountKit.FacebookAccountKitActivity" />
+        <activity
+                android:name="com.rideincab.user.taxi.views.peakPricing.PeakPricing"
+                android:screenOrientation="portrait" />
+        <activity android:name="com.rideincab.user.taxi.views.signinsignup.SSLoginActivity" />
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.referral.ShowReferralOptions"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name="com.rideincab.user.taxi.sidebar.payment.PaymentPage"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.rideincab.user.taxi.sendrequest.SendingRequestActivity"
+                android:hardwareAccelerated="true"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name="com.rideincab.user.common.views.SupportActivityCommon"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+       <!-- <activity
+                android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+                android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>-->
+    </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PICK" />
+            <data android:mimeType="vnd.android.cursor.dir/image" />
+        </intent>
+    </queries>
+
+</manifest>

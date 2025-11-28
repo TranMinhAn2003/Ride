@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10adp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <com.rideincab.user.common.custompalette.FontTextView
+            android:layout_width="@dimen/_60adp"
+            android:layout_height="@dimen/_60adp"
+            android:textSize="@dimen/_20asp"
+            android:id="@+id/tv_seat"
+            app:fontName="@string/font_UBERNews"
+            android:background="@drawable/circular_border"
+            android:layout_margin="@dimen/_10adp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/app_primary_button_text_color"
+            android:text="1"/>
+
+</LinearLayout>

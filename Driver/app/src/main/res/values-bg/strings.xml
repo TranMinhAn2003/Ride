@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname "RideIn Captain">
+    <!ENTITY userAppName "RideIn Rider">
+    ]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="hide">Скрий</string>
+    <string name="rider">Водач</string>
+    <string name="emailalreadyexits">"Вече имате акаунт с този имейл. \nОпитайте да влезете вместо това."</string>
+    <string name="invalidelogin">Невалидни данни за вход</string>
+    <string name="signin">ВХОД</string>
+    <string name="usernameemail">"ПОТРЕБИТЕЛСКО ИМЕ ИЛИ ИМЕЙЛ"</string>
+    <string name="password">"Парола"</string>
+    <string name="forgotpassword">ЗАБРАВЕНА ПАРОЛА ?</string>
+
+    <string name="error_msg_vehiclename">"Моля, въведете името на вашето превозно средство"</string>
+    <string name="error_msg_vehiclenumber">"Моля, въведете номера на вашето превозно средство"</string>
+    <string name="error_msg_vehicletype">"Моля, изберете типа на вашето превозно средство"</string>
+    <string name="error_msg_firstname">"Моля, въведете вашето собствено име"</string>
+    <string name="error_msg_mobilenumber">"Невалиден телефонен номер"</string>
+    <string name="error_msg_lastname">"Моля, въведете вашето фамилно име"</string>
+    <string name="error_msg_email">"Моля, въведете валиден имейл адрес"</string>
+    <string name="error_msg_phone">"Моля, въведете валиден телефонен номер"</string>
+    <string name="error_msg_password">"Моля, въведете минимум 6 символа"</string>
+    <string name="error_msg_address">"Моля, въведете валиден адрес"</string>
+    <string name="error_msg_city">"Моля, въведете валиден град"</string>
+    <string name="error_msg_state">"Моля, въведете валидна област"</string>
+    <string name="error_msg_post">"Моля, въведете валиден пощенски код"</string>
+    <string name="error_msg_rating">"Моля, дайте вашата оценка"</string>
+
+    <string name="camera_permission_description">За да правите снимки и видеа, разрешете на &appname; достъп до вашата камера и памет</string>
+    <string name="storage_permission_description">За да качвате изображения, разрешете на &appname; достъп до вашата памет</string>
+    <string name="location_permission_description">За да заявите пътуване, разрешете на &appname; достъп до вашето местоположение</string>
+    <string name="audio_permission_description">За да осъществявате телефонни обаждания, разрешете на &appname; достъп до вашите аудио настройки</string>
+
+    <string name="network_failure">Моля, проверете вашата интернет връзка</string>
+    <string name="internal_server_error">Моля, опитайте отново по-късно.</string>
+    <string name="you_are_viewing_old_data">Преглеждате стари данни, моля, проверете вашата мрежова връзка</string>
+    <string name="retry">Опитайте отново</string>
+
+    <string name="getmobilenumber">Въведете вашия телефонен номер</string>
+    <string name="first">"Собствено име"</string>
+    <string name="last">"Фамилно име"</string>
+    <string name="email">"Имейл"</string>
+    <string name="paypalemail">"PAYPAL ИМЕЙЛ"</string>
+    <string name="address1">"Адрес 1"</string>
+    <string name="address2">"Адрес 2"</string>
+    <string name="city">"Град"</string>
+    <string name="state">"Област"</string>
+    <string name="postalcode">"Пощенски код"</string>
+    <string name="havean_account">Имате акаунт?</string>
+    <string name="login">Вход</string>
+
+    <string name="resetpasswords">Нулирайте вашата парола</string>
+    <string name="riderfeedbacktitle">"ОБРАТНА ВРЪЗКА ОТ ПЪТНИКА"</string>
+    <string name="signout_msg">"Сигурни ли сте, че искате да излезете?"</string>
+    <string name="cancel_s">"Отказ"</string>
+    <string name="what_would_you_like_to_do">"Какво бихте искали да направите?"</string>
+
+    <string name="descreption">"Продължавайки, потвърждавам, че съм съгласен/а &appname; или неговите представители да могат да се свържат с мен по имейл, телефон или SMS (включително чрез автоматична телефонна система) на предоставения от мен имейл адрес или номер, включително за маркетингови цели. Прочетох и разбирам Декларацията за поверителност на водача. Сумите за препоръки и изискванията за минимални пътувания могат да варират в зависимост от града. &appname; може да промени всяка сума или критерии за стимулиране по свое усмотрение."</string>
+    <string name="register">Регистрация</string>
+    <string name="vehicle">"ДАННИ ЗА ПРЕВОЗНОТО СРЕДСТВО"</string>
+    <string name="vehicle_name">"Име на превозното средство / напр.: Toyota Camry, Honda Accord…"</string>
+    <string name="vehicle_number">"Номер на превозното средство / напр.: WNF 382"</string>
+    <string name="vehicle_type">"Изберете типа на вашето превозно средство"</string>
+    <string name="looking">ТЪРСИТЕ ПРИЛОЖЕНИЕТО ЗА ПЪТНИЦИ?</string>
+    <string name="signupwithrider">"РЕГИСТРИРАЙТЕ СЕ С АКАУНТ НА ПЪТНИК"</string>
+    <string name="or">"ИЛИ"</string>
+    <string name="trip_star_5">"ВАШАТА ТЕКУЩА ОЦЕНКА"</string>
+    <string name="current_rating">"ЦЯЛОЖИВОТНИ ПЪТУВАНИЯ"</string>
+    <string name="trip_cancel">"5 ЗВЕЗДИ"</string>
+    <string name="request_accepted">"ОЦЕНЕНИ ПЪТУВАНИЯ"</string>
+    <string name="enter4digit">Въведете 4-цифрения код, изпратен ви на</string>
+    <string name="resend">Изпратете кода отново</string>
+    <string name="otp_mismatch">"Несъответствие на OTP кода."</string>
+    <string name="otp_emty">"Моля, въведете OTP"</string>
+
+    <string name="riderfeedback">"Обратна връзка от пътника"</string>
+    <string name="checkfeedback">"Разгледайте обратната връзка от пътниците и научете как да подобрите"</string>
+    <string name="drivingstyle">"Табло за стил на шофиране"</string>
+    <string name="seeyourdriving">"Вижте вашия профил на стил на шофиране след като завършите повече пътувания"</string>
+    <string name="cancel_your_trip">"Отказване на вашето пътуване"</string>
+    <string name="rider_profile">"ПРОФИЛ НА ПЪТНИКА"</string>
+    <string name="waiting_for_payment">"Изчакване на плащане…"</string>
+    <string name="payment_done">"Плащането е извършено"</string>
+    <string name="paid">"Платено"</string>
+
+    <string name="documents">"ДОКУМЕНТИ"</string>
+    <string name="doc">"Моля, качете вашите документи."</string>
+    <string name="personaldoc">"Моля, качете вашите лични \nдокументи."</string>
+    <string name="vehicledoc_msg">"За да шофирате с &appname;, вашето превозно средство трябва да е средно или голямо седан, което удобно побира 4-8 пътници."</string>
+    <string name="driverlicense_back">"Шофьорска книжка - (Задна страна)"</string>
+    <string name="driverlicense_front">"Шофьорска книжка - (Предна страна)"</string>
+    <string name="motor_insurance">"Свидетелство за застраховка"</string>
+    <string name="registeration">"Свидетелство за регистрация"</string>
+    <string name="contract_carriage">"Разрешение за превоз"</string>
+    <string name="continues">"ПРОДЪЛЖИ"</string>
+    <string name="verify">"ПРОВЕРИ"</string>
+
+    <string name="takephoto">"Направете снимка на вашия"</string>
+    <string name="takephoto_msg">"Моля, уверете се, че всички детайли се четат лесно."</string>
+    <string name="taptoadd">"ДОКЪСНЕТЕ, ЗА ДА ДОБАВИТЕ"</string>
+    <string name="taptochange">"ДОКЪСНЕТЕ, ЗА ДА ПРОМЕНИТЕ"</string>
+    <string name="camera">Камера</string>
+    <string name="camera_roll">Галерия</string>
+
+    <string name="home">"Начало"</string>
+    <string name="earnings">"Печалби"</string>
+    <string name="rating">"Оценки"</string>
+    <string name="account">"АКАУНТ"</string>
+    <string name="offline">"Извън линия"</string>
+    <string name="checkstatus">"Проверете статуса"</string>
+    <string name="online">"Онлайн"</string>
+    <string name="trip_id">"Номер на пътуване: "</string>
+    <string name="enroute">"На път"</string>
+    <string name="navigate">"Навигация"</string>
+    <string name="pickup">"Взимане"</string>
+    <string name="pick_up">"ВЗЕМАНЕ"</string>
+    <string name="dropoff">"СЛИЗАНЕ"</string>
+    <string name="contact_C">"КОНТАКТ"</string>
+    <string name="call">Обаждане</string>
+    <string name="callsonly">"САМО ОБАЖДАНИЯ"</string>
+    <string name="cancel">"ОТКАЗ"</string>
+    <string name="minute">"МИНУТА"</string>
+    <string name="minutes">"МИНУТИ"</string>
+    <string name="help">"Помощ"</string>
+    <string name="edit">"Редактиране"</string>
+    <string name="document_s">"Документи"</string>
+    <string name="about">"Относно"</string>
+    <string name="signout">"Изход"</string>
+    <string name="notrip">"Нямате пътувания"</string>
+
+    <string name="currency">"лв "</string>
+    <string name="tripsdetails">"ДЕТАЙЛИ ЗА ПЪТУВАНЕТО"</string>
+    <string name="triphistory">"ИСТОРИЯ НА ПЪТУВАНИЯТА"</string>
+    <string name="trip_payment">"Пътувания и плащания"</string>
+
+    <string name="tripearnings">"ПЕЧАЛБИ ОТ ПЪТУВАНЕ"</string>
+    <string name="fare">"Основна такса"</string>
+    <string name="uberfee">"Такса за достъп"</string>
+    <string name="distancefare">"Такса за разстояние"</string>
+    <string name="timefare">"Такса за време"</string>
+    <string name="totalamount">"Обща такса за пътуване"</string>
+    <string name="adminamount">"Сума на администратора"</string>
+    <string name="oweamount">"Дължима сума"</string>
+    <string name="driverpayout">"Възнаграждение на водача"</string>
+    <string name="cashcollectable">"Събираема сума в брой"</string>
+    <string name="cash_trip">"Пътуване в брой"</string>
+    <string name="cashcollected">"Събрана сума в брой"</string>
+    <string name="waitforrider">"Изчакване на потвърждение от пътника"</string>
+
+    <string name="duration">"ПРОДЪЛЖИТЕЛНОСТ"</string>
+    <string name="distance">"РАЗСТОЯНИЕ"</string>
+    <string name="thisweek">"ТАЗИ СЕДМИЦА"</string>
+    <string name="thisweek_empty">"Не сте карали тази седмица"</string>
+    <string name="last_trip">"Последно пътуване: "</string>
+    <string name="pay_statemet">"Извлечения за плащане"</string>
+    <string name="payment">"Плащане"</string>
+    <string name="payment_failed">"Неуспешно плащане"</string>
+    <string name="payout">"Възнаграждение"</string>
+    <string name="addpayout">Добавете PayPal възнаграждение</string>
+    <string name="most_recent">"Най-скорошно възнаграждение: "</string>
+    <string name="addpayment_msg">"За да добавите ново възнаграждение. Създайте имейл за вашия &appname; акаунт. "</string>
+
+    <string name="begin_trip">"Плъзнете, за да започнете пътуването"</string>
+    <string name="confirm_arrived">"ПЛЪЗНЕТЕ, ЗА ДА ПОТВЪРДИТЕ, ЧЕ СТЕ ПРИСТИГНАЛИ"</string>
+    <string name="end_trip">"Плъзнете, за да завършите пътуването"</string>
+
+    <string name="begin_trip_text">"Започване на пътуване"</string>
+    <string name="end_trip_text">"Завършване на пътуване"</string>
+
+    <string name="Rating">Оценка</string>
+    <string name="Ratings">Оценки</string>
+    <string name="completed">Завършено</string>
+    <string name="Cancelled">Отменено</string>
+    <string name="scheduled">"Планирано"</string>
+
+    <string name="paystatement">"ИЗВЛЕЧЕНИЕ ЗА ПЛАЩАНЕ"</string>
+    <string name="weeklystatement">"СЕДМИЧНО ИЗВЛЕЧЕНИЕ"</string>
+
+    <string name="timeonline">"ВРЕМЕ ОНЛАЙН"</string>
+    <string name="completedtrips">"Завършени пътувания"</string>
+    <string name="dailyearning">"ДНЕВНИ ПЕЧАЛБИ"</string>
+    <string name="bankdeposit">"Банков депозит"</string>
+    <string name="totaluberearning">"Общо възнаграждение на водача"</string>
+    <string name="riderfaresearn">"Такси на пътници, спечелени и запазени."</string>
+
+    <string name="Interneterror">Няма интернет връзка</string>
+    <string name="no_connection">Няма интернет връзка</string>
+    <string name="enable_connection_and_come_back">Моля, активирайте връзката и опитайте отново</string>
+    <string name="send_message">Изпрати съобщение</string>
+    <string name="go_online">ОНЛАЙН</string>
+
+    <string name="no_address_found">Съжаляваме, не е намерен адрес</string>
+    <string name="no_location_data_provided">Не са предоставени данни за местоположение</string>
+    <string name="service_not_available">Съжаляваме, услугата не е налична</string>
+    <string name="invalid_lat_long_used">Използвани са невалидни географски координати</string>
+
+    <string name="profile">"ПРОФИЛ"</string>
+    <string name="mobile">"Телефонен номер"</string>
+
+    <string name="InvalidMobileNumber">Невалиден телефонен номер</string>
+    <string name="InvalidPassword">Моля, въведете минимум 6 символа</string>
+    <string name="Passwordmismatch">Несъответствие на паролите</string>
+    <string name="Enteryourpassword">Въведете вашата парола</string>
+    <string name="Confirmyourpassword">Потвърдете вашата парола</string>
+    <string name="currencies">"Валута"</string>
+    <string name="selectcurrency">"Изберете валута"</string>
+
+    <string name="mobilenumber">ТЕЛЕФОНЕН НОМЕР</string>
+    <string name="language">Език</string>
+    <string name="selectlanguage">Изберете език</string>
+
+    <string name="noratings">Няма оценки и коментари</string>
+    <string name="ratingsncomment">Оценки и коментари</string>
+    <string name="vehicleinformation">Информация за превозното средство</string>
+    <string name="pleaseentermobile">Моля, въведете телефонния номер</string>
+    <string name="turnoninternet">Включете вашия интернет</string>
+    <string name="ok">OK</string>
+    <string name="yourtripcancelledbydriver">Вашето пътуване е отменено от водача…</string>
+    <string name="driverarrrive">Водачът пристига сега…</string>
+    <string name="waiting">Изчакване на одобрение от администратора..</string>
+    <string name="acceptingpickup">Приемане на взимане…</string>
+    <string name="rateyourrider">Оценете вашия пътник</string>
+    <string name="writecomment">Напишете вашите коментари…</string>
+    <string name="paymentdetails">Детайли за плащането</string>
+    <string name="view">ПРЕГЛЕД</string>
+    <string name="pressbackagain">Натиснете отново, за да излезете</string>
+    <string name="paymentcompleted">Плащането е извършено успешно…</string>
+    <string name="addphoto">Добави снимка</string>
+    <string name="choosefromlib">Изберете от библиотеката</string>
+    <string name="save">Запази</string>
+
+    <string name="yourtripcanceledrider">Вашето пътуване е отменено от пътника…</string>
+    <string name="other_reasons">Други причини</string>
+
+    <string name="layout_direction">0</string>
+    <string name="location_not_enabled">Местоположението не е активирано!</string>
+    <string name="location_settings">Отворете настройките за местоположение</string>
+    <string name="enable_permission">Моля, разрешете разрешенията</string>
+    <string name="active">Активен…</string>
+    <string name="next">Напред</string>
+    <string name="img_failed_msg">Неуспешно качване на изображението</string>
+    <string name="loading">Зареждане…</string>
+
+    <string name="image_uploaded">Изображението е качено успешно</string>
+    <string name="settings">НАСТРОЙКИ</string>
+    <string name="not_now">НЕ СЕГА</string>
+    <string name="message">Съобщение</string>
+    <string name="payout_title">Настройте вашия метод за възнаграждение в &appname;</string>
+    <string name="payout_address">Адрес за възнаграждение</string>
+    <string name="street_hint">"Улица / Име на път"</string>
+    <string name="apt_hint">"Апартамент / Сграда"</string>
+    <string name="city_hint">"Град / Област"</string>
+    <string name="state_hint">"Област / Провинция"</string>
+    <string name="pin_hint">"Пощенски код"</string>
+    <string name="country_hint">"Държава"</string>
+    <string name="currency1">Валута</string>
+    <string name="ssn" translatable="false">ЕГН</string>
+    <string name="routing_number">Роутинг номер</string>
+    <string name="clearing_code">Клиринг код</string>
+    <string name="bank_name">Име на банката</string>
+    <string name="branch_name">Име на клона</string>
+    <string name="bank_code">Код на банката</string>
+    <string name="branch_code">Код на клона</string>
+    <string name="bsb" translatable="false">BSB</string>
+    <string name="transit_number">Транзитен номер</string>
+    <string name="institute_number">Институционен номер</string>
+    <string name="sort_code">Сорт код</string>
+    <string name="account_owner_name">Име на собственика на акаунта</string>
+    <string name="phone_number">Телефонен номер</string>
+    <string name="iban_number">IBAN номер</string>
+    <string name="gender">Пол</string>
+    <string name="address_1">Адрес 1</string>
+    <string name="address_2">Адрес 2</string>
+    <string name="state_province">Област/Провинция</string>
+    <string name="postal_code">Пощенски код</string>
+    <string name="legal_document">Юридически документ</string>
+    <string name="stripe_details">Детайли за Stripe</string>
+    <string name="submit">Изпрати</string>
+    <string name="address_kanji1">Адрес 1</string>
+    <string name="address_kanji2">Адрес 2</string>
+    <string name="kanji_city">Град</string>
+    <string name="state_province_kanji">Област/Провинция</string>
+    <string name="postal_code_kanji">Пощенски код</string>
+    <string name="address_kana2">Адрес 2</string>
+    <string name="city_kana">Град</string>
+    <string name="postal_code_kana">Пощенски код</string>
+    <string name="address_kana">Адрес Kana</string>
+    <string name="paypal_email">PayPal имейл ID</string>
+    <string name="address_kanji">Адрес Kanji</string>
+    <string name="showpassword">Покажи парола</string>
+    <string name="delete">Изтрий</string>
+    <string name="makedefault">Направи по подразбиране</string>
+    <string name="defaults">По подразбиране</string>
+    <string name="selectcountry">Изберете държава</string>
+    <string name="select">Избран</string>
+
+    <string name="enable_permissions_to_proceed_further">Разрешете разрешенията, за да продължите</string>
+    <string name="takephoto_title">Направете снимка</string>
+    <string name="add_stripe_payout">Добавете Stripe възнаграждение</string>
+    <string name="choose_currency">Моля, изберете валута</string>
+    <string name="please_choose_a_currency">Моля, изберете валута</string>
+    <string name="please_enter_account_number">Моля, въведете номер на акаунта</string>
+    <string name="please_enter_bank_name">Моля, въведете име на банката</string>
+    <string name="please_enter_branch_name">Моля, въведете име на клона</string>
+    <string name="please_enter_bank_code">Моля, въведете код на банката</string>
+    <string name="please_enter_branch_code">Моля, въведете код на клона</string>
+    <string name="please_enter_account_holder_name">Моля, въведете име на собственика на акаунта</string>
+    <string name="please_enter_address1">Моля, въведете адрес 1</string>
+    <string name="please_enter_city">Моля, въведете град</string>
+    <string name="please_enter_state">Моля, въведете област</string>
+    <string name="please_enter_postal_code">Моля, въведете пощенски код</string>
+    <string name="please_upload_legal_document">Моля, качете юридически документ</string>
+    <string name="please_upload_additional_document">Моля, качете допълнителен документ</string>
+    <string name="external_storage_permission_necessary">Необходимо е разрешение за външно хранилище</string>
+    <string name="please_enter_sort_code">Моля, въведете сорт код</string>
+    <string name="please_enter_SSN">Моля, въведете ЕГН</string>
+    <string name="please_enter_routing_number">Моля, въведете роутинг номер</string>
+    <string name="please_enter_clearing_code">Моля, въведете клиринг код</string>
+    <string name="please_enter_account_owner_name">Моля, въведете име на собственика на акаунта</string>
+    <string name="please_enter_phone_number">Моля, въведете телефонен номер</string>
+    <string name="please_choose_gender">Моля, изберете пол</string>
+    <string name="please_enter_address_1_of_kana">Моля, въведете адрес 1 на kana</string>
+    <string name="please_enter_address_2_of_kana">Моля, въведете адрес 2 на kana</string>
+    <string name="please_enter_city_of_kana">Моля, въведете град на kana</string>
+    <string name="please_enter_state_of_kana">Моля, въведете област на kana</string>
+    <string name="please_enter_postal_code_of_kana">Моля, въведете пощенски код на kana</string>
+    <string name="please_enter_address_1_of_kanji">Моля, въведете адрес 1 на kanji</string>
+    <string name="please_enter_address_2_of_kanji">Моля, въведете адрес 2 на kanji</string>
+    <string name="please_enter_city_of_kanji">Моля, въведете град на kanji</string>
+    <string name="please_enter_state_of_kanji">Моля, въведете област на kanji</string>
+    <string name="please_enter_postal_code_of_kanji">Моля, въведете пощенски код на kanji</string>
+    <string name="please_choose_country">Моля, изберете държава</string>
+    <string name="please_enter_transit_number">Моля, въведете транзитен номер</string>
+    <string name="please_enter_institution_number">Моля, въведете институционен номер</string>
+    <string name="please_enter_BSB">Моля, въведете BSB</string>
+    <string name="manually_booked">Ръчно резервиран за пътуване</string>
+    <string name="manual_booking_reminder">Напомняне за ръчна резервация</string>
+    <string name="manual_booking_cancelled">Ръчна резервация отменена</string>
+    <string name="send_a_message">Изпрати съобщение</string>
+    <string name="google_map_not_found_in_device">Google Map не е намерен в устройството</string>
+    <string name="waze_google_map_not_found_in_device">Waze Map не е намерен в устройството</string>
+    <string name="choose_map">Изберете карта</string>
+    <string name="google_map" translatable="false">Google Карта</string>
+    <string name="waze_map" translatable="false">Waze Карта</string>
+    <string name="location_not_enabled_please_enable_location">Местоположението не е активирано, моля, активирайте го, за да продължите</string>
+    <string name="you_have_been_manualy_booked">Вие сте били ръчно резервиран</string>
+    <string name="skip">Пропусни</string>
+
+    <string name="bank_location">Местоположение на банката</string>
+    <string name="bic_swift_code">IFSC/BIC/SWIFT код</string>
+    <string name="name_of_bank">Име на банката</string>
+    <string name="account_number">Номер на акаунта</string>
+    <string name="account_holder_name">Име на собственика на акаунта</string>
+    <string name="clabe" translatable="false">CLABE</string>
+
+    <string name="required"> Задължително</string>
+
+    <string name="bank_details">Детайли за банката</string>
+    <string name="bank_details_success_message">Детайлите за банката са добавени успешно</string>
+    <string name="rate_your_ride">Оценете вашето пътуване</string>
+    <string name="no_ratings_display">Нямате оценки за показване</string>
+    <string name="pending_trips">Чакащи пътувания</string>
+    <string name="completed_trips">Завършени пътувания</string>
+    <string name="error_address">Моля, предоставете адрес.</string>
+    <string name="error_city">Моля, предоставете град.</string>
+    <string name="error_zip_code">Моля, предоставете пощенски код.</string>
+    <string name="error_country">Моля, изберете държава за възнаграждение.</string>
+    <string name="no_vehicle_assigned">Няма назначено превозно средство</string>
+    <string name="trips">ПЪТУВАНИЯ</string>
+    <string name="total_trip_amount">Обща сума за пътуване</string>
+    <string name="doc_upload_error">Моля, качете всички документи</string>
+
+    <string name="pay_to">Платете на администратора</string>
+    <string name="your_pay_to">Вашето плащане на администратора</string>
+
+    <string name="add_card">Добави карта</string>
+    <string name="change">ПРОМЕНИ</string>
+    <string name="enter_amount">Въведете сума</string>
+    <string name="enter_amount_empty">Моля, въведете сумата</string>
+    <string name="entered_amt_msg">Въведената сума е по-голяма от дължимата сума</string>
+    <string name="payment_methods">Метод на плащане</string>
+    <string name="credit_or_debit">Добавете кредитна или дебитна карта</string>
+    <string name="select_reason">Изберете причина</string>
+
+    <string name="default_direction" translatable="false">0</string>
+    <string name="mobile_verification">Верификация на телефонен номер</string>
+    <string name="please_enter_mobile_number">Моля, въведете вашия телефонен номер</string>
+    <string name="enter_otp">Въведете OTP</string>
+    <string name="resend_otp">"Не сте получили OTP?"</string>
+    <string name="copy">Копирай</string>
+    <string name="driver_earnings">Печалби на водача</string>
+    <string name="otp_send_to_phone_description">Изпратихме ви код за достъп чрез SMS \n за проверка на мобилния номер</string>
+    <string name="send_OTP_again_in">Можете да изпратите OTP отново след</string>
+    <string name="enter_valid_otp">Въведете валиден OTP!</string>
+    <string name="enter_pendg_amount_empty">Нямате суми за изплащане</string>
+    <string name="enter_otp_to_begin_trip">Въведете OTP, за да започнете пътуването</string>
+    <string name="Done">Готово</string>
+    <string name="close">затвори</string>
+    <string name="connected">Свързан</string>
+    <string name="ringing">Звъни</string>
+    <string name="connecting">Свързване…</string>
+
+    <string name="amount">Сума</string>
+    <string name="apply">Приложи</string>
+    <string name="apply_extra_fee">Приложи допълнителна такса</string>
+    <string name="enter_other_reason">Въведете друга причина</string>
+    <string name="enter_extra_fee_description">Въведете описание на допълнителната такса</string>
+    <string name="enter_extra_fee">Въведете допълнителна такса</string>
+    <string name="no">Не</string>
+    <string name="yes">Да</string>
+    <string name="select_extra_fee_description">Изберете описание на допълнителната такса</string>
+    <string name="error_select_extra_fee_description">Моля, изберете описание на допълнителната такса</string>
+    <string name="er_read_loc">Проблем при четене на списъка с местоположения.</string>
+
+    <string name="referral">Реферална програма</string>
+    <string name="your_invite_code">Вашият покана код</string>
+    <string name="share_my_code">Сподели моя код</string>
+    <string name="friends_incompleted">Приятели - Незавършени</string>
+    <string name="friends_completed">Приятели - Завършени</string>
+    <string name="referral_code_copied">Рефералният код е копиран</string>
+    <string name="referral_code_not_copied">Неуспешно копиране на рефералния код, моля споделете кода</string>
+    <string name="days_left">оставащи дни</string>
+    <string name="need_to_complete">Трябва да завърши</string>
+    <string name="max_referral_earning_statement">Печелете до %s за всеки приятел, който пътува с &appname;</string>
+    <string name="referral_code_optional">Реферален код (по избор)</string>
+    <string name="earned">"Спечелени "</string>
+    <string name="no_referrals_yet">Все още няма реферали</string>
+    <string name="referral_expired">Рефералът е изтекъл</string>
+    <string name="share_to_contacts">Сподели с контакти</string>
+    <string name="invite_msg"><![CDATA[Регистрирайте се и получавайте пари за всяка регистрация по покана и още много бонуси! Използвайте моя покана код]]></string>
+    <string name="referrel_amount">Реферална сума</string>
+    <string name="day_left">оставащ ден</string>
+    <string name="trip_left">ПЪТУВАНЕ</string>
+
+    <string name="tap_to_reload">Докоснете за презареждане</string>
+    <string name="error_msg_unknown">Възникна неочаквана грешка</string>
+    <string name="total_earnings">"ОБЩИ ПЕЧАЛБИ"</string>
+    <string name="remaining_referral">Оставащи реферали</string>
+    <string name="hr_eta">"&#160;ч&#160;"</string>
+
+    <string name="stripe" translatable="false">Stripe</string>
+    <string name="choose">Избери</string>
+    <string name="Add_payment_type">Добавяне на начин на плащане</string>
+    <string name="choose_payment_type">Моля, изберете вашия начин на плащане</string>
+    <string name="add_payout">Добавяне на изплащане</string>
+    <string name="update">Актуализиране</string>
+    <string name="min">&#160;мин</string>
+
+    <string name="add_paypal">Добавяне на PayPal</string>
+    <string name="add_driver_proof">Добавяне на доказателство за водач</string>
+    <string name="payout_details">Детайли за изплащане</string>
+    <string name="onlinepayment">Онлайн плащане</string>
+    <string name="paypal">PayPal</string>
+    <string name="set_canceled">Настройката е отменена, опитайте отново</string>
+    <string name="stripe_error_1">Нещо се обърка, опитайте отново</string>
+    <string name="stripe_error_2">Невалидна версия на Stripe API, опитайте по-късно</string>
+    <string name="navigation_drawer_open">Отваряне на навигационното меню</string>
+    <string name="navigation_drawer_close">Затваряне на навигационното меню</string>
+    <string name="choose_vehicle_type">Изберете тип превозно средство</string>
+    <string name="choose_vehicle">Изберете превозно средство</string>
+    <string name="select_your_vehicle">Изберете вашето превозно средство</string>
+    <string name="manage_vehicles">Управление на превозни средства</string>
+    <string name="add_vehicles">Добавяне на превозни средства</string>
+    <string name="update_vehicles">Актуализиране на превозни средства</string>
+    <string name="New_vehicle">Ново</string>
+    <string name="update_vehicle">Актуализиране на превозно средство</string>
+    <string name="setting">Настройки</string>
+    <string name="choose_make">Изберете марка</string>
+    <string name="choose_year">Изберете година</string>
+    <string name="your_trips">Вашите пътувания</string>
+    <string name="manage_documents">Управление на документи</string>
+    <string name="earning">Печалби</string>
+    <string name="choose_model">Изберете модел</string>
+    <string name="enter_vehicle_color">Въведете цвят на превозното средство</string>
+    <string name="vehicle_color">Цвят на превозното средство</string>
+    <string name="enter_vehicle_name">Въведете име на превозното средство</string>
+    <string name="vehicle_name_title">Име на превозното средство</string>
+    <string name="enter_license_plate">Въведете регистрационен номер</string>
+    <string name="license_plate">Регистрационен номер</string>
+    <string name="year">Година</string>
+    <string name="model">Модел</string>
+    <string name="make">Марка</string>
+    <string name="add_vehicle">Добавяне на превозно средство</string>
+    <string name="delete_msg">"Сигурни ли сте, че искате да изтриете?"</string>
+    <string name="you_have_no_vehicles">Нямате превозни средства</string>
+    <string name="you_have_no_document">Няма добавени документи</string>
+    <string name="please_choose_make">Моля, изберете марка</string>
+    <string name="please_choose_model">Моля, изберете модел</string>
+    <string name="please_choose_year">Моля, изберете година</string>
+    <string name="please_choose_license_number">Моля, въведете регистрационен номер</string>
+    <string name="please_enter_vehicle_name">Моля, въведете име на превозното средство</string>
+    <string name="please_enter_vehicle_color">Моля, въведете цвят на превозното средство</string>
+    <string name="please_choose_vehicle_type">Моля, изберете тип превозно средство</string>
+    <string name="cancelaccount_msg">"Вашата информация няма да бъде запазена."</string>
+    <string name="confirm">"ПОТВЪРДИ"</string>
+    <string name="cancel_vehicle_creation">Отказване на създаването на превозно средство?</string>
+    <string name="upload_doc">Качване на документ</string>
+    <string name="pending">Изчакващ</string>
+    <string name="rejected">Отхвърлен</string>
+    <string name="go_onlines">Онлайн</string>
+    <string name="go_offline">Офлайн</string>
+    <string name="manage_payout">Управление на изплащанията</string>
+    <string name="pool_request">Групово запитване (</string>
+    <string name="persons_braces">&#160;души)</string>
+    <string name="person_braces">&#160;човек)</string>
+    <string name="pickup_address_braces">"Адрес на вземане:\n"</string>
+    <string name="drop_address_braces">"Адрес на оставяне:\n"</string>
+    <string name="manage_driver_document">"Управление на документи на водача"</string>
+    <string name="approved">Одобрен</string>
+    <string name="few_seconds">Това може да отнеме няколко секунди</string>
+    <string name="expiry_date">Срок на валидност</string>
+    <string name="yyyymmdd">ГГГГ-ММ-ДД</string>
+    <string name="changeAlert">Тъй като сте на пътуване, не можете да променяте превозните си средства, моля завършете пътуванията си</string>
+    <string name="vehicleAlert">Тъй като сте онлайн, не можете да редактирате превозните си средства, моля отидете офлайн</string>
+    <string name="please_expiry_date">Моля, изберете вашия срок на валидност</string>
+    <string name="deleteAlert">Тъй като сте онлайн, не можете да изтривате превозните си средства, моля отидете офлайн</string>
+    <string name="male">Мъж</string>
+    <string name="female">Жена</string>
+    <string name="error_gender">Моля, изберете вашия пол</string>
+    <string name="km_value">км</string>
+    <string name="mins_value">мин</string>
+    <string name="settings_status_on_summary" translatable="false">"Услугата работи "</string>
+    <string name="support">Поддръжка</string>
+    <string name="not_valid_data">Невалидни данни</string>
+    <string name="seat_count">Брой места:</string>
+
+    <string name="new_version_available">Налична е нова версия</string>
+    <string name="update_desc">Моля, актуализирайте нашето приложение, за да се наслаждавате на най-новите функции!</string>
+    <string name="update_desc1">За да използвате приложението, изтеглете най-новата версия</string>
+
+    <string name="inactive">Неактивен</string>
+    <string name="update_successfully">Актуализирано успешно.</string>
+    <string name="request_expire">Запитването е изтекло</string>
+    <string name="cancel_trip">Отказване на пътуване</string>
+    <string name="select_view">Изберете %s</string>
+    <string name="vehicle_numbers">Регистрационен номер</string>
+    <string name="continue_with_phone_number">Продължете с телефонен номер</string>
+    <string name="login_to_continue">Влезте, за да продължите</string>
+    <string name="welcome_back">Добре дошли отново</string>
+    <string name="hello">Здравейте</string>
+    <string name="select_photo">Изберете снимка</string>
+    <string name="pickup_address">Адрес на вземане:</string>
+    <string name="drop_address">Адрес на оставяне:</string>
+    <string name="accept">Приеми</string>
+    <string name="drivewithuber">Пътувайте с &userAppName;</string>
+    <string name="pleaseEnteryourpassword">моля въведете вашата парола</string>
+    <string name="pleaseConfirmyourpassword">моля потвърдете вашата парола</string>
+    <string name="trip_request">Запитване за пътуване</string>
+    <string name="additional_document">Допълнителен документ</string>
+    <string name="please_enter_clabe_number">моля въведете CLABE</string>
+
+    <plurals name="manage_vehicles">
+        <item quantity="one"> Управление на превозно средство</item>
+        <item quantity="other"> Управление на превозни средства</item>
+    </plurals>
+
+    <plurals name="minutes">
+        <item quantity="one">%d&#160;Мин</item>
+        <item quantity="other">%d&#160;Мин</item>
+    </plurals>
+
+
+    <plurals name="hours">
+        <item quantity="one">%d&#160;hr&#160;</item>
+        <item quantity="other">%d"&#160;hrs&#160;</item>
+    </plurals>
+
+
+
+    <string name="installed_app_alert">Това приложение събира информация за инсталираните приложения, за да предостави най-доброто потребителско изживяване и пътувания близо до вас.</string>
+    <string name="location_disclaimer">Това приложение събира данни за местоположението, за да активира „Търсене на местоположението на превозното средство“, „Маршрут и навигация“, „Движение на превозното средство в реално време“, дори когато приложението е затворено или не се използва.</string>
+    <string name="delete_account">Изтриване на акаунт</string>
+
+    <string name="sigin_terms1">"Продължавайки, потвърждавам, че съм прочел и съм съгласен с "</string>
+    <string name="sigin_terms2">"Общите условия"</string>
+    <string name="sigin_terms3">" и "</string>
+    <string name="sigin_terms4">"Политиката за поверителност"</string>
+    <string name="location_permission">За да заявите пътуването си, позволете на &appname; да има достъп до местоположението на вашето устройство. &appname; събира данни за местоположението, за да ви намери пътувания, където и да сте, дори когато приложението е затворено или не се използва.</string>
+    <string name="background_location_permission_rationale">Разрешието за местоположение във фонов режим е необходимо за подобрена функционалност.</string>
+    <string name="fine_permission_denied_explanation">Разрешието за точно местоположение беше отказано, но е необходимо за основната функционалност.</string>
+    <string name="background_permission_denied_explanation">Разрешието за местоположение във фонов режим беше отказано, но е необходимо за подобрена функционалност.</string>
+    <string name="notification_permission_description">Необходимо е разрешение за известия, моля позволете го, за да получавате известия за резервации.</string>
+    <string name="pls_allow_permission">Моля, позволете това разрешение.</string>
+    <string name="bubble_permission_msg">При приемане ще можете да виждате плаващ бутон на приложението на екрана си.</string>
+    <string name="allow">Разреши</string>
+    <string name="disclaimer">Декларация</string>
+    <string name="location_permission_is_required_to_find_the_rides_near_you">Необходимо е разрешение за местоположение, за да намерите пътувания близо до вас.</string>
+    <string name="location_permission_required">Необходимо е разрешение за местоположение.</string>
+    <string name="allow_permission">Разреши достъп</string>
+    <string name="allow_background_permission">Разреши достъп във фонов режим</string>
+    <string name="payout_alert">Моля, изчистете дълговете си в секцията за плащане към администратора, за да получите следващо запитване за пътуване</string>
+    <string name="estimated_fare">Очаквана цена</string>
+    <string name="redirect_link" translatable="false"><![CDATA[<p>Създадено от <a href=\"https://api.whatsapp.com/send?l=en&text=Hi!%20I%27m%20interested%20in%20your%20%20RideIn%20Taxi%20App%20Installation&phone=918607248802\">Source Monster©</a><p>]]></string>
+    <string name="menu_redirect_link" translatable="false"><![CDATA[<p>Създадено от <a href=\"https://api.whatsapp.com/send?l=en&text=Hi!%20I%27m%20interested%20in%20your%20%20RideIn%20Taxi%20App%20Installation&phone=918607248802\">Source Monster©</a><p>]]></string>
+    <string name="privacy_policy_txt">Политика за поверителност</string>
+    <string name="start_trip">Започни пътуване</string>
+    <string name="start_trip_alert">Сигурни ли сте, че искате да започнете това пътуване?</string>
+    <string name="please_update_profile_picture">Моля, качете профилна снимка</string>
+    <string name="cancel_payment">Сигурни ли сте, че искате да отмените плащането?</string>
+    <string name="test_yes">Да</string>
+    <string name="alert">Известие</string>
+</resources>

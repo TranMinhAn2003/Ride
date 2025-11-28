@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Hexagonal shape
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path android:fillColor="#fff" android:pathData="M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z"
+        />
+</vector>
+-->
+
+<!--
+full round
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path android:fillColor="#fff" android:pathData="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+</vector>
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path android:fillColor="#fff" android:pathData="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,19C10.1,19 8.3,18.2 7.1,16.9C5.9,15.6 5,13.9 5,12C5,10.1 5.8,8.3 7.1,7.1C8.4,5.9 10.1,5 12,5C13.9,5 15.7,5.8 16.9,7.1C18.1,8.4 19,10.1 19,12C19,13.9 18.2,15.7 16.9,16.9C15.6,18.1 13.9,19 12,19Z" />
+</vector>

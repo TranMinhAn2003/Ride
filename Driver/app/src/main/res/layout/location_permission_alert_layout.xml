@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/layout_background_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:padding="1dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_location"
+                app:tint="@color/cabme_app_yellow"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/location_permission_required"
+                    android:textColor="@color/cabme_app_black"
+                    android:textSize="17sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/dotted_black"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:text="@string/location_permission_is_required_to_find_the_rides_near_you"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.rideincab.driver.common.custompalette.FontButton
+            android:id="@+id/btnAllowLPermission"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50adp"
+            android:layout_below="@+id/posttext"
+            android:layout_marginStart="@dimen/_10adp"
+            android:layout_marginTop="@dimen/_20adp"
+            android:layout_marginEnd="@dimen/_10adp"
+            android:layout_marginBottom="@dimen/_20adp"
+            android:background="@drawable/app_curve_button_yellow"
+            android:text="@string/allow_permission"
+            android:textColor="@color/primary_button_text_color"
+            android:textSize="@dimen/_16asp"
+            app:fontname="@string/font_Medium" />
+
+        <com.rideincab.driver.common.custompalette.FontButton
+            android:id="@+id/btnAllowBGLPermission"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50adp"
+            android:layout_below="@+id/posttext"
+            android:layout_marginStart="@dimen/_10adp"
+            android:layout_marginTop="@dimen/_20adp"
+            android:layout_marginEnd="@dimen/_10adp"
+            android:layout_marginBottom="@dimen/_20adp"
+            android:visibility="gone"
+            android:background="@drawable/app_curve_button_yellow"
+            android:text="@string/allow_background_permission"
+            android:textColor="@color/primary_button_text_color"
+            android:textSize="@dimen/_16asp"
+            app:fontname="@string/font_Medium" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="@string/profile"
+            android:icon="@drawable/user_profile"
+            app:iconTint="@color/app_primary_color"
+            />
+        <item
+            android:id="@+id/nav_payment"
+            android:title="@string/payment"
+            android:icon="@drawable/hand"
+            android:iconTint="@color/app_primary_color"
+            />
+        <item
+            android:id="@+id/nav_yourtrips"
+            android:title="@string/yourtrips"
+            android:icon="@drawable/trip_history"
+            android:iconTint="@color/app_primary_color"
+            />
+        <item
+            android:id="@+id/nav_wallet"
+            android:title="@string/wallet"
+            android:icon="@drawable/money"
+            android:iconTint="@color/app_primary_color"
+            />
+
+        <item
+            android:id="@+id/nav_referral"
+            android:title="@string/referral"
+            android:icon="@drawable/referral"
+            android:iconTint="@color/app_primary_color"
+            />
+        <!--<item
+            android:id="@+id/nav_help"
+            android:title="@string/help" />-->
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/settings"
+            android:icon="@drawable/settings"
+            android:iconTint="@color/app_primary_color"
+            />
+        <item
+            android:id="@+id/emg_contact"
+            android:title="@string/emergency_contacts"
+            android:icon="@drawable/siren"
+            android:iconTint="@color/app_primary_color"
+            android:visible="false"
+            />
+
+        <item
+            android:id="@+id/manual_booking"
+            android:title="@string/manual_booking"
+            android:icon="@drawable/instructions"
+            android:iconTint="@color/app_primary_color"
+            />
+
+        <item
+            android:id="@+id/nav_support"
+            android:title="@string/support"
+            android:icon="@drawable/support"
+            android:iconTint="@color/app_primary_color"
+            />
+
+        <item
+            android:id="@+id/nav_privacy_policy"
+            android:title="@string/privacy_policy_txt"
+            android:icon="@drawable/policy"
+            android:iconTint="@color/app_primary_color"
+            />
+        <item
+            android:id="@+id/nav_powered_by"
+            android:title="Pwd by Source Monster©"
+            android:icon="@drawable/ic_copyright_24"
+            android:iconTint="@color/app_primary_color"
+            />
+    </group>
+    <!-- android:icon="@drawable/ic_menu_camera"
+         android:icon="@drawable/ic_menu_gallery"
+         android:icon="@drawable/ic_menu_slideshow"
+         android:icon="@drawable/ic_menu_manage"
+    -->
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

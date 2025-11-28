@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cabme_app_yellow"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".trips.tripsdetails.YourTrips">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_header"
+        android:layout_marginTop="@dimen/default_header_to"
+        android:background="@drawable/app_top_curve_white">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            style="@style/MyTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10adp"
+            android:layout_marginEnd="@dimen/_10adp"
+            android:layoutDirection="@string/layout_direction"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorColor="@color/cabme_app_yellow"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="@dimen/_3adp"
+            app:tabPaddingEnd="@dimen/_25adp"
+            app:tabPaddingStart="@dimen/_25adp"
+            app:tabSelectedTextColor="@color/cabme_app_black"
+            app:tabTextAppearance="@style/AppTabLayout"
+            app:tabTextColor="@color/cabme_app_text_ash" />
+        <!-- View pager to swipe views -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tabLayout"
+            android:layoutDirection="@string/layout_direction" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

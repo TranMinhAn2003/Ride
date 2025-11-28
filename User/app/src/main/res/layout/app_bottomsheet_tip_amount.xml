@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_top_curve_gray">
+
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/tv_currency_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/_10adp"
+                android:maxLength="6"
+                android:scrollbars="horizontal"
+                android:singleLine="false"
+                android:text="$"
+                android:textColor="@color/text_black"
+                android:textSize="20sp"
+                app:fontName="@string/font_UBERBook"
+                app:layout_constraintBottom_toBottomOf="@+id/ed_tripAmount"
+                app:layout_constraintEnd_toStartOf="@+id/ed_tripAmount"
+                app:layout_constraintTop_toTopOf="@+id/ed_tripAmount"
+                />
+
+        <com.rideincab.user.common.custompalette.FontEditText
+                android:id="@+id/ed_tripAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_60adp"
+                android:layout_marginTop="@dimen/_40adp"
+                android:layout_marginEnd="@dimen/_70adp"
+                android:layout_marginBottom="@dimen/_20adp"
+                android:background="@drawable/app_curve_button_white"
+                android:gravity="center"
+                android:hint="@string/enter_tip"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:padding="@dimen/_10adp"
+                android:singleLine="false"
+                android:textColor="@color/app_primary_text"
+                android:textCursorDrawable="@drawable/app_cursor_color"
+                android:textSize="@dimen/_18asp"
+                app:fontName="@string/font_UBERMedium"
+                app:layout_constraintBottom_toTopOf="@+id/tv_total_trip_amount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgv_close_tips_popup"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        <ImageView
+                android:id="@+id/imgv_close_tips_popup"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/_360adp"
+                android:layout_marginTop="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_30adp"
+                android:src="@drawable/app_ic_cancel"
+                app:layout_constraintBottom_toTopOf="@+id/ed_tripAmount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/tv_total_trip_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/canceltext"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_8adp"
+                android:layout_marginBottom="@dimen/_8adp"
+                android:text="@string/your_trip_amout_was"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_12adp"
+                android:visibility="gone"
+                app:fontName="@string/font_UBERBook"
+                app:layout_constraintBottom_toTopOf="@+id/btn_setTripAmount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+        <com.rideincab.user.common.custompalette.FontButton
+                android:id="@+id/btn_setTripAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_60adp"
+                android:layout_marginTop="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_70adp"
+                android:layout_marginBottom="@dimen/_20adp"
+                android:layout_weight="1"
+                android:background="@drawable/app_curve_button_yellow"
+                android:padding="@dimen/_12adp"
+                android:paddingTop="@dimen/_15adp"
+                android:paddingBottom="@dimen/_15adp"
+                android:text="@string/set_tip"
+                android:textColor="@color/app_primary_button_text_color"
+                android:textSize="@dimen/_15asp"
+                app:fontName="@string/font_Medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_tripAmount"
+                />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

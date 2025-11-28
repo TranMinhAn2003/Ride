@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10adp"
+        android:layout_marginTop="@dimen/_5adp"
+        android:layout_marginEnd="@dimen/_10adp"
+        android:layoutDirection="ltr"
+        app:cardBackgroundColor="@color/cabme_app_white"
+        app:cardCornerRadius="@dimen/_10adp"
+        app:cardElevation="@dimen/_5adp"
+        >
+
+    <LinearLayout
+            android:id="@+id/llt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:paddingStart="@dimen/_8adp"
+                android:paddingTop="@dimen/_5adp"
+                android:paddingEnd="@dimen/_8adp"
+                android:paddingBottom="@dimen/_5adp"
+                >
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/car_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_5adp"
+                    android:duplicateParentState="true"
+                    android:gravity="center_horizontal"
+                    android:text="2 Min"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_10asp"
+                    app:fontName="@string/font_UBERMedium"
+                    />
+
+            <RelativeLayout
+                    android:id="@+id/rlt_car_img"
+                    android:layout_width="@dimen/_50adp"
+                    android:layout_height="@dimen/_50adp"
+                    android:layout_below="@+id/car_min"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                <ImageView
+                        android:id="@+id/car_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:duplicateParentState="true"
+                        />
+
+                <com.rideincab.user.common.custompalette.FontTextView
+                        android:id="@+id/image_pool"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18adp"
+                        android:background="@drawable/app_curve_small_button_yellow"
+                        android:gravity="center"
+                        android:text="@string/pool"
+                        android:textColor="@color/cabme_app_white"
+                        android:textSize="@dimen/_9asp"
+                        android:visibility="visible"
+                        app:fontName="@string/font_UBERNews"
+                        />
+            </RelativeLayout>
+
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/car_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlt_car_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5adp"
+                    android:layout_marginBottom="@dimen/_5adp"
+                    android:duplicateParentState="true"
+                    android:text="@string/ubergo"
+                    android:textColor="@color/cabme_app_black_dot"
+                    android:textSize="@dimen/_12asp"
+                    app:fontName="@string/font_Medium"
+                    />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/car_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/car_name"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/app_curve_small_button_yellow"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="@dimen/_12adp"
+                    android:paddingTop="@dimen/_5adp"
+                    android:paddingEnd="@dimen/_12adp"
+                    android:paddingBottom="@dimen/_5adp"
+                    android:text="@string/amountno7"
+                    android:textColor="@color/app_primary_button_text_color"
+                    android:textSize="@dimen/_11asp"
+                    app:fontName="@string/font_UBERMedium"
+                    />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

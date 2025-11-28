@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="@string/layout_direction"
+        android:background="@color/app_primary_color">
+
+   <include
+       android:id="@+id/common_header"
+           layout="@layout/app_common_header"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/common_header"
+            android:layout_marginTop="@dimen/default_header_to"
+            android:background="@drawable/app_top_curve_white">
+        <RelativeLayout
+                android:id="@+id/wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_35adp">
+
+            <ImageView
+                android:id="@+id/wallet_img"
+                android:layout_width="@dimen/_110adp"
+                android:layout_height="@dimen/_110adp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_40adp"
+                android:src="@drawable/wallet" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/fontTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wallet_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_30adp"
+                    android:text=""
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_UBERNews" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/tv_caller_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fontTextView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:text="$150"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_26asp"
+                    app:fontName="@string/font_Medium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/_10adp"
+                android:paddingTop="@dimen/_10adp">
+
+            <com.rideincab.user.common.custompalette.FontButton
+                    android:id="@+id/add_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonBottomSheetButton"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:text="@string/add_amount"
+                    android:textColor="@color/app_primary_button_text_color"
+                    android:textSize="@dimen/_14asp"
+                    app:fontName="@string/font_Medium" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

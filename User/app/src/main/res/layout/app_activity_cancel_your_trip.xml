@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_primary_color">
+    <include
+            android:id="@+id/common_header"
+            layout="@layout/app_common_header"/>
+    <RelativeLayout
+            android:background="@drawable/app_top_curve_white"
+            android:layout_marginTop="@dimen/default_header_to"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/common_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20adp"
+                android:layout_marginStart="@dimen/_20adp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp">
+
+            <RelativeLayout
+                    android:id="@+id/cancel_reservation1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50adp"
+                    android:background="@drawable/app_curve_button_white_with_outline">
+
+                <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/cabme_app_white"
+                        android:layout_marginStart="@dimen/_10adp"
+                        android:spinnerMode="dropdown"
+                        />
+            </RelativeLayout>
+
+            <com.rideincab.user.common.custompalette.FontEditText
+                    android:id="@+id/cancel_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160adp"
+                    android:layout_below="@+id/cancel_reservation1"
+                    android:layout_marginTop="@dimen/_20adp"
+                    android:textCursorDrawable="@drawable/app_cursor_color"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:gravity="top"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/app_primary_text"
+                    app:fontName="@string/font_Medium"
+                    android:textSize="@dimen/_14asp"
+                    android:hint="@string/writecomment"
+                    android:lines="5"
+                    android:paddingEnd="@dimen/_10adp"
+                    android:paddingStart="@dimen/_10adp"
+                    android:paddingTop="@dimen/_10adp"
+                    android:text="" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/cabme_app_white"
+                android:paddingBottom="@dimen/_10adp"
+                android:paddingTop="@dimen/_10adp">
+
+            <com.rideincab.user.common.custompalette.FontButton
+                    android:id="@+id/cancelreservation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonBottomSheetButton"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:text="@string/cancel_trip"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_primary_button_text_color"
+                    android:textSize="@dimen/_15asp"
+                    app:fontName="@string/font_Medium" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

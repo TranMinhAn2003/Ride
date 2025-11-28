@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cabme_app_white"
+        android:layoutDirection="@string/layout_direction"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70adp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_primary_color"
+        android:elevation="0dp"
+        android:padding="@dimen/_7adp">
+
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="@dimen/_25adp"
+            android:layout_height="@dimen/_25adp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_20adp"
+            android:backgroundTint="@color/app_primary_button_text_color"
+            android:background="@drawable/app_ic_back_arrow" />
+
+
+        <com.rideincab.user.common.custompalette.FontTextView
+            android:id="@+id/tv_headertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_40adp"
+            android:layout_toEndOf="@+id/arrow"
+            android:textColor="@color/app_primary_button_text_color"
+            android:textSize="@dimen/_18asp"
+            app:fontName="@string/font_Medium" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [
+    <!ENTITY appname "RideIn Rider">
+    <!ENTITY driverAppName "RideIn Captain">
+    ]>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="use_in_case_of_emergency">שימוש במקרה חירום</string>
+    <string name="getmoving">התחל לנסוע עם &appname;</string>
+    <string name="navigation_drawer_open">פתח ניווט</string>
+    <string name="navigation_drawer_close">סגור ניווט</string>
+
+    <string name="connectsocila">התחבר</string>
+    <string name="phonenumber">מספר נייד</string>
+
+    <string name="confirm_seat_msg">מס\' נוסעים</string>
+    <string name="chooseaccount">בחר חשבון</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
+    <string name="errormsg_paymnet_type">בחר את סוג התשלום</string>
+    <string name="payment_name">"&appname; תשלום"</string>
+    <string name="alert_your_emergency_contacts">התראה לאנשי קשר בשעת חירום</string>
+    <string name="welcomeback">שלום, התחבר/י כדי להמשיך</string>
+    <string name="forgotpassword">שכחתי סיסמא</string>
+    <string name="resetpasswords">איפוס סיסמא</string>
+    <string name="creatacount">צור חשבון</string>
+    <string name="soscontent">&appname; תשתמש במיקומך במהלך הזמנה פעילה</string>
+    <string name="close">סגור</string>
+    <string name="continue_alert">המשך</string>
+    <string name="continue_to_send_alert">לשלוח התראה?</string>
+    <string name="sucessmessfe">הודעה נשלחה בהצלחה</string>
+    <string name="messagesenttoadmin">ההודעה נשלחה בהצלחה למנהל המערכת</string>
+
+
+    <string name="enteremailadress">דוא"ל</string>
+    <string name="car_unavailable">"לצערנו, &appname;
+        עדיין לא הגיעו לאיזורך, בהמשך..."</string>
+    <string name="email">דוא"ל</string>
+    <string name="cancel">ביטול</string>
+    <string name="editaccount">ערוך חשבון</string>
+    <string name="textpayment">תשלום</string>
+    <string name="paypal_payment">PayPal</string>
+    <string name="helptitle">עזרה</string>
+
+    <string name="capacity">קיבולת</string>
+    <string name="fare">מחיר</string>
+    <string name="done">בוצע</string>
+    <string name="continues">המשך</string>
+
+    <string name="pricepresented">המחיר המשוער מתבסס ע”פ התעריפים שלהלן</string>
+    <string name="basefare">מחיר בסיס</string>
+    <string name="perminute">+ לדקה</string>
+    <string name="perkm">+ לק”מ</string>$37.10
+
+    <string name="requestuber">"בבקשה "</string>
+    <string name="amountno7">$53.00</string>
+    <string name="ubergo">&appname;צא</string>
+    <string name="cancel_your_trip">"ביטול ההזמנה"</string>
+
+    <string name="paymentmethods">שיטות תשלום</string>
+    <string name="cash">מזומן</string>
+    <string name="wallets">ארנק</string>
+    <string name="promotions">מבצעים</string>
+    <string name="add">הוסף</string>
+    <string name="add_promo">הוסף/י קוד הטבה</string>
+    <string name="free_trip">נסיעה עד</string>
+    <string name="from">מ</string>
+    <string name="off">כיבוי</string>
+    <string name="promo_applied">ההטבה פעילה</string>
+    <string name="enter_promo_code">הזן/י קוד הטבה</string>
+    <string name="wallet">הארנק שלי</string>
+    <string name="use_wallet">השתמש בארנק</string>
+    <string name="wallet_amount">הסכום בארנק שלך הוא</string>
+    <string name="add_amount">הוסף/י כסף</string>
+    <string name="payable_amount">סכום לתשלום</string>
+    <string name="paid_amount">"סכום ששולם"</string>
+    <string name="enter_amount">הזן/י סכום</string>
+    <string name="add_money">הוסף/י כסף לארנק</string>
+    <string name="pay">תשלום</string>
+    <string name="trip_id">מס’ הזמנה :</string>
+    <string name="proceed">המשך</string>
+    <string name="waitfordriver">ממתין לאישור הנהג</string>
+    <string name="paypal">PayPal</string>
+    <string name="credit_or_debit_card">הוסף כרטיס אשראי</string>
+    <string name="change_credit_or_debit_card">שנה כרטיס אשראי</string>
+    <string name="card">כרטיס</string>
+    <string name="save">שמור</string>
+
+    <string name="baseFare">מחיר בסיס</string>
+    <string name="currency">"מטבע"</string>
+    <string name="selectcurrency">"בחר מטבע"</string>
+    <string name="signOut">יציאה</string>
+    <string name="tripDetails">פרטי הנסיעה</string>
+    <string name="fordFiesta">פורד פיאסטה</string>
+    <string name="FordFiesta">פורד פיאסטה</string>
+    <string name="nameexamplecom" translatable="false">AllisrelTaxis@gmail.com</string>
+
+    <string name="YourTrips">הנסיעות שלך</string>
+    <string name="address">שדרות גולדה מאיר 3, ירושלים</string>
+
+    <string name="request_car_msg">"מתחבר</string>
+    <string name="request_car_msg1">" לידך&#8230;</string>
+
+    <string name="favorites">מועדפים</string>
+    <string name="addhome">הוסף/י בית</string>
+    <string name="addwork">הוסף/י עבודה</string>
+    <string name="home">בית</string>
+    <string name="work">עבודה</string>
+    <string name="events">אירועים</string>
+    <string name="signout_msg">"האם אתה בטוח שברצונך לצאת?"</string>
+    <string name="cancel_s">"ביטול"</string>
+    <string name="signout">"יציאה"</string>
+
+    <string name="accountsetting">הגדרות חשבון</string>
+
+    <string name="resend">שלח קוד מחדש</string>
+    <string name="affordable">נסיעות יומיומיות</string>
+
+    <!-- Help Page started -->
+    <string name="tripsreview">סקירה ותעריפים</string>
+    <string name="accountpayment">אפשרויות תשלום חשבון</string>
+    <string name="guideuber">מדריך ל &appname;</string>
+    <string name="signingup">הרשמה</string>
+    <string name="more">עוד</string>
+    <string name="accessibility">נגישות</string>
+    <string name="additionaltopics">נושאים נוספים</string>
+    <!-- Fare Breakdown Page -->
+
+    <string name="farebreakdown">פירוט תעריפים</string>
+    <string name="farediscribction">מחיר הנסיעה נקבע ע”פ מונה</string>
+
+    <!-- Home Page started -->
+    <string name="profile">פרופיל</string>
+    <string name="payment">אפשרויות תשלום</string>
+    <string name="yourtrips">הנסיעות שלי</string>
+    <string name="begin_trip">"התחל נסיעה"</string>
+    <string name="Rating">דירוג</string>
+    <string name="completed">הושלם</string>
+    <string name="Cancelled">מבוטל</string>
+    <string name="end_trip">"סיום נסיעה"</string>
+    <string name="scheduled">"מתוזמן"</string>
+    <string name="not_now">לא עכשיו</string>
+    <string name="camera_permission_description">לצילום, אפשר ל &appname; לגשת למצלמה/אחסון</string>
+    <string name="storage_permission_description">להעלאת תמונת פרופיל, אפשר ל &appname; לגשות למצלמה/אחסון</string>
+    <string name="location_permission_description">אפשר ל &appname; לגשת למיקום שלך</string>
+    <string name="audio_permission_description">לשיחה, אפשר ל &appname; לגשת ל שמע/מיקרופון</string>
+    <string name="contact_permission_description">כדי לשתף את פרטי הנסיעה, אפשר ל &appname; לגשת לאנשי הקשר שלך</string>
+    <string name="settings">הגדרות</string>
+    <string name="drivewithuber">הנהג הוא &driverAppName;</string>
+    <string name="legal">חוקיות</string>
+    <string name="whereto">לאן?</string>
+
+    <string name="pickuplocation">"מיקום איסוף"</string>
+    <string name="currentlocation">"מיקוד יעד"</string>
+    <string name="setlocationonmap">"חפש במפה"</string>
+    <string name="scheduleride">"תזמן נסיעה"</string>
+
+    <string name="contact_C">"צור קשר"</string>
+    <string name="contact">"צור קשר"</string>
+    <string name="call">"התקשר"</string>
+    <string name="callsonly">"שיחות בלבד"</string>
+
+    <string name="support">"תמיכה"</string>
+
+    <!-- Home Page Ended -->
+
+
+    <!-- Route Page -->
+
+    <string name="arrival">"1:51pm הגעה ב"</string>
+    <string name="sharestatus">"שתף סטטוס"</string>
+    <string name="ratetext">"$79.76"</string>
+    <string name="mastercard">"MasterCard 2930"</string>
+    <string name="restaurantdelights">"פינוקים"</string>
+    <string name="uberittowangs">"it to Wangs"</string>
+    <string name="enrote">"בדרך"</string>
+    <string name="mins">"דקות"</string>
+    <string name="min">"דקה"</string>
+    <string name="yourcurrenttrip">"הנסיעה שלך"</string>
+    <string name="change">החלף</string>
+
+    <string name="min_eta">&#160;Min</string>
+    <string name="hr_eta">"&#160;hr&#160;"</string>
+
+    <!-- First and last name Page started -->
+    <string name="notrip">"אין לך נסיעה"</string>
+    <string name="whatisyourname">"מה השם שלך?"</string>
+    <string name="confirmyourinformation">"אשר את המידע"</string>
+    <string name="first">שם פרטי</string>
+    <string name="last">משפחה</string>
+    <string name="email_s">דוא”ל</string>
+    <string name="password">סיסמא</string>
+    <string name="mobile_s">מס’ נייד</string>
+    <string name="sigin_terms1">"המשך, אני מאשר/ת את התנאים"</string>
+    <string name="confirm_contact_number">הקש/י שוב מס’ נייד</string>
+    <string name="sigin_terms2">"תנאים והגבלות"</string>
+    <string name="sigin_terms3">" ו "</string>
+    <string name="sigin_terms4">"מדיניות פרטיות"</string>
+    <string name="cancelaccount_title">"לבטל יצירת חשבון?"</string>
+    <string name="cancelaccount_msg">"המידע שלך לא ישמר."</string>
+    <string name="confirm">אישור</string>
+    <string name="your_ride_with">"הנהג שלך הוא :"</string>
+    <!-- First and last name Page started -->
+
+    <!-- First and last name Page started -->
+    <string name="error_msg_firstname">"חסר שם פרטי"</string>
+    <string name="error_msg_lastname">"חסר משפחה"</string>
+    <string name="error_msg_email">"חסר דוא”ל"</string>
+    <string name="error_msg_password">"מינימום 6 תווים"</string>
+    <string name="error_msg_rating">"דרג/י"</string>
+    <!-- First and last name Page started -->
+
+
+    <!-- Error Messages -->
+
+    <string name="InvalidMobileNumber">מס’ נייד לא חוקי</string>
+    <string name="InvalidPassword">מינימום 6 תווים</string>
+    <string name="Passwordmismatch">סיסמא שגויה</string>
+    <string name="Enteryourpassword">הזן/י סיסמא</string>
+    <string name="Confirmyourpassword">אשר/י את הסיסמא</string>
+
+
+    <!--Translatable false-->
+
+    <!-- fonts started -->
+
+    /* ***************************************************** */
+    <string name="fonts_Book" translatable="false">"ClanPro-Book.otf"</string>
+    <string name="fonts_Medium" translatable="false">"ClanPro-Medium.otf"</string>
+    <string name="fonts_NarrBook" translatable="false">"ClanPro-NarrBook.otf"</string>
+    <string name="fonts_NarrMedium" translatable="false">"ClanPro-NarrMedium.otf"</string>
+
+    <string name="fonts_NarrNews" translatable="false">"ClanPro-NarrNews.otf"</string>
+    <string name="fonts_News" translatable="false">"ClanPro-News.otf"</string>
+    <string name="fonts_WideMedium" translatable="false">"ClanPro-WideMedium.otf"</string>
+    <string name="fonts_WideNews" translatable="false">"ClanPro-WideNews.otf"</string>
+
+    <string name="fonts_UBERBook" translatable="false">"ClanProForUBER-Book.ttf"</string>
+    <string name="fonts_UBERMedium" translatable="false">"ClanProForUBER-Medium.ttf"</string>
+    <string name="fonts_UBERNews" translatable="false">"ClanProForUBER-News.ttf"</string>
+
+    <string name="fonts_PermanentMarker" translatable="false">"PermanentMarker.ttf"</string>
+    <string name="fonts_UberClone" translatable="false">"uber-clone-mobile.ttf"</string>
+
+    /* ***************************************************** */
+    <string name="font_Book" translatable="false">"ClanPro-Book"</string>
+    <string name="font_Medium" translatable="false">"ClanPro-Medium"</string>
+    <string name="font_NarrBook" translatable="false">"ClanPro-NarrBook"</string>
+    <string name="font_NarrMedium" translatable="false">"ClanPro-NarrMedium"</string>
+
+    <string name="font_NarrNews" translatable="false">"ClanPro-NarrNews"</string>
+    <string name="font_News" translatable="false">"ClanPro-News"</string>
+    <string name="font_WideMedium" translatable="false">"ClanPro-WideMedium"</string>
+    <string name="font_WideNews" translatable="false">"ClanPro-WideNews"</string>
+
+    <string name="font_UBERBook" translatable="false">"ClanProForUBER-Book"</string>
+    <string name="font_UBERMedium" translatable="false">"ClanProForUBER-Medium"</string>
+    <string name="font_UBERNews" translatable="false">"ClanProForUBER-News"</string>
+
+    <string name="font_PermanentMarker" translatable="false">"PermanentMarker"</string>
+    <string name="font_UberClone" translatable="false">"uber-clone-mobile"</string>
+
+    <!-- fonts ended -->
+
+    <string name="uberfee">דמי הזמנה</string>
+    <string name="distancefare">תעריף מרחק</string>
+    <string name="timefare">תעריף זמן</string>
+    <string name="estimatedpayout">תעריף נסיעה כולל</string>
+    <string name="wallet_amounts">הסכום בארנק</string>
+    <string name="promo_amounts">סכום הטבה</string>
+
+    <!--Fetch Address-->
+    <string name="no_connection">אין חיבור לאינטרנט</string>
+
+
+    <string name="schedule">"לוח זמנים"</string>
+
+    <string name="no_address_found">לא נמצאה כתובת</string>
+    <string name="UpcomingRideSet">"נסיעה קרובה"</string>
+    <string name="currentestimation">"הערכת תעריף נוכחית"</string>
+    <string name="pending">בהמתנה</string>
+    <string name="schedule_car_details">"אישי"</string>
+    <string name="car_type">"&appname; X"</string>
+    <string name="date_time" translatable="false">"THU, Feb 20 at 10:25AM - 10:40AM"</string>
+    <string name="termschedule">"התעריפים עשויים להשתנות. &appname;
+        לא מבטיחים שימצא נהג בקרבתך."</string>
+    <string name="pasttrip">"עבר"</string>
+    <string name="noschedulerides">"אין לך נסיעות קרובות</string>
+    <string name="amount_schedule" translatable="false">"$ 26-34"</string>
+    <string name="cancel_ride">"ביטול הזמנה"</string>
+    <string name="upcomingtrips">"בקרוב"</string>
+    <string name="no_location_data_provided">אין שירותי מיקום</string>
+    <string name="service_not_available">השירות אינו זמין</string>
+    <string name="invalid_lat_long_used">שימוש בקו אורך/רוחב לא חוקי</string>
+    <string name="emergency_contacts">אנשי קשר לשעת חירום</string>
+    <string name="let_s_make_travel_safe">נסיעה בטוחה</string>
+    <string name="alert_your_contact">שלח התראה לאיש קשר לשעת חירום והוסף לאנשי קשר.</string>
+    <string name="alert_your_contact_add">בואו נהפוך את הנסיעה לבטוחה יותר</string>
+    <string name="you_can_add_5_contacts">אפשר עד 5 אנשי קשר</string>
+    <string name="remove">הסר אנשי קשר</string>
+    <string name="add_contacts">הוסף אנשי קשר</string>
+    <string name="testname" translatable="false">נכשל</string>
+    <string name="testphonenumber" translatable="false">+91 1235479895</string>
+    <string name="delete">מחק</string>
+
+    <string name="getting_car_detail">פרטי הנהג&#8230;</string>
+    <string name="press_again_toexit">לחץ שוב ליציאה</string>
+    <string name="sorry_no_rides">אין נסיעות פתוחות עכשיו</string>
+    <string name="try_again">נסה שוב</string>
+    <string name="try_again_later">נסה שוב מאוחר יותר</string>
+    <string name="receipt">קבלה</string>
+    <string name="addphoto">הוסף תמונה</string>
+    <string name="gettinglocate">קבל מיקום&#8230;</string>
+    <string name="phone">טלפון</string>
+    <string name="verify">אמת</string>
+    <string name="please_enter_promo">הזן קוד הטבה</string>
+    <string name="language">שפה</string>
+    <string name="selectlanguage">בחר/י שפה</string>
+    <string name="turnoninternet">הפעל את האינטרנט שלך</string>
+    <string name="ok_c">בסדר</string>
+    <string name="setpickuptime">"הגדר/י זמן איסוף"</string>
+    <string name="driverarrrive">הנהג מגיע עכשיו&#8230;</string>
+    <string name="yourtripcancelledbydriver">הנסיעה שלך בוטלה ע”י הנהג&#8230;</string>
+    <string name="yourtripbegin">הנסיעה מתחילה עכשיו&#8230;</string>
+    <string name="paymentcompleted">תשלום בוצע&#8230;</string>
+    <string name="rateyourride">דרג/י את הנהג</string>
+    <string name="smoothorsloopy">Smooth or Sloppy?</string>
+    <string name="writecomment">הערה&#8230;</string>
+    <string name="paymentdetails">פרטי תשלום</string>
+    <string name="otherreasons">סיבה אחרת</string>
+    <string name="enterworkaddress">הזן/י כתובת עבודה</string>
+    <string name="enterhomeaddress">הזן/י כתובת בית</string>
+
+
+    <string name="layout_direction" translatable="false">0</string>
+
+    <string name="edit_ride">ערוך זמן</string>
+    <string name="people">אנשים</string>
+
+    <string name="network_failure">בדוק את החיבור לאינטרנט</string>
+    <string name="internal_server_error">נסה/י שוב מאוחר יותר.</string>
+    <string name="img_src" translatable="false">/sdcard/Cabme/slectimage.png</string>
+    <string name="camera">מצלמה</string>
+    <string name="camera_roll">מצלמה 2</string>
+    <string name="nocabs">אין מוניות</string>
+    <string name="loading">טוען …</string>
+    <string name="no_cars">אין מכוניות זמינות…</string>
+    <string name="no_cabs">אין מוניות</string>
+    <string name="picker_today" translatable="false">היום</string>
+    <string name="picker_am" translatable="false">AM</string>
+    <string name="picker_pm" translatable="false">PM</string>
+    <string name="no_contacts_selected">לא נבחרו אנשי קשר</string>
+    <string name="next">הבא</string>
+    <string name="message">הודעה</string>
+    <string name="PeakPricing">תעריף בזמן שיא</string>
+    <string name="iAcceptHigherPrice">אני מקבל תעריף גבוה</string>
+    <string name="peakPriceDescription">ביקוש שיא למוניות ב &appname;
+        הנהגים בדרכים.</string>
+    <string name="the_normal_fare">התעריף הרגיל</string>
+    <string name="driver">נהג</string>
+
+    <string name="minimum_fare">מחיר מינימום</string>
+    <string name="signin">כניסה</string>
+
+    <string name="enable_permissions_to_proceed_further">אפשר להמשיך הלאה</string>
+    <string name="pickup_and_drop_location_is_same">מיקום האיסוף וההורדה זהה&#8230;</string>
+    <string name="unable_to_get_location">לא ניתן לקבל מיקום, נסה/י שוב&#8230;</string>
+
+
+    <string name="location_not_enabled">מיקום לא מופעל!</string>
+    <string name="location_settings">פתח הגדרות מיקום</string>
+    // Demo Base URL
+    // base url
+    // Image upload base url
+    //Terms and
+    policy
+
+    <string name="send_a_message">הקלד הודעה</string>
+    <string name="referral">הפניה</string>
+    <string name="your_invite_code">קוד הפניה שלך</string>
+    <string name="share_my_code">העתק</string>
+    <string name="skip">דלג</string>
+    <string name="rate_your_ride">דרג את הנסיעה</string>
+    <string name="enter_wallet_amount">הזן/י את סכום הארנק</string>
+    <string name="manual_booking">הזמנה ידנית</string>
+    <string name="call_admin">התקשר %s</string>
+    <string name="contact_admin_for_manual_booking">צור קשר עם מנהל המערכת</string>
+    <string name="dial">חייג %s</string>
+    <string name="no_contact_found">לא נמצא איש קשר</string>
+    <string name="mobile_verification">אימות נייד</string>
+    <string name="please_enter_mobile_number">הזן/י מס’ נייד</string>
+    <string name="select_reason">בחר סיבה</string>
+    <string name="default_direction" translatable="false">0</string>
+    <string name="enter_otp">הזן קוד אימות</string>
+    <string name="resend_otp">"הקוד לא התקבל?"</string>
+    <string name="otp_send_to_phone_description">שלחנו לך SMS לאימות מס’ הנייד</string>
+    <string name="send_OTP_again_in">תוכל לשלוח לי שוב?</string>
+    <string name="enter_valid_otp">הזן קוד אימות!</string>
+    <string name="OTP">"אימות"</string>
+
+    <string name="Pickup_or_Drop_Address_missing_please_try_again">חסר כתובת איסוף/מוצא. נסו שוב…</string>
+    <string name="friends_incompleted">חברים - לא הושלם</string>
+    <string name="friends_completed">חברים - הושלם</string>
+    <string name="referral_code_copied">קוד הפניה הועתק</string>
+    <string name="referral_code_not_copied">קוד הפניה לא הועתק</string>
+    <string name="days_left">ימים שנותרו</string>
+    <string name="need_to_complete">צריך להשלים</string>
+    <string name="trips">נסיעות</string>
+    <string name="max_referral_earning_statement">קבל עד %s לכל חבר שתזמין ל &appname;</string>
+    <string name="referral_code_optional">קוד הפניה (לא חובה)</string>
+    <string name="earned">(הרווחת : </string>
+    <string name="no_referrals_yet">אין הפניות</string>
+    <string name="referral_expired">הפניה לא בתוקף</string>
+    <string name="share_to_contacts">שתף איש קשר</string>
+    <string name="share_code">שתף קוד!</string>
+    <string name="invite_msg"><![CDATA[SignUp & Get Paid For Every Invited Sign-up & Much More Bonus Awaits! Use my invite code]]></string>
+    <string name="add_tip">הוסף טיף</string>
+    <string name="add_tip_amt">טיפ %s לנהג</string>
+    <string name="set_tip">קבע טיפ</string>
+    <string name="your_trip_amout_was">"סכום הנסיעה" </string>
+    <string name="waiting_charge_description">%s/min תשלום עמלת המתנה בתוקף לאחר %s min הגעת המונית אל מקום הנוסע/ת.</string>
+    <string name="connected">מחובר</string>
+    <string name="ringing">צלצול</string>
+    <string name="connecting">מתחבר…</string>
+    <string name="enter_tip">הזן/י סכום טיפ</string>
+    <string name="tap_to_reload">לטעינה מחדש</string>
+    <string name="error_msg_unknown">אירעה שגיאה בלתי צפויה</string>
+    <string name="schedule_trip">נסיעה עתידית</string>
+    <string name="onlinepayment">תשלום באינטרנט</string>
+    <string name="unable_to_get_location_pickup">לא ניתן לקבוע את מקום האיסוף. יש לנסות שוב</string>
+    <string name="to_arrive">להגיע</string>
+    <string name="to_reach">להגיע</string>
+    <string name="sign_fb">התחבר עם Facebook</string>
+    <string name="sign_google">התחבר עם Google</string>
+    <string name="sign_apple">התחבר עם Apple</string>
+    <string name="set_canceled">ההתקנה בוטלה. יש לנסות שוב</string>
+    <string name="stripe_error_1">משהו השתבש, יש לנסות שוב.</string>
+    <string name="stripe_error_2">גרסת Stripe API אינה תקינה</string>
+    <string name="stripe" translatable="false">Stripe</string>
+    <string name="choose">בחר/י</string>
+    <string name="Add_payment_type">הוסף שיטת תשלום</string>
+    <string name="choose_payment_type">בר סוג תשלום</string>
+    <string name="few_seconds">נא להמתין מס’ שניות</string>
+    <string name="confirm_seats">לאישור מס’ נוסעים</string>
+    <string name="pool">שיתופית</string>
+    <string name="driver_busy">הנהג תפוס, נסה שוב</string>
+
+    <string name="gender">מין</string>
+    <string name="male">גבר</string>
+    <string name="female">אישה</string>
+    <string name="error_gender">בחר מין</string>
+    <string name="not_valid_data">לא נמצאו נתונים</string>
+    <string name="seat_count">מס’ נוסעים :</string>
+
+    <string name="new_version_available">גרסה חדשה זמינה</string>
+    <string name="update">עדכון</string>
+    <string name="update_desc">אנא עדכן את האפליקציה שלנו כדי להינות מהתכונות האחרונות!</string>
+    <string name="update_desc1">כדי להשתמש באפליקציה, הורד את הגרסה האחרונה.</string>
+    <string name="at">at</string>
+    <string name="accepted_request">הנסיעה שלך אורה ע”י הנהג</string>
+    <string name="enable_connection_and_come_back">אנא בדוק את החיבור ונסה שנית </string>
+    <string name="you_are_viewing_old_data">מצב לא מקוון, בדוק חיבור לרשת</string>
+    <string name="retry">נסה שוב</string>
+
+    <!--New Design String Values-->
+
+    <string name="continue_with_login">יש לך חשבון? </string>
+    <string name="login">התחבר</string>
+    <string name="forgot_password">שכחת סיסמא?</string>
+    <string name="welcome_back">שלום</string>
+    <string name="login_to_continue">התחבר/י כדי להמשיך</string>
+    <string name="continue_with_phone_number">המשך למס’ נייד</string>
+    <string name="register">הרשמה</string>
+    <string name="apple_login">Apple התחבר ל</string>
+    <string name="addwork_location">הוסף מיקום עבודה</string>
+    <string name="cancel_reason">סיבת ביטול</string>
+    <string name="select_view">בחר %s</string>
+    <string name="hello">שלום</string>
+    <string name="hey_user">היי %s</string>
+    <string name="grab_your_new_ride">חפש מונית חדשה</string>
+    <string name="change_location">שנה מיקום</string>
+    <string name="send_message">שלח הודעה</string>
+
+    <string name="add_home_location">הוסף מיקום בית</string>
+    <string name="add_work_location">הוסף מיקום עבודה</string>
+
+    <string name="cancel_trip">בטל נסיעה</string>
+    <string name="sos">חירום</string>
+    <string name="select_photo">בחר תמונה</string>
+    <string name="pleaseConfirmyourpassword">סיסמא בשנית</string>
+    <string name="pleaseEnteryourpassword">סיסמא</string>
+    <string name="valid_time">פג תוקף הקוד</string>
+    <string name="covid_feature_title">נסיעה נקיה.</string>
+    <string name="covid_desc_1">שמור על הבטיחות!!</string>
+    <string name="covid_desc_2">חובת חבישת מסיכה ושמירת מרחק..</string>
+    <string name="covid_desc_3">לא לשכוח לחטא ידיים</string>
+    <string name="covid_desc_4">אל תיקח נסיעה אם יש לך קורונה</string>
+    <string name="covid_desc_5">שמור על הבריאות!!!</string>
+    <string name="covid_rating_desc">הנסיעה הושלמה.</string>
+
+    <string name="installed_app_alert">יישום זה משתמש במידע על מנת לספק מוניות בקרבתך.</string>
+    <string name="location_disclaimer">יישום זה אוסף מיקום כדי לאפשר \'Search Vehicle Location\', \'Travel Route and Navigation\', \'Realtime Vehicle Movement\', when the app is in use.</string>
+    <string name="delete_account">מחק חשבון</string>
+    <string name="delete_msg">האם אתה בטוח שברצונך למחוק את החשבון?</string>
+    <string name="notification_permission_description">אנא אשר על מנת לקבל התראות.</string>
+    <string name="pls_allow_permission">אשר הרשאה זו.</string>
+    <string name="bubble_permission_msg">אנא אשר להציג חלון צף בעת ההזמנה.</string>
+    <string name="allow">מותר</string>
+    <string name="no_rides">אין נסיעות</string>
+    <string name="no_vehicle">אין מוניות</string>
+    <string name="privacy_policy_txt">מדיניות הפרטיות</string>
+    <string name="cancel_trip_alert">האם אתה בטוח שברצונך לבטל את הטיול שלך?</string>
+    <string name="txt_no">לא</string>
+    <string name="disclaimer">כתב ויתור</string>
+    <string name="accept">לְקַבֵּל</string>
+    <string name="cancel_payment">האם אתה בטוח שברצונך לבטל את התשלום?</string>
+    <string name="test_yes">כן</string>
+    <string name="alert">התראה</string>
+
+    <plurals name="minutes" tools:ignore="MissingQuantity">
+        <item quantity="one">%d&#160;דקה</item>
+        <item quantity="other">%d&#160;דקות</item>
+    </plurals>
+
+
+    <plurals name="hours" tools:ignore="MissingQuantity">
+        <item quantity="one">%d&#160;שעה&#160;</item>
+        <item quantity="other">%d"&#160;שעות&#160;</item>
+    </plurals>
+
+
+</resources>
+
+

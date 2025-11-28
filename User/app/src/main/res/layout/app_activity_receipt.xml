@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:background="@color/cabme_app_white">
+
+    <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/app_top_curve_white">
+
+        <RelativeLayout
+                android:id="@+id/basrfarelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40adp"
+                android:paddingBottom="@dimen/_5adp"
+                android:paddingTop="@dimen/_20adp">
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/faretxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_20adp"
+                    android:text="@string/baseFare"
+                    android:textAlignment="center"
+                    android:layout_marginStart="@dimen/_15asp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/faretxt"
+                    android:paddingStart="@dimen/_5adp"
+                    android:text="w"
+                    android:textAlignment="center"
+                    android:textColor="@color/switch_thumb_normal_material_dark"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/basefare_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="@dimen/_20adp"
+                    android:text="100"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1adp"
+                    android:layout_marginTop="@dimen/_50adp"
+                    android:layout_marginStart="@dimen/_25adp"
+                    android:layout_marginEnd="@dimen/_25adp"
+                    android:background="@color/cabme_app_border_shadow"
+                    />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/distancelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/basrfarelayout"
+                android:paddingBottom="@dimen/_10adp"
+                android:paddingTop="@dimen/_20adp">
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/distancefare"
+                    android:textAlignment="center"
+                    android:layout_marginStart="@dimen/_15adp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/distance_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="@dimen/_20adp"
+                    android:text="200"
+                    android:layout_marginEnd="@dimen/_15asp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/timefarelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distancelayout"
+                android:paddingBottom="@dimen/_10adp"
+                android:paddingTop="@dimen/_10adp">
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_20adp"
+                    android:text="@string/timefare"
+                    android:textAlignment="center"
+                    android:layout_marginStart="@dimen/_15adp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/time_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="@dimen/_20adp"
+                    android:text="300"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/accesslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timefarelayout"
+                android:layout_marginEnd="@dimen/_20adp"
+                android:layout_marginStart="@dimen/_20adp"
+                android:paddingBottom="@dimen/_10adp"
+                android:paddingTop="@dimen/_10adp">
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uberfee"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_15asp"
+                    android:layout_marginStart="@dimen/_15asp"
+                    app:fontName="@string/font_Medium" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="400"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginTop="@dimen/_50adp"
+                    android:layout_marginStart="@dimen/_25adp"
+                    android:layout_marginEnd="@dimen/_25adp"
+                    android:background="@color/cabme_app_border_shadow"
+                    />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/totalamountlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accesslayout"
+                android:layout_marginEnd="@dimen/_20adp"
+                android:layout_marginStart="@dimen/_20adp"
+                android:background="@drawable/d_buttomtopboarder"
+                android:paddingBottom="@dimen/_10adp"
+                android:paddingTop="@dimen/_20adp">
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/total_payouts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/estimatedpayout"
+                    android:textAlignment="center"
+                    android:layout_marginStart="@dimen/_15adp"
+                    android:textColor="@color/app_primary_color"
+                    android:textSize="@dimen/_17asp"
+                    app:fontName="@string/font_Medium" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_payouts"
+                    android:layout_marginTop="@dimen/_3adp"
+                    android:text="*Rounded"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_13asp"
+                    android:visibility="gone"
+                    app:fontName="@string/font_Book" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/totalamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="500"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:textColor="@color/app_primary_color"
+                    android:textSize="@dimen/_17asp"
+                    app:fontName="@string/font_Medium" />
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginTop="@dimen/_50adp"
+                    android:layout_marginStart="@dimen/_25adp"
+                    android:background="@color/cabme_app_border_shadow"
+                    />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/walletamountlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalamountlayout"
+                android:layout_marginEnd="@dimen/_20adp"
+                android:layout_marginStart="@dimen/_20adp"
+                android:paddingBottom="@dimen/_10adp"
+                android:paddingTop="@dimen/_10adp">
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:layout_toStartOf="@+id/walletamount"
+                    android:text="@string/wallet_amounts"
+                    android:textColor="@color/app_primary_text"
+                    android:layout_marginStart="@dimen/_15adp"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/walletamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="- $500"
+                    android:textColor="@color/app_primary_text"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/promoamountlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/walletamountlayout"
+                android:layout_marginEnd="@dimen/_20adp"
+                android:layout_marginStart="@dimen/_20adp"
+                android:paddingBottom="@dimen/_10adp"
+                android:paddingTop="@dimen/_10adp">
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:text="@string/promo_amounts"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_13asp"
+                    android:layout_marginStart="@dimen/_15adp"
+                    app:fontName="@string/font_Medium" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/promoamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="- $500"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:textColor="@color/app_primary_text"
+                    android:textSize="@dimen/_13asp"
+                    app:fontName="@string/font_Medium" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1adp"
+                    android:layout_marginTop="@dimen/_50adp"
+                    android:layout_marginStart="@dimen/_25adp"
+                    android:layout_marginEnd="@dimen/_25adp"
+                    android:background="@color/cabme_app_border_shadow"
+                    />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/payableamountlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/promoamountlayout"
+                android:layout_marginEnd="@dimen/_20adp"
+                android:layout_marginStart="@dimen/_20adp"
+                android:paddingBottom="@dimen/_20adp"
+                android:paddingTop="@dimen/_20adp">
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:layout_toStartOf="@+id/payableamount"
+                    android:text="@string/paid_amount"
+                    android:layout_marginStart="@dimen/_15adp"
+                    android:textColor="@color/app_primary_color"
+                    android:textSize="@dimen/_17asp"
+                    app:fontName="@string/font_Medium" />
+
+            <com.rideincab.user.common.custompalette.FontTextView
+                    android:id="@+id/payableamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="500"
+                    android:layout_marginEnd="@dimen/_15adp"
+                    android:textColor="@color/app_primary_color"
+                    android:textSize="@dimen/_17asp"
+                    app:fontName="@string/font_Medium" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10adp"
+            android:layout_marginStart="@dimen/_15adp"
+            android:layout_marginEnd="@dimen/_15adp"
+            android:scrollbars="none" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

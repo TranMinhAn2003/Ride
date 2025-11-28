@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/app_logo" />
+
+    <com.rideincab.user.common.custompalette.FontTextView
+        android:id="@+id/tv_powered_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/_5adp"
+        android:text="Powered by Source Monster ©"
+        android:textColor="@color/app_secondary_text"
+        android:textSize="@dimen/_13asp"
+        app:fontName="@string/font_Medium"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

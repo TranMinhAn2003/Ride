@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="@string/layout_direction"
+        android:padding="@dimen/_10adp"
+        >
+
+    <com.rideincab.user.common.custompalette.FontTextView
+            android:id="@+id/tv_gender_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textColor="@color/app_primary_text"
+            android:textSize="@dimen/_16asp"
+            android:textStyle="bold"
+            app:fontName="@string/font_Medium"
+            />
+
+    <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gender_title"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+        <RadioButton
+                android:id="@+id/rd_male"
+                style="@style/ThemeOverlay.App.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15adp"
+                android:buttonTint="@color/app_primary_color"
+                android:textStyle="bold"
+                android:text="@string/male"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_14asp"
+                />
+
+        <RadioButton
+                android:id="@+id/rd_female"
+                style="@style/ThemeOverlay.App.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/app_primary_color"
+                android:textStyle="bold"
+                android:text="@string/female"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_14asp"
+                />
+
+    </RadioGroup>
+</RelativeLayout>

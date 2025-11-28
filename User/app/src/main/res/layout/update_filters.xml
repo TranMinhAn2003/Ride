@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+    <data>
+
+        <variable
+                name="features"
+                type="com.rideincab.user.taxi.views.main.filter.FeaturesInCarModel"
+                />
+    </data>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="@string/layout_direction"
+            android:paddingStart="@dimen/_15asp"
+            android:paddingTop="@dimen/_5adp"
+            android:paddingEnd="@dimen/_15asp"
+            android:paddingBottom="@dimen/_10adp"
+            >
+
+        <com.rideincab.user.common.custompalette.FontTextView
+                android:id="@+id/tv_filters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5adp"
+                android:layout_marginEnd="@dimen/_5adp"
+                android:layout_toEndOf="@+id/cb_select_filter"
+                android:text="@{features.name}"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/_13asp"
+                app:fontName="@string/font_Medium"
+                />
+
+        <CheckBox
+                android:id="@+id/cb_select_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10adp"
+                android:checked="@{features.selected}"
+                />
+
+    </RelativeLayout>
+
+</layout>

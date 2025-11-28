@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#000000</color>
+
+
+    <color name="linegray">#8a000000</color>
+    // grey line in add wallet
+
+
+    <color name="white">#ffffff</color>
+    <color name="blue_light">#5B85A6</color>
+    <color name="infobackcolur">#f2f2f4</color>
+    <color name="picker_background">#3F51B5</color>
+    <color name="picker_button_background_selected">#3F51B5</color>
+    <color name="picker_button_background">@android:color/white</color>
+    <color name="picker_button_background_innactive">#BDBDBD</color>
+    <color name="picker_default_text_color">#999</color>
+    <color name="picker_default_selected_text_color">@android:color/black</color>
+    <color name="picker_default_selector_color">#646464</color>
+
+
+    <color name="pickup_dest_point_color">#37000000</color>
+    <color name="dialog_deny_grey">#ffdee6e6</color>
+    <color name="ub__black">#ff000000</color>
+
+    <color name="custom_progress_green">#ff27aa0b</color>
+    <color name="notification_black">#ff000000</color>
+
+
+    <!--price recycler view color-->
+    <color name="price_recycler_black_color">#ff000000</color>
+    <color name="price_recycler_green_color">#ff27aa0b</color>
+
+
+    <color name="sending_request_black">#ff000000</color>
+    <color name="contact_border_color">#ffa3a3a3</color>
+    // driver contact boarder color
+    <color name="whereto_border_color">#ffababab</color>
+    // where to rectangle white color
+    <color name="currentloc_bgcolor_placesearch">#fff8f8f8</color>
+    <color name="placesearch_bggrey_color">#fff1f1f1</color>
+    <color name="promotion_bg_color">#ff218a00</color>
+    <color name="destination_red_marker">#fff32f00</color>
+    <color name="transparent">#00000000</color>
+    <color name="radio_button_blue">#ff368ecd</color>
+    <color name="radio_button_black">#ff6b6b76</color>
+    <color name="promo_background">#ff0e9e5e</color>
+    <color name="sending_request_blue">#ff3d9fc6</color>
+    <color name="contact_border_greycolor">#ffededed</color>
+    <color name="white_bgcolor">#ffffffff</color>
+    <color name="whereto_vertical_line">#ffb2b2b2</color>
+
+
+    <color name="chat_input_background">#fff6f6f6</color>
+    <color name="chat_input_default_border">#ffeaeaea</color>
+    <color name="chat_gray_border">#dbd8d8</color>
+    <color name="accountkit_input_bacground_color">#f1f0f0</color>
+
+
+    // text font color
+    <color name="green_text_color">#ff27aa0b</color>
+    <color name="header_color">#000000</color>
+    <color name="background_color">#161616</color>
+    <color name="button_color">#000000</color>
+    <color name="button_disable_color">#dbd8d8</color>
+    <color name="cancel_text_color">#37000000</color>
+    <color name="button_disable_darkgrey_color">#37000000</color>
+    <color name="button_color_blue">#4267A9</color>
+    <color name="text_black">#de000000</color>
+    <color name="blue_text_color">#ff368ecd</color>
+    <color name="blue_light_text_color">#ff1eacc7</color>
+    <color name="blue_light_loader_color">#ff1eacc7</color>
+    <color name="light_blue_button_color">#ff1fbad6</color>
+    <color name="textgray">#8a000000</color>
+    <color name="text_light_gray">#80000000</color>
+    <color name="text_light_black">#888888</color>
+    <color name="red_text_color">#BA605F</color>
+    <color name="round_next_color">#de000000</color>
+    <color name="fb_bg">#0F5999</color>
+    <color name="google_bg">#DF5746</color>
+
+    <color name="bt_base_background">#FAFAFA</color>
+    <color name="bt_blue_pressed">#008BC7</color>
+    <color name="bt_border_color">#99999A</color>
+    <color name="bt_button_disabled_color">#99999A</color>
+    <color name="bt_color_highlight">#9F9EA1</color>
+    <color name="bt_color_primary">#3E3C42</color>
+    <color name="bt_color_primary_dark">#363439</color>
+    <color name="bt_error_red">#DD5555</color>
+    <color name="bt_paypal_monogram_button_background">#009CDE</color>
+    <color name="bt_paypal_monogram_button_background_pressed">#008AC5</color>
+    <color name="bt_text_blue">#199DDC</color>
+    <color name="bt_very_light_gray">#E2E2E3</color>
+    <color name="bt_white_pressed">#F2F2F2</color>
+
+    <!--        Cabme 2.5 color code        -->
+    <color name="app_primary_color">#16AC1C</color>
+    <color name="app_primary_text">#303841</color>
+    <color name="app_primary_light_text">#80303841</color>
+    <color name="cabme_app_gray">#EEEEEE</color>
+    <color name="app_secondary_text">#3A4750</color>
+    <color name="cabme_app_grey">#ffd6d7d7</color>
+    <color name="cabme_app_white">#FFFFFF</color>
+    <color name="cabme_app_white_outline">#37000000</color>
+    <color name="cabme_app_black_dark">#141414</color>
+    <color name="cabme_app_black_dot">#0D1724</color>
+
+    <color name="cabme_app_text_ash">#A9A9A9</color>
+    <color name="cabme_app_red">#A5353A</color>
+    <color name="cabme_app_ash_light">#88888829</color>
+    <color name="cabme_app_border_shadow">#F4F4F4</color>
+    <color name="cabme_app_divider_grey">#C7C7C7</color>
+    <color name="cabme_app_yellow_dim">#12F6C92E</color>
+    <color name="app_primary_disable">#4016AC1C</color>
+    <color name="cabme_app_yellow_fade">#12F6C92E</color>
+    <color name="app_primary_button_text_color">#ffffff</color>
+
+</resources>
