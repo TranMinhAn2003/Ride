@@ -1,7 +1,26 @@
-user :  // password 'AKCp8jQcoDy2hxSWhDAUQKXLDPDx6NYRkqrgFLRc3qDrayg6rrCbJpsKKyMwaykVL8FWusJpp'  //khi nào chạy bỏ comment
-D:\Project\RideIn\User\app\build.gradle
-khi nào chạy vào file trên với đường dẫn đó dán cái password vào dòng 98 chỗ username 
+Thay đổi trong các file sau
 
-driver:             // password 'AKCp8jQcoDy2hxSWhDAUQKXLDPDx6NYRkqrgFLRc3qDrayg6rrCbJpsKKyMwaykVL8FWusJpp'   //khi nào chạy bỏ comment
+
+
+
+D:\Project\RideIn\User\app\build.gradle
+//dòng 14
+   maven {
+        url "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+        credentials {
+            username 'braintree_team_sdk'
+           password 'AKCp8jQcoDy2hxSWhDAUQKXLDPDx6NYRkqrgFLRc3qDrayg6rrCbJpsKKyMwaykVL8FWusJpp'
+        }
+    }
+ 
+
 D:\Project\RideIn\Driver\app\build.gradle
-khi nào chạy vào file trên với đường dẫn đó dán cái password vào dòng 98 chỗ username 
+
+//dòng 94
+ maven {
+        url "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+        credentials {
+            username 'braintree_team_sdk'
+            password 'AKCp8jQcoDy2hxSWhDAUQKXLDPDx6NYRkqrgFLRc3qDrayg6rrCbJpsKKyMwaykVL8FWusJpp'
+        }
+    }
